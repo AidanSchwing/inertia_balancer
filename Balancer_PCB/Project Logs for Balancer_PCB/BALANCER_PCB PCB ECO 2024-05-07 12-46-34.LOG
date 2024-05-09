@@ -1,0 +1,13 @@
+Added Component: Designator=D6(0805_LED)
+Added Component: Designator=R19(0603_RES)
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "130"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=D6-2
+Added Pin To Net: NetName=NetD6_1 Pin=D6-1
+Added Pin To Net: NetName=NetD6_1 Pin=R19-1
+Added Net: Name=NetD6_1
+Added Pin To Net: NetName=NetIC1_50 Pin=IC1-50
+Added Pin To Net: NetName=NetIC1_50 Pin=R19-2
+Added Net: Name=NetIC1_50
+Added Member To Class: ClassName=MCU Member=Component D6 0805_LED
+Added Member To Class: ClassName=MCU Member=Component R19 Resistor

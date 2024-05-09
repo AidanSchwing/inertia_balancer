@@ -1,0 +1,22 @@
+Change Component Footprint: Designator=Q1 Old Footprint=SOT23-3 New Footprint=SOT95P240X120-3N
+Change Component Footprint: Designator=Q2 Old Footprint=SOT23-3 New Footprint=SOT95P240X120-3N
+Change Component Comment : Designator=Q1 Old Comment=DMG2302UK-7 New Comment=BSS138
+Change Component Comment : Designator=Q2 Old Comment=DMG2302UK-7 New Comment=BSS138
+Change component parameters: Designator = "Q1" ("Q1"); Footprint = "SOT23-3"; UniqueID = "\BGVQCAQH" ("\BGVQCAQH")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "BSS138"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/bss138/on-semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "1.2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "BSS138"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "512-BSS138"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/BSS138?qs=HK%252BeIG1iaahCeqBvjB4arg%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Q2" ("Q2"); Footprint = "SOT23-3"; UniqueID = "\VLCCUPMW" ("\VLCCUPMW")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "BSS138"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/bss138/on-semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "1.2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "BSS138"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "512-BSS138"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/BSS138?qs=HK%252BeIG1iaahCeqBvjB4arg%3D%3D"; VariantName = "[No Variations]"

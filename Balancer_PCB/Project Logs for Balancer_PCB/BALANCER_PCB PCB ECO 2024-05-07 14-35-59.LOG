@@ -1,0 +1,11 @@
+Change Component Footprint: Designator=Y1 Old Footprint=ECS-80-18 New Footprint=ABM7
+Change Component Comment : Designator=Y1 Old Comment=ECS-80-18-4XDN New Comment=ABM7-8.000MHZ-D2Y-T
+Change component parameters: Designator = "Y1" ("Y1"); Footprint = "ECS-80-18"; UniqueID = "\OKOPHGAK" ("\OKOPHGAK")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "ABM7-8.000MHZ-D2Y-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/abm7-8.000mhz-d2y-t/abracon?region=europe"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://abracon.com/Resonators/abm7.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "1.4mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "ABRACON"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ABM7-8.000MHZ-D2Y-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "815-ABM7-8-D2Y-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ABRACON/ABM7-8.000MHZ-D2Y-T?qs=LoTOQoUkC8SFsmY8snleBA%3D%3D"; VariantName = "[No Variations]"

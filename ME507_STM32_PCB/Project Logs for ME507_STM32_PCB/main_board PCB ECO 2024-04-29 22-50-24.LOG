@@ -1,0 +1,10 @@
+Added Component: Designator=S?(6mmTactileSwitch_ThroughHole)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/c-k/PTS645SH95-2-LFS/1146763"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "0.05A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MaxVoltage"; Value = "12V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting"; Value = "TH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "TactileSwitch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pole"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Added Class: Name=main_schematic

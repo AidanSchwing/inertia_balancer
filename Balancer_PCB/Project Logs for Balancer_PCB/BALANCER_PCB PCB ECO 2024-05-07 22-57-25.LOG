@@ -1,0 +1,8 @@
+Added Component: Designator=F?(05200101Z Cartridge Holder)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/littelfuse-inc/05200101Z/554336"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current"; Value = "10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Voltage"; Value = "600V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=F?-1
+Added Pin To Net: NetName=GND Pin=F?-2
+Added Member To Class: ClassName=MCU_Extras Member=Component F? 05200101Z Cartridge Fuse Holder

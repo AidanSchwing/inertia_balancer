@@ -1,0 +1,152 @@
+Removed Pin From Net: NetName=GND Pin=C1-1
+Removed Pin From Net: NetName=VCC Pin=C1-2
+Removed Pin From Net: NetName=GND Pin=C2-1
+Removed Pin From Net: NetName=+5 Pin=C2-2
+Change Component Footprint: Designator=C1 Old Footprint=0805_CAP New Footprint=0603_CAP
+Change Component Footprint: Designator=C2 Old Footprint=0805_CAP New Footprint=0603_CAP
+Change component parameters: Designator = "C1" ("C1"); Footprint = "0805_CAP"; UniqueID = "\KPTIKPPC" ("\KPTIKPPC")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2" ("C2"); Footprint = "0805_CAP"; UniqueID = "\RGGQJNSY" ("\RGGQJNSY")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C34(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C35(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C36(1210_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C37(1210_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C38(6.60x6.60x8.00mm_E_CAP)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/product-detail/en/nichicon/UWT1H470MCL1GS/493-2225-1-ND/590200"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = "20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "47u"; VariantName = "[No Variations]"
+Added Component: Designator=C39(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C40(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C41(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C42(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C43(1210_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C44(1210_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C45(6.60x6.60x8.00mm_E_CAP)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/product-detail/en/nichicon/UWT1H470MCL1GS/493-2225-1-ND/590200"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = "20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "47u"; VariantName = "[No Variations]"
+Added Component: Designator=C46(6.60x6.60x8.00mm_E_CAP)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/865080343009/5728014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = "20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Added Component: Designator=C47(6.60x6.60x8.00mm_E_CAP)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/865080343009/5728014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = "20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=VCC Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=VCC Pin=C34-1
+Added Pin To Net: NetName=GND Pin=C34-2
+Added Pin To Net: NetName=VCC Pin=C35-1
+Added Pin To Net: NetName=GND Pin=C35-2
+Added Pin To Net: NetName=VCC Pin=C36-1
+Added Pin To Net: NetName=GND Pin=C36-2
+Added Pin To Net: NetName=VCC Pin=C37-1
+Added Pin To Net: NetName=GND Pin=C37-2
+Added Pin To Net: NetName=VCC Pin=C38-1
+Added Pin To Net: NetName=GND Pin=C38-2
+Added Pin To Net: NetName=+5 Pin=C39-1
+Added Pin To Net: NetName=GND Pin=C39-2
+Added Pin To Net: NetName=+5 Pin=C40-1
+Added Pin To Net: NetName=GND Pin=C40-2
+Added Pin To Net: NetName=+5 Pin=C41-1
+Added Pin To Net: NetName=GND Pin=C41-2
+Added Pin To Net: NetName=+5 Pin=C42-1
+Added Pin To Net: NetName=GND Pin=C42-2
+Added Pin To Net: NetName=+5 Pin=C43-1
+Added Pin To Net: NetName=GND Pin=C43-2
+Added Pin To Net: NetName=+5 Pin=C44-1
+Added Pin To Net: NetName=GND Pin=C44-2
+Added Pin To Net: NetName=+5 Pin=C45-1
+Added Pin To Net: NetName=GND Pin=C45-2
+Added Pin To Net: NetName=+5 Pin=C46-1
+Added Pin To Net: NetName=GND Pin=C46-2
+Added Pin To Net: NetName=+5 Pin=C47-1
+Added Pin To Net: NetName=GND Pin=C47-2
+Added Member To Class: ClassName=main_schematic Member=Component C34 Capacitor
+Added Member To Class: ClassName=main_schematic Member=Component C35 Capacitor
+Added Member To Class: ClassName=main_schematic Member=Component C36 Capacitor
+Added Member To Class: ClassName=main_schematic Member=Component C37 Capacitor
+Added Member To Class: ClassName=main_schematic Member=Component C38 UWT1H470MCL1GS
+Added Member To Class: ClassName=main_schematic Member=Component C39 Capacitor
+Added Member To Class: ClassName=main_schematic Member=Component C40 Capacitor
+Added Member To Class: ClassName=main_schematic Member=Component C41 Capacitor
+Added Member To Class: ClassName=main_schematic Member=Component C42 Capacitor
+Added Member To Class: ClassName=main_schematic Member=Component C43 Capacitor
+Added Member To Class: ClassName=main_schematic Member=Component C44 Capacitor
+Added Member To Class: ClassName=main_schematic Member=Component C45 UWT1H470MCL1GS
+Added Member To Class: ClassName=main_schematic Member=Component C46 865080343009
+Added Member To Class: ClassName=main_schematic Member=Component C47 865080343009

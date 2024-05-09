@@ -1,0 +1,581 @@
+Added Component: Designator=C1(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C2(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C3(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C4(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "32p"; VariantName = "[No Variations]"
+Added Component: Designator=C5(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "32p"; VariantName = "[No Variations]"
+Added Component: Designator=C6(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C7(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C8(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10n"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C9(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C10(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C11(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10n"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C12(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C13(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C14(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C15(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C16(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C17(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C18(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C19(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C20(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C21(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C22(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10n"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C23(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C24(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C25(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10n"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C26(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C27(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C28(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C29(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C30(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C31(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "2.2u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C32(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "2.2u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C33(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "2.2u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C34(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C35(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C36(1210_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C37(1210_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C38(6.60x6.60x8.00mm_E_CAP)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/product-detail/en/nichicon/UWT1H470MCL1GS/493-2225-1-ND/590200"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = "20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "47u"; VariantName = "[No Variations]"
+Added Component: Designator=C39(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C40(0603_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C41(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C42(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C43(1210_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C44(1210_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C45(6.60x6.60x8.00mm_E_CAP)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/product-detail/en/nichicon/UWT1H470MCL1GS/493-2225-1-ND/590200"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = "20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "47u"; VariantName = "[No Variations]"
+Added Component: Designator=C46(6.60x6.60x8.00mm_E_CAP)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/865080343009/5728014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = "20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Added Component: Designator=C47(6.60x6.60x8.00mm_E_CAP)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/865080343009/5728014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = "20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Added Component: Designator=D1(SOD-123F)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/product-detail/en/diodes-incorporated/1N5819HW1-7-F/1N5819HW1-7-FDITR-ND/5768523"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Num_Circuits"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOD-123F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vr"; Value = "40V"; VariantName = "[No Variations]"
+Added Component: Designator=D2(0805_LED)
+Added Component: Designator=D3(0805_LED)
+Added Component: Designator=F(1206_RES)
+Added Component: Designator=IC1(QFP50P1600X1600X160-100N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.st.com/resource/en/datasheet/stm32h7r3a8.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "STM32H7R3V8T6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=L1(SRR1280-150M)
+Add component (AddParameter): Name = "iMax"; Value = "1.1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Inductance"; Value = "330uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://www.mouser.com/ProductDetail/Bourns/SRR1280-331K?qs=brMhP%2FMjUfd0KI3Wq6D0xQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MfrPartNo"; Value = "652-SRR1280-331K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "SRR1280-331K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "5050"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "600mOhm"; VariantName = "[No Variations]"
+Added Component: Designator=R1(0603_RES)
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R2(0603_RES)
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R3(0603_RES)
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "130"; VariantName = "[No Variations]"
+Added Component: Designator=R4(0805_RES)
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Added Component: Designator=R5(0603_RES)
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R6(0805_RES)
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "620"; VariantName = "[No Variations]"
+Added Component: Designator=S1(6mmTactileSwitch_ThroughHole)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/c-k/PTS645SH95-2-LFS/1146763"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "0.05A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MaxVoltage"; Value = "12V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting"; Value = "TH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "TactileSwitch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pole"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=S2(DS04254201BKSMTTR)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "DS04-254-2-01BK-SMT-TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ds04-254-2-01bk-smt-tr/cui-devices?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.cuidevices.com/product/resource/supplyframepdf/ds04-254-smt.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "4.3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "CUI Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "DS04-254-2-01BK-SMT-TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "490-DS04254201BK-STR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/CUI-Devices/DS04-254-2-01BK-SMT-TR?qs=wnTfsH77Xs4xXRFXKF0ssg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=U1(DPAK3_TO-252-3)
+Added Component: Designator=U2(MICROCHIP_TO-263)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "LM2576-5.0WU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/lm2576-5.0wu/microchip-technology?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://ww1.microchip.com/downloads/en/DeviceDoc/lm2576.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Microchip"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "LM2576-5.0WU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "998-LM2576-5.0WU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/LM2576-5.0WU?qs=kh6iOki%2FeLHlI9xhWDTjJw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=X1(XT30PWM)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.tme.eu/sl/Document/ce4077e36b79046da520ca73227e15de/XT30PW%20SPEC.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Amass"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XT30PW-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=X2(HeaderPad)
+Added Component: Designator=X3(HeaderPad)
+Added Component: Designator=X4(GenericPinHeader(.1in))
+Added Component: Designator=X5(GenericPinHeader(.1in))
+Added Component: Designator=X6(GenericPinHeader(.1in))
+Added Component: Designator=X7(GenericPinHeader(.1in))
+Added Component: Designator=X8(GenericPinHeader(.1in))
+Added Component: Designator=X9(GenericPinHeader(.1in))
+Added Component: Designator=Y1(ECS-80-18)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/ProductDetail/ECS/ECS-80-18-4XDN?qs=CkbNAJEAr%2FRohZNNeAgxsQ%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3V3 Pin=C6-2
+Added Pin To Net: NetName=+3V3 Pin=C7-2
+Added Pin To Net: NetName=+3V3 Pin=C8-2
+Added Pin To Net: NetName=+3V3 Pin=C9-2
+Added Pin To Net: NetName=+3V3 Pin=C10-2
+Added Pin To Net: NetName=+3V3 Pin=C11-2
+Added Pin To Net: NetName=+3V3 Pin=C12-2
+Added Pin To Net: NetName=+3V3 Pin=C13-2
+Added Pin To Net: NetName=+3V3 Pin=C14-2
+Added Pin To Net: NetName=+3V3 Pin=C15-2
+Added Pin To Net: NetName=+3V3 Pin=C16-2
+Added Pin To Net: NetName=+3V3 Pin=C17-2
+Added Pin To Net: NetName=+3V3 Pin=C18-2
+Added Pin To Net: NetName=+3V3 Pin=C19-2
+Added Pin To Net: NetName=+3V3 Pin=C20-2
+Added Pin To Net: NetName=+3V3 Pin=C21-2
+Added Pin To Net: NetName=+3V3 Pin=C22-2
+Added Pin To Net: NetName=+3V3 Pin=C23-2
+Added Pin To Net: NetName=+3V3 Pin=C24-2
+Added Pin To Net: NetName=+3V3 Pin=C25-2
+Added Pin To Net: NetName=+3V3 Pin=IC1-9
+Added Pin To Net: NetName=+3V3 Pin=IC1-14
+Added Pin To Net: NetName=+3V3 Pin=IC1-15
+Added Pin To Net: NetName=+3V3 Pin=IC1-23
+Added Pin To Net: NetName=+3V3 Pin=IC1-58
+Added Pin To Net: NetName=+3V3 Pin=IC1-69
+Added Pin To Net: NetName=+3V3 Pin=IC1-78
+Added Pin To Net: NetName=+3V3 Pin=IC1-82
+Added Pin To Net: NetName=+3V3 Pin=IC1-85
+Added Pin To Net: NetName=+3V3 Pin=IC1-96
+Added Pin To Net: NetName=+3V3 Pin=R1-2
+Added Pin To Net: NetName=+3V3 Pin=R3-2
+Added Pin To Net: NetName=+3V3 Pin=R4-1
+Added Pin To Net: NetName=+3V3 Pin=S2-1
+Added Pin To Net: NetName=+3V3 Pin=U1-4
+Added Pin To Net: NetName=+3V3 Pin=X4-1
+Added Net: Name=+3V3
+Added Pin To Net: NetName=+5 Pin=C39-1
+Added Pin To Net: NetName=+5 Pin=C40-1
+Added Pin To Net: NetName=+5 Pin=C41-1
+Added Pin To Net: NetName=+5 Pin=C42-1
+Added Pin To Net: NetName=+5 Pin=C43-1
+Added Pin To Net: NetName=+5 Pin=C44-1
+Added Pin To Net: NetName=+5 Pin=C45-1
+Added Pin To Net: NetName=+5 Pin=C46-1
+Added Pin To Net: NetName=+5 Pin=C47-1
+Added Pin To Net: NetName=+5 Pin=L1-1
+Added Pin To Net: NetName=+5 Pin=R2-2
+Added Pin To Net: NetName=+5 Pin=U1-3
+Added Pin To Net: NetName=+5 Pin=U2-4
+Added Net: Name=+5
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=GND Pin=C13-1
+Added Pin To Net: NetName=GND Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C15-1
+Added Pin To Net: NetName=GND Pin=C16-1
+Added Pin To Net: NetName=GND Pin=C17-1
+Added Pin To Net: NetName=GND Pin=C18-1
+Added Pin To Net: NetName=GND Pin=C19-1
+Added Pin To Net: NetName=GND Pin=C20-1
+Added Pin To Net: NetName=GND Pin=C21-1
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=GND Pin=C23-1
+Added Pin To Net: NetName=GND Pin=C24-1
+Added Pin To Net: NetName=GND Pin=C25-1
+Added Pin To Net: NetName=GND Pin=C26-1
+Added Pin To Net: NetName=GND Pin=C27-1
+Added Pin To Net: NetName=GND Pin=C28-1
+Added Pin To Net: NetName=GND Pin=C29-1
+Added Pin To Net: NetName=GND Pin=C30-1
+Added Pin To Net: NetName=GND Pin=C31-1
+Added Pin To Net: NetName=GND Pin=C32-1
+Added Pin To Net: NetName=GND Pin=C33-1
+Added Pin To Net: NetName=GND Pin=C34-2
+Added Pin To Net: NetName=GND Pin=C35-2
+Added Pin To Net: NetName=GND Pin=C36-2
+Added Pin To Net: NetName=GND Pin=C37-2
+Added Pin To Net: NetName=GND Pin=C38-2
+Added Pin To Net: NetName=GND Pin=C39-2
+Added Pin To Net: NetName=GND Pin=C40-2
+Added Pin To Net: NetName=GND Pin=C41-2
+Added Pin To Net: NetName=GND Pin=C42-2
+Added Pin To Net: NetName=GND Pin=C43-2
+Added Pin To Net: NetName=GND Pin=C44-2
+Added Pin To Net: NetName=GND Pin=C45-2
+Added Pin To Net: NetName=GND Pin=C46-2
+Added Pin To Net: NetName=GND Pin=C47-2
+Added Pin To Net: NetName=GND Pin=D1-2
+Added Pin To Net: NetName=GND Pin=D2-2
+Added Pin To Net: NetName=GND Pin=D3-2
+Added Pin To Net: NetName=GND Pin=IC1-8
+Added Pin To Net: NetName=GND Pin=IC1-12
+Added Pin To Net: NetName=GND Pin=IC1-13
+Added Pin To Net: NetName=GND Pin=IC1-20
+Added Pin To Net: NetName=GND Pin=IC1-31
+Added Pin To Net: NetName=GND Pin=IC1-35
+Added Pin To Net: NetName=GND Pin=IC1-41
+Added Pin To Net: NetName=GND Pin=IC1-47
+Added Pin To Net: NetName=GND Pin=IC1-57
+Added Pin To Net: NetName=GND Pin=IC1-68
+Added Pin To Net: NetName=GND Pin=IC1-79
+Added Pin To Net: NetName=GND Pin=IC1-95
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S1-2
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U2-3
+Added Pin To Net: NetName=GND Pin=U2-5
+Added Pin To Net: NetName=GND Pin=U2-6
+Added Pin To Net: NetName=GND Pin=X1-GND
+Added Pin To Net: NetName=GND Pin=X1-MOUNT
+Added Pin To Net: NetName=GND Pin=X1-MOUNT
+Added Pin To Net: NetName=GND Pin=X6-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=NetC4_2 Pin=R6-1
+Added Pin To Net: NetName=NetC4_2 Pin=Y1-1
+Added Net: Name=NetC4_2
+Added Pin To Net: NetName=NetC26_2 Pin=C26-2
+Added Pin To Net: NetName=NetC26_2 Pin=C27-2
+Added Pin To Net: NetName=NetC26_2 Pin=C28-2
+Added Pin To Net: NetName=NetC26_2 Pin=C29-2
+Added Pin To Net: NetName=NetC26_2 Pin=C30-2
+Added Pin To Net: NetName=NetC26_2 Pin=IC1-30
+Added Pin To Net: NetName=NetC26_2 Pin=IC1-36
+Added Pin To Net: NetName=NetC26_2 Pin=IC1-42
+Added Pin To Net: NetName=NetC26_2 Pin=IC1-48
+Added Pin To Net: NetName=NetC26_2 Pin=R4-2
+Added Net: Name=NetC26_2
+Added Pin To Net: NetName=NetC31_2 Pin=C31-2
+Added Pin To Net: NetName=NetC31_2 Pin=IC1-56
+Added Net: Name=NetC31_2
+Added Pin To Net: NetName=NetC32_2 Pin=C32-2
+Added Pin To Net: NetName=NetC32_2 Pin=IC1-67
+Added Net: Name=NetC32_2
+Added Pin To Net: NetName=NetC33_2 Pin=C33-2
+Added Pin To Net: NetName=NetC33_2 Pin=IC1-94
+Added Net: Name=NetC33_2
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=L1-2
+Added Pin To Net: NetName=NetD1_1 Pin=U2-2
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=R2-1
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=R3-1
+Added Net: Name=NetD3_1
+Added Pin To Net: NetName=NetIC1_1 Pin=IC1-1
+Added Pin To Net: NetName=NetIC1_1 Pin=X2-1
+Added Net: Name=NetIC1_1
+Added Pin To Net: NetName=NetIC1_77 Pin=IC1-77
+Added Pin To Net: NetName=NetIC1_77 Pin=X3-1
+Added Net: Name=NetIC1_77
+Added Pin To Net: NetName=NetIC1_90 Pin=IC1-90
+Added Pin To Net: NetName=NetIC1_90 Pin=R5-2
+Added Pin To Net: NetName=NetIC1_90 Pin=S2-2
+Added Net: Name=NetIC1_90
+Added Pin To Net: NetName=NRST Pin=C3-2
+Added Pin To Net: NetName=NRST Pin=IC1-7
+Added Pin To Net: NetName=NRST Pin=R1-1
+Added Pin To Net: NetName=NRST Pin=S1-3
+Added Pin To Net: NetName=NRST Pin=S1-4
+Added Pin To Net: NetName=NRST Pin=X8-1
+Added Net: Name=NRST
+Added Pin To Net: NetName=OSC_IN Pin=C5-2
+Added Pin To Net: NetName=OSC_IN Pin=IC1-5
+Added Pin To Net: NetName=OSC_IN Pin=Y1-2
+Added Net: Name=OSC_IN
+Added Pin To Net: NetName=OSC_OUT Pin=IC1-6
+Added Pin To Net: NetName=OSC_OUT Pin=R6-2
+Added Net: Name=OSC_OUT
+Added Pin To Net: NetName=SWCLK Pin=IC1-65
+Added Pin To Net: NetName=SWCLK Pin=X5-1
+Added Net: Name=SWCLK
+Added Pin To Net: NetName=SWDIO Pin=IC1-64
+Added Pin To Net: NetName=SWDIO Pin=X7-1
+Added Net: Name=SWDIO
+Added Pin To Net: NetName=SWO Pin=IC1-91
+Added Pin To Net: NetName=SWO Pin=X9-1
+Added Net: Name=SWO
+Added Pin To Net: NetName=VCC Pin=C1-1
+Added Pin To Net: NetName=VCC Pin=C2-1
+Added Pin To Net: NetName=VCC Pin=C34-1
+Added Pin To Net: NetName=VCC Pin=C35-1
+Added Pin To Net: NetName=VCC Pin=C36-1
+Added Pin To Net: NetName=VCC Pin=C37-1
+Added Pin To Net: NetName=VCC Pin=C38-1
+Added Pin To Net: NetName=VCC Pin=F-2
+Added Pin To Net: NetName=VCC Pin=U2-1
+Added Net: Name=VCC
+Added Pin To Net: NetName=VIN Pin=F-1
+Added Pin To Net: NetName=VIN Pin=X1-VIN
+Added Net: Name=VIN
+Added Class: Name=main_schematic
+Added Class: Name=MCU
