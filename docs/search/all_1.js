@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['busfault_5fhandler_0',['BusFault_Handler',['../stm32f4xx__it_8c.html#a850cefb17a977292ae5eb4cafa9976c3',1,'stm32f4xx_it.c']]]
+  ['ahbpresctable_0',['AHBPrescTable',['../group___s_t_m32_f4xx___system___private___variables.html#ga6e1d9cd666f0eacbfde31e9932a93466',1,'system_stm32f4xx.c']]],
+  ['apbpresctable_1',['APBPrescTable',['../group___s_t_m32_f4xx___system___private___variables.html#ga5b4f8b768465842cf854a8f993b375e9',1,'system_stm32f4xx.c']]]
 ];

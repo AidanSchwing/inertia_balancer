@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pendsv_5fhandler_0',['PendSV_Handler',['../stm32f4xx__it_8c.html#a6303e1f258cbdc1f970ce579cc015623',1,'stm32f4xx_it.c']]]
+  ['initialise_5fmonitor_5fhandles_0',['initialise_monitor_handles',['../syscalls_8c.html#a25c7f100d498300fff65568c2fcfe639',1,'syscalls.c']]]
 ];
