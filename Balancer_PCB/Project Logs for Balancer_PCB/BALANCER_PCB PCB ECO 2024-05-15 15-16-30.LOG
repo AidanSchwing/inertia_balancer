@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=+5 Pin=X6-1
+Removed Pin From Net: NetName=GND Pin=X6-2
+Removed Pin From Net: NetName=PWM_READ Pin=X6-4
+Removed Pin From Net: NetName=USART6_RX Pin=X6-5
+Removed Pin From Net: NetName=USART6_TX Pin=X6-6
+Change Component Footprint: Designator=X6 Old Footprint=2843916 New Footprint=GenericPinHeader(.1in)
+Change Component Comment : Designator=X6 Old Comment=284391-6 New Comment=GenericPinHeader(0.1in)
+Change component parameters: Designator = "X6" ("X6"); Footprint = "2843916"; UniqueID = "\UEHYSLMY" ("\UEHYSLMY")
+Added Component: Designator=X9(GenericPinHeader(.1in))
+Added Component: Designator=X18(GenericPinHeader(.1in))
+Added Component: Designator=X19(GenericPinHeader(.1in))
+Added Component: Designator=X20(GenericPinHeader(.1in))
+Added Component: Designator=X21(GenericPinHeader(.1in))
+Added Pin To Net: NetName=USART6_TX Pin=X6-1
+Added Pin To Net: NetName=USART6_RX Pin=X9-1
+Added Pin To Net: NetName=PWM_READ Pin=X18-1
+Added Pin To Net: NetName=GND Pin=X20-1
+Added Pin To Net: NetName=+5 Pin=X21-1
+Added Pin To Net: NetName=NetX11_1 Pin=X11-1
+Added Pin To Net: NetName=NetX11_1 Pin=X19-1
+Added Net: Name=NetX11_1
+Added Member To Class: ClassName=MCU Member=Component X9 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU Member=Component X18 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU Member=Component X19 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU Member=Component X20 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU Member=Component X21 GenericPinHeader(0.1in)

@@ -134,7 +134,116 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SSGIJCWG
 
+[Document6]
+DocumentPath=Balancer_PCB.BomDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\NC Drill\BALANCER_PCB-RoundHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\NC Drill\BALANCER_PCB-SlotHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\NC Drill\BALANCER_PCB.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.G1
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.G2
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GM13
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\NC Drill\BALANCER_PCB.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.REP
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for Balancer_PCB\JLCPCB\Gerber\BALANCER_PCB.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument24]
 DocumentPath=Project Outputs for Balancer_PCB\Design Rule Check - BALANCER_PCB.html
 DItemRevisionGUID=
 

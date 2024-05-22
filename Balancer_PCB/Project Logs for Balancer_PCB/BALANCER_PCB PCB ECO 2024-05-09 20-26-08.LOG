@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=USART6_TX Pin=X13-1
+Removed Pin From Net: NetName=USART6_RX Pin=X13-2
+Removed Pin From Net: NetName=NetX11_1 Pin=X13-3
+Removed Pin From Net: NetName=NetX12_1 Pin=X13-4
+Removed Pin From Net: NetName=GND Pin=X13-5
+Removed Pin From Net: NetName=+5 Pin=X13-6
+Removed Member From Class: ClassName=MCU Member=X13
+Added Component: Designator=X?(2843916)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "284391-6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/284391-6/te-connectivity?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1-1773458-1_EURO_STYLE_QRG&DocType=Data%20Sheet&DocLang=English&PartCntxt=284391-6&DocFormat=pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "12.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "284391-6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "571-284391-6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/284391-6?qs=79dOc3%2F91%2FeC3GGdUf8hxQ%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=X?-1
+Added Pin To Net: NetName=GND Pin=X?-2
+Added Pin To Net: NetName=NetX12_1 Pin=X?-3
+Added Pin To Net: NetName=NetX11_1 Pin=X?-4
+Added Pin To Net: NetName=USART6_RX Pin=X?-5
+Added Pin To Net: NetName=USART6_TX Pin=X?-6
+Added Member To Class: ClassName=MCU Member=Component X? 284391-6

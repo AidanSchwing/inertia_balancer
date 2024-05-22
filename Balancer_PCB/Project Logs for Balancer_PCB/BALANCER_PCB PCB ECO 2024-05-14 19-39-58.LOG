@@ -1,0 +1,52 @@
+Removed Member From Class: ClassName=MCU Member=C3
+Removed Member From Class: ClassName=MCU Member=C4
+Removed Member From Class: ClassName=MCU Member=C6
+Removed Member From Class: ClassName=IMU Member=C17
+Removed Member From Class: ClassName=IMU Member=C19
+Removed Member From Class: ClassName=MCU_Extras Member=C19
+Removed Member From Class: ClassName=MCU_Extras Member=R11
+Removed Member From Class: ClassName=IMU Member=R12
+Removed Member From Class: ClassName=MCU_Extras Member=R12
+Removed Member From Class: ClassName=MCU_Extras Member=U2
+Removed Member From Class: ClassName=MCU Member=X2
+Removed Member From Class: ClassName=MCU Member=X4
+Removed Member From Class: ClassName=MCU_Extras Member=X8
+Removed Member From Class: ClassName=MCU_Extras Member=X12
+Change Component Comment : Designator=U1 Old Comment= New Comment=NCP1117DT33T5G
+Change Net Name : Old Net Name=UDB_DP New Net Name=USB_DP
+Added Member To Class: ClassName=MCU_Extras Member=Component C1 Capacitor
+Added Member To Class: ClassName=MCU_Extras Member=Component C3 Capacitor
+Added Member To Class: ClassName=MCU_Extras Member=Component C5 Capacitor
+Added Member To Class: ClassName=MCU_Extras Member=Component C7 Capacitor
+Added Member To Class: ClassName=MCU_Extras Member=Component C8 Capacitor
+Added Member To Class: ClassName=MCU_Extras Member=Component C9 Capacitor
+Added Member To Class: ClassName=MCU Member=Component C11 Capacitor
+Added Member To Class: ClassName=MCU Member=Component C12 Capacitor
+Added Member To Class: ClassName=MCU Member=Component C13 Capacitor
+Added Member To Class: ClassName=MCU Member=Component C14 Capacitor
+Added Member To Class: ClassName=MCU Member=Component C18 Capacitor
+Added Member To Class: ClassName=MCU Member=Component C20 Capacitor
+Added Member To Class: ClassName=IMU Member=Component C21 Capacitor
+Added Member To Class: ClassName=IMU Member=Component C22 Capacitor
+Added Member To Class: ClassName=IMU Member=Component C23 Capacitor
+Added Member To Class: ClassName=IMU Member=Component Q4 BSS138
+Added Member To Class: ClassName=MCU_Extras Member=Component R4 Resistor
+Added Member To Class: ClassName=MCU_Extras Member=Component R5 Resistor
+Added Member To Class: ClassName=MCU_Extras Member=Component R7 Resistor
+Added Member To Class: ClassName=MCU_Extras Member=Component R8 Resistor
+Added Member To Class: ClassName=MCU_Extras Member=Component R9 Resistor
+Added Member To Class: ClassName=MCU_Extras Member=Component R10 Resistor
+Added Member To Class: ClassName=IMU Member=Component R15 Resistor
+Added Member To Class: ClassName=IMU Member=Component R17 Resistor
+Added Member To Class: ClassName=IMU Member=Component R18 Resistor
+Added Member To Class: ClassName=IMU Member=Component R19 Resistor
+Added Member To Class: ClassName=MCU_Extras Member=Component U1 NCP1117DT33T5G
+Added Member To Class: ClassName=MCU_Extras Member=Component X1 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU_Extras Member=Component X3 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU_Extras Member=Component X5 USB-C 2.0
+Added Member To Class: ClassName=MCU Member=Component X6 284391-6
+Added Member To Class: ClassName=MCU Member=Component X7 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU Member=Component X10 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU Member=Component X11 HeaderPad
+Added Member To Class: ClassName=MCU Member=Component X15 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU Member=Component X17 HeaderPad

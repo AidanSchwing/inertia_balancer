@@ -1,0 +1,16 @@
+Change Component Footprint: Designator=X11 Old Footprint=HeaderPad New Footprint=GenericPinHeader(.1in)
+Change Component Comment : Designator=X11 Old Comment=HeaderPad New Comment=GenericPinHeader(0.1in)
+Added Component: Designator=X22(GenericPinHeader(.1in))
+Added Component: Designator=X23(GenericPinHeader(.1in))
+Added Component: Designator=X24(GenericPinHeader(.1in))
+Added Component: Designator=X25(GenericPinHeader(.1in))
+Added Pin To Net: NetName=+5 Pin=X11-1
+Added Pin To Net: NetName=+3V3 Pin=X19-1
+Added Pin To Net: NetName=GND Pin=X22-1
+Added Pin To Net: NetName=GND Pin=X23-1
+Added Pin To Net: NetName=GND Pin=X24-1
+Added Pin To Net: NetName=+5 Pin=X25-1
+Added Member To Class: ClassName=MCU Member=Component X22 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU Member=Component X23 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU Member=Component X24 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU Member=Component X25 GenericPinHeader(0.1in)

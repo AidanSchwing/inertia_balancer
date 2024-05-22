@@ -1,0 +1,65 @@
+Removed Pin From Net: NetName=+5 Pin=X11-1
+Removed Pin From Net: NetName=+3V3 Pin=X19-1
+Removed Pin From Net: NetName=GND Pin=X22-1
+Removed Member From Class: ClassName=MCU Member=X11
+Removed Member From Class: ClassName=MCU Member=X19
+Removed Member From Class: ClassName=MCU Member=X22
+Removed Member From Class: ClassName=MCU Member=X23
+Change Component Footprint: Designator=X11 Old Footprint=GenericPinHeader(.1in) New Footprint=HeaderPad
+Change Component Comment : Designator=X11 Old Comment=GenericPinHeader(0.1in) New Comment=HeaderPad
+Change Component Designator: OldDesignator=C14 | NewDesignator=C14
+Added Component: Designator=IC4(SOT95P280X145-5N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "TLV7031DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/tlv7031dbvr/texas-instruments?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.ti.com/lit/gpn/TLV7031"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.45mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "TLV7031DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-TLV7031DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV7031DBVR?qs=EBDBlbfErPzxbC0zg598sw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R21(35WR)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/en/products/detail/bourns-inc/TC33X-2-103E/612911"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R22(0805_RES)
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R23(0805_RES)
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "604k"; VariantName = "[No Variations]"
+Added Component: Designator=R24(0805_RES)
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "143k"; VariantName = "[No Variations]"
+Added Component: Designator=X26(GenericPinHeader(.1in))
+Added Pin To Net: NetName=GND Pin=IC4-2
+Added Pin To Net: NetName=+3V3 Pin=IC4-5
+Added Pin To Net: NetName=+3V3 Pin=R21-1
+Added Pin To Net: NetName=+3V3 Pin=R22-2
+Added Pin To Net: NetName=VCC Pin=R23-2
+Added Pin To Net: NetName=GND Pin=R24-1
+Added Pin To Net: NetName=+5 Pin=X19-1
+Added Pin To Net: NetName=+3V3 Pin=X22-1
+Added Pin To Net: NetName=GND Pin=X26-1
+Added Pin To Net: NetName=NetIC4_4 Pin=IC4-4
+Added Pin To Net: NetName=NetIC4_4 Pin=R21-2
+Added Pin To Net: NetName=NetIC4_4 Pin=X11-1
+Added Net: Name=NetIC4_4
+Added Pin To Net: NetName=NetR23_1 Pin=R23-1
+Added Pin To Net: NetName=NetR23_1 Pin=R24-2
+Added Net: Name=NetR23_1
+Added Pin To Net: NetName=U\V\ Pin=IC4-1
+Added Pin To Net: NetName=U\V\ Pin=R22-1
+Added Pin To Net: NetName=U\V\ Pin=U2-20
+Added Net: Name=U\V\
+Added Member To Class: ClassName=MCU Member=Component C14 Capacitor
+Added Member To Class: ClassName=MCU_Extras Member=Component IC4 TLV7031DBVR
+Added Member To Class: ClassName=MCU_Extras Member=Component R21 TC33X-2-103E
+Added Member To Class: ClassName=MCU_Extras Member=Component R22 Resistor
+Added Member To Class: ClassName=MCU_Extras Member=Component R23 Resistor
+Added Member To Class: ClassName=MCU_Extras Member=Component R24 Resistor
+Added Member To Class: ClassName=MCU_Extras Member=Component X11 HeaderPad
+Added Member To Class: ClassName=MCU_Extras Member=Component X19 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU_Extras Member=Component X22 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU_Extras Member=Component X23 GenericPinHeader(0.1in)
+Added Member To Class: ClassName=MCU_Extras Member=Component X26 GenericPinHeader(0.1in)

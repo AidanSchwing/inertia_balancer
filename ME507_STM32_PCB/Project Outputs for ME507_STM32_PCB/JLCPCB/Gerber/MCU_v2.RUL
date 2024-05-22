@@ -1,9 +1,0 @@
-DRC Rules Export File for PCB: C:\Users\Aidan\My Drive\School\College\Q14 - Spring 2024\ME 507 - Control System Design\Lab\Project\ME507_STM32_PCB\MCU_v2.PcbDoc
-RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=5.12
-RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
-RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
-RuleKind=Width|RuleName=Width|Scope=Board|Minimum=3.50
-RuleKind=Clearance|RuleName=Clearance Top Layer|Scope=Board|Minimum=8.00
-RuleKind=Clearance|RuleName=Clearance Bottom Layer|Scope=Board|Minimum=8.00
-RuleKind=Clearance|RuleName=Clearance Same Nets|Scope=Board|Minimum=7.87
-RuleKind=Clearance|RuleName=Clearance Different Nets|Scope=Board|Minimum=7.87

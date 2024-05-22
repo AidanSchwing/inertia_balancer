@@ -1,0 +1,4 @@
+Removed Member From Class: ClassName=MCU Member=X9
+Added Pin To Net: NetName=PWM_READ Pin=U2-62
+Added Pin To Net: NetName=PWM_READ Pin=X6-4
+Added Net: Name=PWM_READ

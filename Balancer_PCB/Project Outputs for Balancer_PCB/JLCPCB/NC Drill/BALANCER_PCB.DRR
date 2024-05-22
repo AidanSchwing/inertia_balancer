@@ -1,0 +1,21 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: BALANCER_PCB.PcbDoc   2024-05-20  15:06:37
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : BALANCER_PCB-RoundHoles.TXT
+ASCII SlotHoles File : BALANCER_PCB-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      16mil (0.399mm)                                           Round             68        PTH        14.41inch (365.93mm)
+T2      24mil (0.599mm)                                           Slot              4         PTH        1.50inch (38.17mm)
+T3      39mil (1.001mm)                                           Round             6         PTH        3.02inch (76.81mm)
+T4      40mil (1.016mm)                                           Round             22        PTH        6.35inch (161.28mm)
+T5      67mil (1.699mm)                                           Round             2         PTH        0.20inch (5.00mm)
+T6      26mil (0.65mm)                                            Round             2         NPTH       0.23inch (5.78mm)
+T7      118mil (3mm)                                              Round             3         NPTH       5.13inch (130.37mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              107
+
+Total Processing Time (hh:mm:ss) : 00:00:00

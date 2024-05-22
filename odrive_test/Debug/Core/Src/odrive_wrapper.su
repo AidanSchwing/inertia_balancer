@@ -1,0 +1,8 @@
+../Core/Src/odrive_wrapper.c:15:6:ODRIVE_Reboot	72	static
+../Core/Src/odrive_wrapper.c:22:6:ODRIVE_ClearErrors	72	static
+../Core/Src/odrive_wrapper.c:29:6:ODRIVE_SetPosition	128	static
+../Core/Src/odrive_wrapper.c:36:6:ODRIVE_SetTorque	88	static
+../Core/Src/odrive_wrapper.c:44:10:ODRIVE_GetVBus	80	static
+../Core/Src/odrive_wrapper.c:61:10:getReceivedString	16	static
+../Core/Src/odrive_wrapper.c:77:6:start_receive_string	16	static
+../Core/Src/odrive_wrapper.c:85:6:ODRIVE_Receive_Callback	16	static

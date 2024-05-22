@@ -1,0 +1,4 @@
+Change component parameters: Designator = "R17" ("R17"); Footprint = "0603_RES"; UniqueID = "\JJJQHOBM" ("\JJJQHOBM")
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "130"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=IMU Member=Component D4 0805_LED

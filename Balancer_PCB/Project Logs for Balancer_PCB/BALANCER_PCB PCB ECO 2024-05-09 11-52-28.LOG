@@ -1,0 +1,315 @@
+Removed Pin From Net: NetName=GND Pin=C20-1
+Removed Pin From Net: NetName=GND Pin=C21-1
+Removed Pin From Net: NetName=GND Pin=C22-1
+Removed Pin From Net: NetName=GND Pin=C23-1
+Removed Pin From Net: NetName=+3V3 Pin=C23-2
+Removed Pin From Net: NetName=GND Pin=C24-1
+Removed Pin From Net: NetName=+3V3 Pin=C24-2
+Removed Pin From Net: NetName=GND Pin=C25-1
+Removed Pin From Net: NetName=+3V3 Pin=C25-2
+Removed Pin From Net: NetName=GND Pin=C26-1
+Removed Pin From Net: NetName=+3V3 Pin=C26-2
+Removed Pin From Net: NetName=GND Pin=C27-1
+Removed Pin From Net: NetName=+3V3 Pin=C27-2
+Removed Pin From Net: NetName=GND Pin=C28-1
+Removed Pin From Net: NetName=+3V3 Pin=C28-2
+Removed Pin From Net: NetName=GND Pin=C29-1
+Removed Pin From Net: NetName=+3V3 Pin=C29-2
+Removed Pin From Net: NetName=GND Pin=C30-1
+Removed Pin From Net: NetName=+3V3 Pin=C30-2
+Removed Pin From Net: NetName=GND Pin=C31-1
+Removed Pin From Net: NetName=+3V3 Pin=C31-2
+Removed Pin From Net: NetName=GND Pin=C32-1
+Removed Pin From Net: NetName=+3V3 Pin=C32-2
+Removed Pin From Net: NetName=GND Pin=C33-1
+Removed Pin From Net: NetName=+3V3 Pin=C33-2
+Removed Pin From Net: NetName=GND Pin=C34-1
+Removed Pin From Net: NetName=+3V3 Pin=C34-2
+Removed Pin From Net: NetName=GND Pin=C35-1
+Removed Pin From Net: NetName=+3V3 Pin=C35-2
+Removed Pin From Net: NetName=GND Pin=C36-1
+Removed Pin From Net: NetName=+3V3 Pin=C36-2
+Removed Pin From Net: NetName=GND Pin=C37-1
+Removed Pin From Net: NetName=+3V3 Pin=C37-2
+Removed Pin From Net: NetName=GND Pin=C38-1
+Removed Pin From Net: NetName=+3V3 Pin=C38-2
+Removed Pin From Net: NetName=GND Pin=C39-1
+Removed Pin From Net: NetName=+3V3 Pin=C39-2
+Removed Pin From Net: NetName=GND Pin=C40-1
+Removed Pin From Net: NetName=+3V3 Pin=C40-2
+Removed Pin From Net: NetName=GND Pin=C41-1
+Removed Pin From Net: NetName=+3V3 Pin=C41-2
+Removed Pin From Net: NetName=GND Pin=C42-1
+Removed Pin From Net: NetName=+3V3 Pin=C42-2
+Removed Pin From Net: NetName=GND Pin=C43-1
+Removed Pin From Net: NetName=GND Pin=C44-1
+Removed Pin From Net: NetName=GND Pin=C45-1
+Removed Pin From Net: NetName=GND Pin=C46-1
+Removed Pin From Net: NetName=GND Pin=C47-1
+Removed Pin From Net: NetName=+3V3 Pin=D1-1
+Removed Pin From Net: NetName=+3V3 Pin=D4-1
+Removed Pin From Net: NetName=OSC_IN Pin=IC1-5
+Removed Pin From Net: NetName=OSC_OUT Pin=IC1-6
+Removed Pin From Net: NetName=NRST Pin=IC1-7
+Removed Pin From Net: NetName=GND Pin=IC1-8
+Removed Pin From Net: NetName=+3V3 Pin=IC1-9
+Removed Pin From Net: NetName=GND Pin=IC1-12
+Removed Pin From Net: NetName=GND Pin=IC1-13
+Removed Pin From Net: NetName=+3V3 Pin=IC1-14
+Removed Pin From Net: NetName=+3V3 Pin=IC1-15
+Removed Pin From Net: NetName=USART2_TX Pin=IC1-18
+Removed Pin From Net: NetName=USART2_RX Pin=IC1-19
+Removed Pin From Net: NetName=GND Pin=IC1-20
+Removed Pin From Net: NetName=+3V3 Pin=IC1-23
+Removed Pin From Net: NetName=GND Pin=IC1-31
+Removed Pin From Net: NetName=GND Pin=IC1-35
+Removed Pin From Net: NetName=GND Pin=IC1-41
+Removed Pin From Net: NetName=GND Pin=IC1-47
+Removed Pin From Net: NetName=GND Pin=IC1-57
+Removed Pin From Net: NetName=+3V3 Pin=IC1-58
+Removed Pin From Net: NetName=SWDIO Pin=IC1-64
+Removed Pin From Net: NetName=SWCLK Pin=IC1-65
+Removed Pin From Net: NetName=GND Pin=IC1-68
+Removed Pin From Net: NetName=+3V3 Pin=IC1-69
+Removed Pin From Net: NetName=+3V3 Pin=IC1-78
+Removed Pin From Net: NetName=GND Pin=IC1-79
+Removed Pin From Net: NetName=+3V3 Pin=IC1-82
+Removed Pin From Net: NetName=+3V3 Pin=IC1-85
+Removed Pin From Net: NetName=SWO Pin=IC1-91
+Removed Pin From Net: NetName=TIM3_CH2 Pin=IC1-93
+Removed Pin From Net: NetName=GND Pin=IC1-95
+Removed Pin From Net: NetName=+3V3 Pin=IC1-96
+Removed Pin From Net: NetName=SCL Pin=IC1-97
+Removed Pin From Net: NetName=SDA Pin=IC1-100
+Removed Pin From Net: NetName=GND Pin=IC3-5
+Removed Pin From Net: NetName=+3V3 Pin=IC3-12
+Removed Pin From Net: NetName=GND Pin=IC3-13
+Removed Pin From Net: NetName=+3V3 Pin=R6-1
+Removed Pin From Net: NetName=USART2_TX Pin=R20-2
+Removed Pin From Net: NetName=USART2_RX Pin=R22-2
+Removed Pin From Net: NetName=GND Pin=R26-1
+Removed Member From Class: ClassName=MCU_Extras Member=C4
+Removed Member From Class: ClassName=MCU_Extras Member=C6
+Removed Member From Class: ClassName=MCU_Extras Member=C7
+Removed Member From Class: ClassName=MCU Member=C24
+Removed Member From Class: ClassName=MCU Member=C25
+Removed Member From Class: ClassName=MCU Member=C26
+Removed Member From Class: ClassName=MCU Member=C27
+Removed Member From Class: ClassName=MCU Member=C28
+Removed Member From Class: ClassName=MCU Member=C29
+Removed Member From Class: ClassName=MCU Member=C30
+Removed Member From Class: ClassName=MCU Member=C31
+Removed Member From Class: ClassName=MCU Member=C32
+Removed Member From Class: ClassName=MCU Member=C33
+Removed Member From Class: ClassName=MCU Member=C34
+Removed Member From Class: ClassName=MCU Member=C35
+Removed Member From Class: ClassName=MCU Member=C36
+Removed Member From Class: ClassName=MCU Member=C37
+Removed Member From Class: ClassName=MCU Member=C38
+Removed Member From Class: ClassName=MCU Member=C39
+Removed Member From Class: ClassName=MCU Member=C40
+Removed Member From Class: ClassName=MCU Member=C41
+Removed Member From Class: ClassName=MCU Member=C42
+Removed Member From Class: ClassName=MCU Member=C43
+Removed Member From Class: ClassName=MCU Member=C44
+Removed Member From Class: ClassName=MCU Member=C45
+Removed Member From Class: ClassName=MCU Member=C46
+Removed Member From Class: ClassName=MCU Member=C47
+Removed Member From Class: ClassName=MCU_Extras Member=D1
+Removed Member From Class: ClassName=MCU_Extras Member=D4
+Removed Member From Class: ClassName=MCU Member=IC1
+Removed Member From Class: ClassName=MCU_Extras Member=IC3
+Removed Member From Class: ClassName=MCU Member=R6
+Removed Member From Class: ClassName=MCU_Extras Member=R10
+Removed Member From Class: ClassName=MCU_Extras Member=R11
+Removed Member From Class: ClassName=MCU_Extras Member=R12
+Removed Member From Class: ClassName=MCU_Extras Member=R13
+Removed Member From Class: ClassName=MCU_Extras Member=R20
+Removed Member From Class: ClassName=MCU_Extras Member=R22
+Removed Member From Class: ClassName=MCU_Extras Member=R25
+Removed Member From Class: ClassName=MCU_Extras Member=R26
+Change Component Footprint: Designator=C4 Old Footprint=0603_CAP New Footprint=0805_CAP
+Change Component Footprint: Designator=C6 Old Footprint=0603_CAP New Footprint=0805_CAP
+Change Component Footprint: Designator=C7 Old Footprint=0603_CAP New Footprint=0805_CAP
+Change Component Footprint: Designator=C20 Old Footprint=0603_CAP New Footprint=0805_CAP
+Change Component Footprint: Designator=C21 Old Footprint=0603_CAP New Footprint=0805_CAP
+Change Component Footprint: Designator=C22 Old Footprint=0603_CAP New Footprint=0805_CAP
+Change Component Footprint: Designator=C23 Old Footprint=0603_CAP New Footprint=0805_CAP
+Change Component Footprint: Designator=R6 Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=R10 Old Footprint=0805_RES New Footprint=0603_RES
+Change Component Footprint: Designator=X3 Old Footprint=HeaderPad New Footprint=GenericPinHeader(.1in)
+Change Component Comment : Designator=X3 Old Comment=HeaderPad New Comment=GenericPinHeader(0.1in)
+Change component parameters: Designator = "C4" ("C4"); Footprint = "0603_CAP"; UniqueID = "\XDCCXSIP" ("\XDCCXSIP")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10n"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C6" ("C6"); Footprint = "0603_CAP"; UniqueID = "\NDTGGWVL" ("\NDTGGWVL")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C7" ("C7"); Footprint = "0603_CAP"; UniqueID = "\MWYSSUOE" ("\MWYSSUOE")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C20" ("C20"); Footprint = "0603_CAP"; UniqueID = "\JXCRSLRL" ("\JXCRSLRL")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C21" ("C21"); Footprint = "0603_CAP"; UniqueID = "\KWBXKBUT" ("\KWBXKBUT")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C22" ("C22"); Footprint = "0603_CAP"; UniqueID = "\GSMRNUYW" ("\GSMRNUYW")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C23" ("C23"); Footprint = "0603_CAP"; UniqueID = "\THNHGKWB" ("\THNHGKWB")
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "4.7u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R6" ("R6"); Footprint = "0805_RES"; UniqueID = "\GKDGKIWV" ("\GKDGKIWV")
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R10" ("R10"); Footprint = "0805_RES"; UniqueID = "\FBSINVUS" ("\FBSINVUS")
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=C14(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C15(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C16(0805_CAP)
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Percent Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=Q4(SOT95P240X120-3N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "BSS138"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/bss138/on-semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "BSS138"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-BSS138"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/BSS138?qs=HK%252BeIG1iaahCeqBvjB4arg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=U1(QFP50P1200X1200X160-64N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'STMicroelectronics'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "STM32F411RET6TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=X17(GenericPinHeader(.1in))
+Added Pin To Net: NetName=+3V3 Pin=C4-1
+Added Pin To Net: NetName=+3V3 Pin=C6-1
+Added Pin To Net: NetName=+3V3 Pin=C7-1
+Added Pin To Net: NetName=+3V3 Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C14-2
+Added Pin To Net: NetName=+3V3 Pin=C15-1
+Added Pin To Net: NetName=GND Pin=C15-2
+Added Pin To Net: NetName=+3V3 Pin=C16-1
+Added Pin To Net: NetName=GND Pin=C16-2
+Added Pin To Net: NetName=+3V3 Pin=C20-1
+Added Pin To Net: NetName=GND Pin=C20-2
+Added Pin To Net: NetName=+3V3 Pin=C21-1
+Added Pin To Net: NetName=GND Pin=C21-2
+Added Pin To Net: NetName=+3V3 Pin=C22-1
+Added Pin To Net: NetName=GND Pin=C22-2
+Added Pin To Net: NetName=GND Pin=C23-2
+Added Pin To Net: NetName=+1.8V Pin=IC5-9
+Added Pin To Net: NetName=+1.8V Pin=Q4-1
+Added Pin To Net: NetName=+1.8V Pin=R6-2
+Added Pin To Net: NetName=+3V3 Pin=R10-2
+Added Pin To Net: NetName=OSC_IN Pin=U1-5
+Added Pin To Net: NetName=OSC_OUT Pin=U1-6
+Added Pin To Net: NetName=NRST Pin=U1-7
+Added Pin To Net: NetName=GND Pin=U1-12
+Added Pin To Net: NetName=+3V3 Pin=U1-13
+Added Pin To Net: NetName=USART2_TX Pin=U1-16
+Added Pin To Net: NetName=USART2_RX Pin=U1-17
+Added Pin To Net: NetName=GND Pin=U1-18
+Added Pin To Net: NetName=+3V3 Pin=U1-19
+Added Pin To Net: NetName=TIM3_CH2 Pin=U1-23
+Added Pin To Net: NetName=GND Pin=U1-31
+Added Pin To Net: NetName=+3V3 Pin=U1-32
+Added Pin To Net: NetName=SWDIO Pin=U1-46
+Added Pin To Net: NetName=GND Pin=U1-47
+Added Pin To Net: NetName=+3V3 Pin=U1-48
+Added Pin To Net: NetName=SWCLK Pin=U1-49
+Added Pin To Net: NetName=SWO Pin=U1-55
+Added Pin To Net: NetName=SCL Pin=U1-58
+Added Pin To Net: NetName=SDA Pin=U1-59
+Added Pin To Net: NetName=GND Pin=U1-63
+Added Pin To Net: NetName=+3V3 Pin=U1-64
+Added Pin To Net: NetName=USART2_TX Pin=X3-1
+Added Pin To Net: NetName=USART2_RX Pin=X17-1
+Added Pin To Net: NetName=IMU_INT Pin=Q4-3
+Added Pin To Net: NetName=IMU_INT Pin=R10-1
+Added Net: Name=IMU_INT
+Added Pin To Net: NetName=INT_1.8 Pin=IC5-12
+Added Pin To Net: NetName=INT_1.8 Pin=Q4-2
+Added Pin To Net: NetName=INT_1.8 Pin=R6-1
+Added Net: Name=INT_1.8
+Added Pin To Net: NetName=NetC23_1 Pin=C23-1
+Added Pin To Net: NetName=NetC23_1 Pin=U1-30
+Added Net: Name=NetC23_1
+Added Pin To Net: NetName=NetR5_2 Pin=R5-2
+Added Pin To Net: NetName=NetR5_2 Pin=S2-2
+Added Pin To Net: NetName=NetR5_2 Pin=U1-60
+Added Net: Name=NetR5_2
+Added Pin To Net: NetName=NetR19_2 Pin=R19-2
+Added Pin To Net: NetName=NetR19_2 Pin=U1-36
+Added Net: Name=NetR19_2
+Added Pin To Net: NetName=NetU1_1 Pin=U1-1
+Added Pin To Net: NetName=NetU1_1 Pin=X2-1
+Added Net: Name=NetU1_1
+Added Pin To Net: NetName=NetX10_A4_B9 Pin=X10-A4_B9
+Added Pin To Net: NetName=NetX10_A4_B9 Pin=X10-B4_A9
+Added Net: Name=NetX10_A4_B9
+Added Pin To Net: NetName=UDB_DP Pin=U1-45
+Added Pin To Net: NetName=UDB_DP Pin=X10-A6
+Added Pin To Net: NetName=UDB_DP Pin=X10-B6
+Added Net: Name=UDB_DP
+Added Pin To Net: NetName=USART6_RX Pin=U1-38
+Added Pin To Net: NetName=USART6_RX Pin=X13-2
+Added Net: Name=USART6_RX
+Added Pin To Net: NetName=USART6_TX Pin=U1-37
+Added Pin To Net: NetName=USART6_TX Pin=X13-1
+Added Net: Name=USART6_TX
+Added Pin To Net: NetName=USB_DM Pin=U1-44
+Added Pin To Net: NetName=USB_DM Pin=X10-A7
+Added Pin To Net: NetName=USB_DM Pin=X10-B7
+Added Net: Name=USB_DM
+Added Member To Class: ClassName=MCU Member=Component C4 Capacitor
+Added Member To Class: ClassName=MCU Member=Component C6 Capacitor
+Added Member To Class: ClassName=MCU Member=Component C7 Capacitor
+Added Member To Class: ClassName=MCU Member=Component C14 Capacitor
+Added Member To Class: ClassName=MCU Member=Component C15 Capacitor
+Added Member To Class: ClassName=MCU Member=Component C16 Capacitor
+Added Member To Class: ClassName=IMU Member=Component Q4 BSS138
+Added Member To Class: ClassName=IMU Member=Component R6 Resistor
+Added Member To Class: ClassName=IMU Member=Component R10 Resistor
+Added Member To Class: ClassName=MCU Member=Component U1 STM32F411RET6TR
+Added Member To Class: ClassName=MCU Member=Component X17 GenericPinHeader(0.1in)
