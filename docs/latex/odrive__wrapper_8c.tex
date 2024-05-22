@@ -1,0 +1,159 @@
+\doxysection{C\+:/\+Users/\+Aidan/\+Documents/507\+\_\+\+Project/balancer\+\_\+code/\+Core/\+Src/odrive\+\_\+wrapper.c File Reference}
+\hypertarget{odrive__wrapper_8c}{}\label{odrive__wrapper_8c}\index{C:/Users/Aidan/Documents/507\_Project/balancer\_code/Core/Src/odrive\_wrapper.c@{C:/Users/Aidan/Documents/507\_Project/balancer\_code/Core/Src/odrive\_wrapper.c}}
+{\ttfamily \#include "{}main.\+h"{}}\newline
+{\ttfamily \#include "{}odrive\+\_\+wrapper.\+h"{}}\newline
+Include dependency graph for odrive\+\_\+wrapper.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{odrive__wrapper_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{odrive__wrapper_8c_a25d657b24b80292f58a570b02e7aa428}{ODRIVE\+\_\+\+Reboot}} (odrive\+\_\+t \texorpdfstring{$\ast$}{*}p)
+\item 
+void \mbox{\hyperlink{odrive__wrapper_8c_ab13b958603fb943556b9a7c32fc95bac}{ODRIVE\+\_\+\+Clear\+Errors}} (odrive\+\_\+t \texorpdfstring{$\ast$}{*}p)
+\item 
+void \mbox{\hyperlink{odrive__wrapper_8c_a7b3454ebe0e4fdd3a2a0dc64f72719c9}{ODRIVE\+\_\+\+Set\+Position}} (odrive\+\_\+t \texorpdfstring{$\ast$}{*}p, int motor\+\_\+number, float position, float velocity\+\_\+lim, float torque\+\_\+lim)
+\item 
+void \mbox{\hyperlink{odrive__wrapper_8c_a18367d959b193c49f6c7534cc7ab857f}{ODRIVE\+\_\+\+Set\+Position\+FF}} (odrive\+\_\+t \texorpdfstring{$\ast$}{*}p, int motor\+\_\+number, float position, float velocity\+\_\+feedforward, float current\+\_\+feedforward)
+\item 
+void \mbox{\hyperlink{odrive__wrapper_8c_a3a31ea6c326e5a87a3f76245f099e158}{ODRIVE\+\_\+\+Set\+Velocity}} (odrive\+\_\+t \texorpdfstring{$\ast$}{*}p, int motor\+\_\+number, float velocity, float torque\+\_\+feedforward)
+\item 
+void \mbox{\hyperlink{odrive__wrapper_8c_a6fff222e9c4e938392faacf4cccd1925}{ODRIVE\+\_\+\+Set\+Torque}} (odrive\+\_\+t \texorpdfstring{$\ast$}{*}p, int motor\+\_\+number, float torque)
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{odrive__wrapper_8c_a42dae01f885677084b5223cb8a259b66}{ODRIVE\+\_\+\+Get\+Feedback}} (odrive\+\_\+t \texorpdfstring{$\ast$}{*}p, int motor\+\_\+number)
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{odrive__wrapper_8c_a60cc06522e5b60f0383052c1f9cea4c5}{ODRIVE\+\_\+\+Get\+VBus}} (odrive\+\_\+t \texorpdfstring{$\ast$}{*}p)
+\item 
+void \mbox{\hyperlink{odrive__wrapper_8c_a6ea52cd425986e041299100c9ce37564}{ODRIVE\+\_\+\+Write\+Param}} (odrive\+\_\+t \texorpdfstring{$\ast$}{*}p, char param\mbox{[}$\,$\mbox{]})
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{odrive__wrapper_8c_ad14c9d5698a70cc0796f76190bdd1aa8}{ODRIVE\+\_\+\+Read\+Param}} (odrive\+\_\+t \texorpdfstring{$\ast$}{*}p, char param\mbox{[}$\,$\mbox{]})
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{odrive__wrapper_8c_a88ecdd0331d179bc1dbe55975976a190}{get\+Received\+String}} (odrive\+\_\+t \texorpdfstring{$\ast$}{*}p)
+\item 
+void \mbox{\hyperlink{odrive__wrapper_8c_ab6435b6238a1cb4ff3627f8736a86d72}{start\+\_\+receive\+\_\+string}} (odrive\+\_\+t \texorpdfstring{$\ast$}{*}p)
+\item 
+void \mbox{\hyperlink{odrive__wrapper_8c_a38cf8e45ebb6bf5c5afcfde2e0df6a89}{ODRIVE\+\_\+\+Receive\+\_\+\+Callback}} (UART\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}huart, odrive\+\_\+t \texorpdfstring{$\ast$}{*}p)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{odrive__wrapper_8c_af59853d08dfd3128856dea473e04b8ab}{rx\+Buffer}} \mbox{[}BUFFER\+\_\+\+SIZE\mbox{]}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{odrive__wrapper_8c_a5f39e47fdf46ecf4822ca9875f6aacf3}{rx\+Index}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{odrive__wrapper_8c_a20bc908e26cf958e1df3790d425cdb40}{response\+Finished\+Flag}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{odrive__wrapper_8c_afb5471a16c58930c1a97e82caeb880b2}{received\+Data}} \mbox{[}BUFFER\+\_\+\+SIZE\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{odrive__wrapper_8c_a88ecdd0331d179bc1dbe55975976a190}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!getReceivedString@{getReceivedString}}
+\index{getReceivedString@{getReceivedString}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{getReceivedString()}{getReceivedString()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_a88ecdd0331d179bc1dbe55975976a190} 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} get\+Received\+String (\begin{DoxyParamCaption}\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{odrive__wrapper_8c_ab13b958603fb943556b9a7c32fc95bac}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!ODRIVE\_ClearErrors@{ODRIVE\_ClearErrors}}
+\index{ODRIVE\_ClearErrors@{ODRIVE\_ClearErrors}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{ODRIVE\_ClearErrors()}{ODRIVE\_ClearErrors()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_ab13b958603fb943556b9a7c32fc95bac} 
+void ODRIVE\+\_\+\+Clear\+Errors (\begin{DoxyParamCaption}\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{odrive__wrapper_8c_a42dae01f885677084b5223cb8a259b66}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!ODRIVE\_GetFeedback@{ODRIVE\_GetFeedback}}
+\index{ODRIVE\_GetFeedback@{ODRIVE\_GetFeedback}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{ODRIVE\_GetFeedback()}{ODRIVE\_GetFeedback()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_a42dae01f885677084b5223cb8a259b66} 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} ODRIVE\+\_\+\+Get\+Feedback (\begin{DoxyParamCaption}\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{int}]{motor\+\_\+number}{}\end{DoxyParamCaption})}
+
+\Hypertarget{odrive__wrapper_8c_a60cc06522e5b60f0383052c1f9cea4c5}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!ODRIVE\_GetVBus@{ODRIVE\_GetVBus}}
+\index{ODRIVE\_GetVBus@{ODRIVE\_GetVBus}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{ODRIVE\_GetVBus()}{ODRIVE\_GetVBus()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_a60cc06522e5b60f0383052c1f9cea4c5} 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} ODRIVE\+\_\+\+Get\+VBus (\begin{DoxyParamCaption}\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{odrive__wrapper_8c_ad14c9d5698a70cc0796f76190bdd1aa8}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!ODRIVE\_ReadParam@{ODRIVE\_ReadParam}}
+\index{ODRIVE\_ReadParam@{ODRIVE\_ReadParam}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{ODRIVE\_ReadParam()}{ODRIVE\_ReadParam()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_ad14c9d5698a70cc0796f76190bdd1aa8} 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} ODRIVE\+\_\+\+Read\+Param (\begin{DoxyParamCaption}\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{char}]{param}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+\Hypertarget{odrive__wrapper_8c_a25d657b24b80292f58a570b02e7aa428}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!ODRIVE\_Reboot@{ODRIVE\_Reboot}}
+\index{ODRIVE\_Reboot@{ODRIVE\_Reboot}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{ODRIVE\_Reboot()}{ODRIVE\_Reboot()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_a25d657b24b80292f58a570b02e7aa428} 
+void ODRIVE\+\_\+\+Reboot (\begin{DoxyParamCaption}\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{odrive__wrapper_8c_a38cf8e45ebb6bf5c5afcfde2e0df6a89}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!ODRIVE\_Receive\_Callback@{ODRIVE\_Receive\_Callback}}
+\index{ODRIVE\_Receive\_Callback@{ODRIVE\_Receive\_Callback}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{ODRIVE\_Receive\_Callback()}{ODRIVE\_Receive\_Callback()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_a38cf8e45ebb6bf5c5afcfde2e0df6a89} 
+void ODRIVE\+\_\+\+Receive\+\_\+\+Callback (\begin{DoxyParamCaption}\item[{UART\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}}]{huart}{, }\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{odrive__wrapper_8c_a7b3454ebe0e4fdd3a2a0dc64f72719c9}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!ODRIVE\_SetPosition@{ODRIVE\_SetPosition}}
+\index{ODRIVE\_SetPosition@{ODRIVE\_SetPosition}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{ODRIVE\_SetPosition()}{ODRIVE\_SetPosition()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_a7b3454ebe0e4fdd3a2a0dc64f72719c9} 
+void ODRIVE\+\_\+\+Set\+Position (\begin{DoxyParamCaption}\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{int}]{motor\+\_\+number}{, }\item[{float}]{position}{, }\item[{float}]{velocity\+\_\+lim}{, }\item[{float}]{torque\+\_\+lim}{}\end{DoxyParamCaption})}
+
+\Hypertarget{odrive__wrapper_8c_a18367d959b193c49f6c7534cc7ab857f}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!ODRIVE\_SetPositionFF@{ODRIVE\_SetPositionFF}}
+\index{ODRIVE\_SetPositionFF@{ODRIVE\_SetPositionFF}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{ODRIVE\_SetPositionFF()}{ODRIVE\_SetPositionFF()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_a18367d959b193c49f6c7534cc7ab857f} 
+void ODRIVE\+\_\+\+Set\+Position\+FF (\begin{DoxyParamCaption}\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{int}]{motor\+\_\+number}{, }\item[{float}]{position}{, }\item[{float}]{velocity\+\_\+feedforward}{, }\item[{float}]{current\+\_\+feedforward}{}\end{DoxyParamCaption})}
+
+\Hypertarget{odrive__wrapper_8c_a6fff222e9c4e938392faacf4cccd1925}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!ODRIVE\_SetTorque@{ODRIVE\_SetTorque}}
+\index{ODRIVE\_SetTorque@{ODRIVE\_SetTorque}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{ODRIVE\_SetTorque()}{ODRIVE\_SetTorque()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_a6fff222e9c4e938392faacf4cccd1925} 
+void ODRIVE\+\_\+\+Set\+Torque (\begin{DoxyParamCaption}\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{int}]{motor\+\_\+number}{, }\item[{float}]{torque}{}\end{DoxyParamCaption})}
+
+\Hypertarget{odrive__wrapper_8c_a3a31ea6c326e5a87a3f76245f099e158}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!ODRIVE\_SetVelocity@{ODRIVE\_SetVelocity}}
+\index{ODRIVE\_SetVelocity@{ODRIVE\_SetVelocity}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{ODRIVE\_SetVelocity()}{ODRIVE\_SetVelocity()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_a3a31ea6c326e5a87a3f76245f099e158} 
+void ODRIVE\+\_\+\+Set\+Velocity (\begin{DoxyParamCaption}\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{int}]{motor\+\_\+number}{, }\item[{float}]{velocity}{, }\item[{float}]{torque\+\_\+feedforward}{}\end{DoxyParamCaption})}
+
+\Hypertarget{odrive__wrapper_8c_a6ea52cd425986e041299100c9ce37564}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!ODRIVE\_WriteParam@{ODRIVE\_WriteParam}}
+\index{ODRIVE\_WriteParam@{ODRIVE\_WriteParam}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{ODRIVE\_WriteParam()}{ODRIVE\_WriteParam()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_a6ea52cd425986e041299100c9ce37564} 
+void ODRIVE\+\_\+\+Write\+Param (\begin{DoxyParamCaption}\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{char}]{param}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+\Hypertarget{odrive__wrapper_8c_ab6435b6238a1cb4ff3627f8736a86d72}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!start\_receive\_string@{start\_receive\_string}}
+\index{start\_receive\_string@{start\_receive\_string}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{start\_receive\_string()}{start\_receive\_string()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_ab6435b6238a1cb4ff3627f8736a86d72} 
+void start\+\_\+receive\+\_\+string (\begin{DoxyParamCaption}\item[{odrive\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{odrive__wrapper_8c_afb5471a16c58930c1a97e82caeb880b2}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!receivedData@{receivedData}}
+\index{receivedData@{receivedData}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{receivedData}{receivedData}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_afb5471a16c58930c1a97e82caeb880b2} 
+uint8\+\_\+t received\+Data\mbox{[}BUFFER\+\_\+\+SIZE\mbox{]}}
+
+\Hypertarget{odrive__wrapper_8c_a20bc908e26cf958e1df3790d425cdb40}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!responseFinishedFlag@{responseFinishedFlag}}
+\index{responseFinishedFlag@{responseFinishedFlag}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{responseFinishedFlag}{responseFinishedFlag}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_a20bc908e26cf958e1df3790d425cdb40} 
+uint8\+\_\+t response\+Finished\+Flag = 0}
+
+\Hypertarget{odrive__wrapper_8c_af59853d08dfd3128856dea473e04b8ab}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!rxBuffer@{rxBuffer}}
+\index{rxBuffer@{rxBuffer}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{rxBuffer}{rxBuffer}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_af59853d08dfd3128856dea473e04b8ab} 
+uint8\+\_\+t rx\+Buffer\mbox{[}BUFFER\+\_\+\+SIZE\mbox{]}}
+
+\Hypertarget{odrive__wrapper_8c_a5f39e47fdf46ecf4822ca9875f6aacf3}\index{odrive\_wrapper.c@{odrive\_wrapper.c}!rxIndex@{rxIndex}}
+\index{rxIndex@{rxIndex}!odrive\_wrapper.c@{odrive\_wrapper.c}}
+\doxysubsubsection{\texorpdfstring{rxIndex}{rxIndex}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8c_a5f39e47fdf46ecf4822ca9875f6aacf3} 
+uint8\+\_\+t rx\+Index = 0}
+

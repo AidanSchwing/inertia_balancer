@@ -1,0 +1,189 @@
+\doxysection{C\+:/\+Users/\+Aidan/\+Documents/507\+\_\+\+Project/balancer\+\_\+code/\+Core/\+Src/main.c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{C:/Users/Aidan/Documents/507\_Project/balancer\_code/Core/Src/main.c@{C:/Users/Aidan/Documents/507\_Project/balancer\_code/Core/Src/main.c}}
+
+
+\+: Main program body  
+
+
+{\ttfamily \#include "{}main.\+h"{}}\newline
+{\ttfamily \#include "{}odrive\+\_\+wrapper.\+h"{}}\newline
+Include dependency graph for main.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_a70af21c671abfcc773614a9a4f63d920}{System\+Clock\+\_\+\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em System Clock Configuration. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em The application entry point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_ae494a9643f29b87d6d81e5264e60e57b}{HAL\+\_\+\+UART\+\_\+\+Rx\+Cplt\+Callback}} (UART\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}huart)
+\item 
+void \mbox{\hyperlink{main_8c_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+TIM\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{main_8c_a25fc663547539bc49fecc0011bd76ab5}{htim1}}
+\item 
+TIM\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{main_8c_aac3d2c59ee0e3bbae1b99529a154eb62}{htim3}}
+\item 
+UART\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{main_8c_a2cf715bef37f7e8ef385a30974a5f0d5}{huart1}}
+\item 
+UART\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{main_8c_aa9479c261d65eecedd3d9582f7f0f89c}{huart2}}
+\item 
+odrive\+\_\+t \mbox{\hyperlink{main_8c_ad04fe84a2d499fe57651a80bf68f29de}{odrive}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8c_ad7394d71a5b03e693a17bc6ea557b4d9}{rx\+Buffer}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8c_a5f39e47fdf46ecf4822ca9875f6aacf3}{rx\+Index}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8c_a20bc908e26cf958e1df3790d425cdb40}{response\+Finished\+Flag}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8c_a076a5923dcfdcf95d91a8e24981ba4ee}{received\+Data}}
+\item 
+char \mbox{\hyperlink{main_8c_af4d22e2e3395f74933e838aa8134e4a3}{transmit\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Main program body 
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+Copyright (c) 2024 STMicroelectronics. All rights reserved.
+
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-\/\+IS. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_a1730ffe1e560465665eb47d9264826f9}\index{main.c@{main.c}!Error\_Handler@{Error\_Handler}}
+\index{Error\_Handler@{Error\_Handler}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Error\_Handler()}{Error\_Handler()}}
+{\footnotesize\ttfamily \label{main_8c_a1730ffe1e560465665eb47d9264826f9} 
+void Error\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+This function is executed in case of error occurrence. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{main_8c_ae494a9643f29b87d6d81e5264e60e57b}\index{main.c@{main.c}!HAL\_UART\_RxCpltCallback@{HAL\_UART\_RxCpltCallback}}
+\index{HAL\_UART\_RxCpltCallback@{HAL\_UART\_RxCpltCallback}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{HAL\_UART\_RxCpltCallback()}{HAL\_UART\_RxCpltCallback()}}
+{\footnotesize\ttfamily \label{main_8c_ae494a9643f29b87d6d81e5264e60e57b} 
+void HAL\+\_\+\+UART\+\_\+\+Rx\+Cplt\+Callback (\begin{DoxyParamCaption}\item[{UART\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}}]{huart}{}\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8c_a840291bc02cba5474a4cb46a9b9566fe} 
+int main (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+The application entry point. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em int} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{main_8c_a70af21c671abfcc773614a9a4f63d920}\index{main.c@{main.c}!SystemClock\_Config@{SystemClock\_Config}}
+\index{SystemClock\_Config@{SystemClock\_Config}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{SystemClock\_Config()}{SystemClock\_Config()}}
+{\footnotesize\ttfamily \label{main_8c_a70af21c671abfcc773614a9a4f63d920} 
+void System\+Clock\+\_\+\+Config (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+System Clock Configuration. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+Configure the main internal regulator output voltage
+
+Initializes the RCC Oscillators according to the specified parameters in the RCC\+\_\+\+Osc\+Init\+Type\+Def structure.
+
+Initializes the CPU, AHB and APB buses clocks
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8c_a25fc663547539bc49fecc0011bd76ab5}\index{main.c@{main.c}!htim1@{htim1}}
+\index{htim1@{htim1}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{htim1}{htim1}}
+{\footnotesize\ttfamily \label{main_8c_a25fc663547539bc49fecc0011bd76ab5} 
+TIM\+\_\+\+Handle\+Type\+Def htim1}
+
+\Hypertarget{main_8c_aac3d2c59ee0e3bbae1b99529a154eb62}\index{main.c@{main.c}!htim3@{htim3}}
+\index{htim3@{htim3}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{htim3}{htim3}}
+{\footnotesize\ttfamily \label{main_8c_aac3d2c59ee0e3bbae1b99529a154eb62} 
+TIM\+\_\+\+Handle\+Type\+Def htim3}
+
+\Hypertarget{main_8c_a2cf715bef37f7e8ef385a30974a5f0d5}\index{main.c@{main.c}!huart1@{huart1}}
+\index{huart1@{huart1}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{huart1}{huart1}}
+{\footnotesize\ttfamily \label{main_8c_a2cf715bef37f7e8ef385a30974a5f0d5} 
+UART\+\_\+\+Handle\+Type\+Def huart1}
+
+\Hypertarget{main_8c_aa9479c261d65eecedd3d9582f7f0f89c}\index{main.c@{main.c}!huart2@{huart2}}
+\index{huart2@{huart2}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{huart2}{huart2}}
+{\footnotesize\ttfamily \label{main_8c_aa9479c261d65eecedd3d9582f7f0f89c} 
+UART\+\_\+\+Handle\+Type\+Def huart2}
+
+\Hypertarget{main_8c_ad04fe84a2d499fe57651a80bf68f29de}\index{main.c@{main.c}!odrive@{odrive}}
+\index{odrive@{odrive}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{odrive}{odrive}}
+{\footnotesize\ttfamily \label{main_8c_ad04fe84a2d499fe57651a80bf68f29de} 
+odrive\+\_\+t odrive}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ .huart\ =\ \&\mbox{\hyperlink{main_8c_a2cf715bef37f7e8ef385a30974a5f0d5}{huart1}}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{main_8c_a076a5923dcfdcf95d91a8e24981ba4ee}\index{main.c@{main.c}!receivedData@{receivedData}}
+\index{receivedData@{receivedData}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{receivedData}{receivedData}}
+{\footnotesize\ttfamily \label{main_8c_a076a5923dcfdcf95d91a8e24981ba4ee} 
+uint8\+\_\+t received\+Data\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{main_8c_a20bc908e26cf958e1df3790d425cdb40}\index{main.c@{main.c}!responseFinishedFlag@{responseFinishedFlag}}
+\index{responseFinishedFlag@{responseFinishedFlag}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{responseFinishedFlag}{responseFinishedFlag}}
+{\footnotesize\ttfamily \label{main_8c_a20bc908e26cf958e1df3790d425cdb40} 
+uint8\+\_\+t response\+Finished\+Flag\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{main_8c_ad7394d71a5b03e693a17bc6ea557b4d9}\index{main.c@{main.c}!rxBuffer@{rxBuffer}}
+\index{rxBuffer@{rxBuffer}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{rxBuffer}{rxBuffer}}
+{\footnotesize\ttfamily \label{main_8c_ad7394d71a5b03e693a17bc6ea557b4d9} 
+uint8\+\_\+t rx\+Buffer\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{main_8c_a5f39e47fdf46ecf4822ca9875f6aacf3}\index{main.c@{main.c}!rxIndex@{rxIndex}}
+\index{rxIndex@{rxIndex}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{rxIndex}{rxIndex}}
+{\footnotesize\ttfamily \label{main_8c_a5f39e47fdf46ecf4822ca9875f6aacf3} 
+uint8\+\_\+t rx\+Index\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{main_8c_af4d22e2e3395f74933e838aa8134e4a3}\index{main.c@{main.c}!transmitBuffer@{transmitBuffer}}
+\index{transmitBuffer@{transmitBuffer}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{transmitBuffer}{transmitBuffer}}
+{\footnotesize\ttfamily \label{main_8c_af4d22e2e3395f74933e838aa8134e4a3} 
+char transmit\+Buffer\hspace{0.3cm}{\ttfamily [extern]}}
+

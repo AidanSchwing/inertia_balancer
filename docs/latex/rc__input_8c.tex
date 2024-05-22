@@ -1,0 +1,71 @@
+\doxysection{C\+:/\+Users/\+Aidan/\+Documents/507\+\_\+\+Project/balancer\+\_\+code/\+Core/\+Src/rc\+\_\+input.c File Reference}
+\hypertarget{rc__input_8c}{}\label{rc__input_8c}\index{C:/Users/Aidan/Documents/507\_Project/balancer\_code/Core/Src/rc\_input.c@{C:/Users/Aidan/Documents/507\_Project/balancer\_code/Core/Src/rc\_input.c}}
+{\ttfamily \#include "{}main.\+h"{}}\newline
+{\ttfamily \#include "{}rc\+\_\+input.\+h"{}}\newline
+Include dependency graph for rc\+\_\+input.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{rc__input_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{rc__input_8c_a6d9d21e31e69ba95f828f14468da310f}{RC\+\_\+start\+\_\+cap}} (rc\+\_\+inp\+\_\+t \texorpdfstring{$\ast$}{*}p)
+\item 
+void \mbox{\hyperlink{rc__input_8c_a172b212a1b5960a31c110bb02b4b5ada}{RC\+\_\+callback}} (rc\+\_\+inp\+\_\+t \texorpdfstring{$\ast$}{*}p, TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}timer)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{rc__input_8c_a6fe204f55b3b9bd8151b1a3a281cc54c}{RC\+\_\+get\+\_\+trig}} (rc\+\_\+inp\+\_\+t \texorpdfstring{$\ast$}{*}p)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{rc__input_8c_a409cea763dd020135c48d3b7329fda32}{RC\+\_\+get\+\_\+whl}} (rc\+\_\+inp\+\_\+t \texorpdfstring{$\ast$}{*}p)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{rc__input_8c_a89624b0ba8aab502acb444c51ec3f4cd}{trig\+\_\+val}} = 0
+\item 
+uint16\+\_\+t \mbox{\hyperlink{rc__input_8c_a459b3e83d3daadc3a995528cdfb0dd53}{whl\+\_\+val}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rc__input_8c_a172b212a1b5960a31c110bb02b4b5ada}\index{rc\_input.c@{rc\_input.c}!RC\_callback@{RC\_callback}}
+\index{RC\_callback@{RC\_callback}!rc\_input.c@{rc\_input.c}}
+\doxysubsubsection{\texorpdfstring{RC\_callback()}{RC\_callback()}}
+{\footnotesize\ttfamily \label{rc__input_8c_a172b212a1b5960a31c110bb02b4b5ada} 
+void RC\+\_\+callback (\begin{DoxyParamCaption}\item[{rc\+\_\+inp\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}}]{timer}{}\end{DoxyParamCaption})}
+
+\Hypertarget{rc__input_8c_a6fe204f55b3b9bd8151b1a3a281cc54c}\index{rc\_input.c@{rc\_input.c}!RC\_get\_trig@{RC\_get\_trig}}
+\index{RC\_get\_trig@{RC\_get\_trig}!rc\_input.c@{rc\_input.c}}
+\doxysubsubsection{\texorpdfstring{RC\_get\_trig()}{RC\_get\_trig()}}
+{\footnotesize\ttfamily \label{rc__input_8c_a6fe204f55b3b9bd8151b1a3a281cc54c} 
+uint32\+\_\+t RC\+\_\+get\+\_\+trig (\begin{DoxyParamCaption}\item[{rc\+\_\+inp\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{rc__input_8c_a409cea763dd020135c48d3b7329fda32}\index{rc\_input.c@{rc\_input.c}!RC\_get\_whl@{RC\_get\_whl}}
+\index{RC\_get\_whl@{RC\_get\_whl}!rc\_input.c@{rc\_input.c}}
+\doxysubsubsection{\texorpdfstring{RC\_get\_whl()}{RC\_get\_whl()}}
+{\footnotesize\ttfamily \label{rc__input_8c_a409cea763dd020135c48d3b7329fda32} 
+uint32\+\_\+t RC\+\_\+get\+\_\+whl (\begin{DoxyParamCaption}\item[{rc\+\_\+inp\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{rc__input_8c_a6d9d21e31e69ba95f828f14468da310f}\index{rc\_input.c@{rc\_input.c}!RC\_start\_cap@{RC\_start\_cap}}
+\index{RC\_start\_cap@{RC\_start\_cap}!rc\_input.c@{rc\_input.c}}
+\doxysubsubsection{\texorpdfstring{RC\_start\_cap()}{RC\_start\_cap()}}
+{\footnotesize\ttfamily \label{rc__input_8c_a6d9d21e31e69ba95f828f14468da310f} 
+void RC\+\_\+start\+\_\+cap (\begin{DoxyParamCaption}\item[{rc\+\_\+inp\+\_\+t \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{rc__input_8c_a89624b0ba8aab502acb444c51ec3f4cd}\index{rc\_input.c@{rc\_input.c}!trig\_val@{trig\_val}}
+\index{trig\_val@{trig\_val}!rc\_input.c@{rc\_input.c}}
+\doxysubsubsection{\texorpdfstring{trig\_val}{trig\_val}}
+{\footnotesize\ttfamily \label{rc__input_8c_a89624b0ba8aab502acb444c51ec3f4cd} 
+uint16\+\_\+t trig\+\_\+val = 0}
+
+\Hypertarget{rc__input_8c_a459b3e83d3daadc3a995528cdfb0dd53}\index{rc\_input.c@{rc\_input.c}!whl\_val@{whl\_val}}
+\index{whl\_val@{whl\_val}!rc\_input.c@{rc\_input.c}}
+\doxysubsubsection{\texorpdfstring{whl\_val}{whl\_val}}
+{\footnotesize\ttfamily \label{rc__input_8c_a459b3e83d3daadc3a995528cdfb0dd53} 
+uint16\+\_\+t whl\+\_\+val = 0}
+
