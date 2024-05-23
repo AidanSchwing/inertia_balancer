@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['systemcoreclock_0',['SystemCoreClock',['../group___s_t_m32_f4xx___system___private___variables.html#gaa3cd3e43291e81e795d642b79b6088e6',1,'system_stm32f4xx.c']]]
+  ['mot_5fchannel1_0',['mot_channel1',['../structmotor__t.html#a679a9056b673dcecad9c65c525cddbd4',1,'motor_t']]],
+  ['mot_5fchannel2_1',['mot_channel2',['../structmotor__t.html#a0d5aa4db469c1e886fb0ffcc4bc0fef4',1,'motor_t']]],
+  ['mot_5ftimer_2',['mot_timer',['../structmotor__t.html#ab6e4252b29ea1012bf499187a3c8d15f',1,'motor_t']]]
 ];

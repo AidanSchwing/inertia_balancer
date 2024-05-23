@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>reaction_balance: C:/Users/Aidan/Documents/507_Project/balancer_code/Core/Src/main.c File Reference</title>
+<title>reaction_balance: main.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,6 +18,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -31,6 +36,18 @@
    </div>
    <div id="projectbrief">Single axis balancing robot developed for ME 507 at Cal Poly</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -47,17 +64,6 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search',true);
-  $(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -106,18 +112,21 @@ $(function(){initNavTree('main_8c.html',''); initResizable(true); });
 
 <p>: Main program body  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;main.h&quot;</code><br />
-<code>#include &quot;odrive_wrapper.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="odrive__wrapper_8h_source.html">odrive_wrapper.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8c__incl.png" border="0" usemap="#a_c_1_2_users_2_aidan_2_documents_2507___project_2balancer__code_2_core_2_src_2main_8c" alt=""/></div>
-<map name="a_c_1_2_users_2_aidan_2_documents_2507___project_2balancer__code_2_core_2_src_2main_8c" id="a_c_1_2_users_2_aidan_2_documents_2507___project_2balancer__code_2_core_2_src_2main_8c">
-<area shape="rect" title=": Main program body" alt="" coords="5,5,188,64"/>
-<area shape="rect" title=" " alt="" coords="10,112,71,139"/>
-<area shape="poly" title=" " alt="" coords="81,66,59,100,54,97,76,63"/>
-<area shape="rect" title=" " alt="" coords="95,112,213,139"/>
-<area shape="poly" title=" " alt="" coords="117,63,140,97,135,100,113,66"/>
+<div class="center"><img src="main_8c__incl.png" border="0" usemap="#amain_8c" alt=""/></div>
+<map name="amain_8c" id="amain_8c">
+<area shape="rect" title=": Main program body" alt="" coords="33,5,94,32"/>
+<area shape="rect" href="main_8h.html" title=": Header for main.c file." alt="" coords="33,155,94,181"/>
+<area shape="poly" title=" " alt="" coords="60,33,43,80,44,111,53,140,48,141,39,112,38,80,55,32"/>
+<area shape="rect" href="odrive__wrapper_8h.html" title=" " alt="" coords="53,80,170,107"/>
+<area shape="poly" title=" " alt="" coords="74,31,97,66,93,69,70,34"/>
+<area shape="rect" title=" " alt="" coords="5,229,122,256"/>
+<area shape="poly" title=" " alt="" coords="66,182,66,214,61,214,61,182"/>
+<area shape="poly" title=" " alt="" coords="105,109,82,143,78,140,101,106"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -145,7 +154,7 @@ Variables</h2></td></tr>
 <tr class="separator:a2cf715bef37f7e8ef385a30974a5f0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9479c261d65eecedd3d9582f7f0f89c" id="r_aa9479c261d65eecedd3d9582f7f0f89c"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9479c261d65eecedd3d9582f7f0f89c">huart2</a></td></tr>
 <tr class="separator:aa9479c261d65eecedd3d9582f7f0f89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad04fe84a2d499fe57651a80bf68f29de" id="r_ad04fe84a2d499fe57651a80bf68f29de"><td class="memItemLeft" align="right" valign="top">odrive_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad04fe84a2d499fe57651a80bf68f29de">odrive</a></td></tr>
+<tr class="memitem:ad04fe84a2d499fe57651a80bf68f29de" id="r_ad04fe84a2d499fe57651a80bf68f29de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structodrive__t.html">odrive_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad04fe84a2d499fe57651a80bf68f29de">odrive</a></td></tr>
 <tr class="separator:ad04fe84a2d499fe57651a80bf68f29de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7394d71a5b03e693a17bc6ea557b4d9" id="r_ad7394d71a5b03e693a17bc6ea557b4d9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7394d71a5b03e693a17bc6ea557b4d9">rxBuffer</a></td></tr>
 <tr class="separator:ad7394d71a5b03e693a17bc6ea557b4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -323,7 +332,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">odrive_t odrive</td>
+          <td class="memname"><a class="el" href="structodrive__t.html">odrive_t</a> odrive</td>
         </tr>
       </table>
 </div><div class="memdoc">

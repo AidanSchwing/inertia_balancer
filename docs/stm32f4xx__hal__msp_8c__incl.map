@@ -1,5 +1,7 @@
-<map id="C:/Users/Aidan/Documents/507_Project/balancer_code/Core/Src/stm32f4xx_hal_msp.c" name="C:/Users/Aidan/Documents/507_Project/balancer_code/Core/Src/stm32f4xx_hal_msp.c">
-<area shape="rect" id="Node000001" title="This file provides code for the MSP Initialization and de&#45;Initialization codes." alt="" coords="5,5,213,64"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="79,112,139,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,64,112,96,106,96,106,64"/>
+<map id="stm32f4xx_hal_msp.c" name="stm32f4xx_hal_msp.c">
+<area shape="rect" id="Node000001" title="This file provides code for the MSP Initialization and de&#45;Initialization codes." alt="" coords="5,5,154,32"/>
+<area shape="rect" id="Node000002" href="$main_8h.html" title=": Header for main.c file." alt="" coords="49,80,110,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,33,82,64,77,64,77,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="21,155,138,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,107,82,139,77,139,77,107"/>
 </map>

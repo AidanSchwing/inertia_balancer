@@ -1,0 +1,52 @@
+\doxysection{rc\+\_\+input.\+h}
+\hypertarget{rc__input_8h_source}{}\label{rc__input_8h_source}\index{rc\_input.h@{rc\_input.h}}
+\mbox{\hyperlink{rc__input_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ rc\_input.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ Created\ on:\ May\ 19,\ 2024}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ \ \ \ \ Author:\ Aidan}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ INC\_RC\_INPUT\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ INC\_RC\_INPUT\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{main_8h}{main.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }rc\_input\_struct\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_ac3a6b643da8701b4ac8a38ebfaac55de}{trig\_ch\_rise}};\ \textcolor{comment}{//\ channel\ for\ trigger\ rise}}
+\DoxyCodeLine{00016\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_ae346beca1230cba54e44be57c5072585}{trig\_ch\_fall}};\ \textcolor{comment}{//\ channel\ for\ trigger\ fall}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_a3a85abfd5cc996d99e0386eebe38e68a}{whl\_ch\_rise}};\ \textcolor{comment}{//\ channel\ for\ wheel\ rise}}
+\DoxyCodeLine{00019\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_aa1a9e5d96da93b07e34a45c75ddd1aab}{whl\_ch\_fall}};\ \textcolor{comment}{//\ channel\ for\ wheel\ fall}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ TIM\_HandleTypeDef*\ \mbox{\hyperlink{structrc__inp__t_ae9413a4c48755bd4923d1990d445a8ba}{rc\_timer}};\ \textcolor{comment}{//\ timer\ for\ rc\ input,\ pointer}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ bounding\ values\ to\ the\ receiver\ PWM\ signal\ length,\ us}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ values\ from\ scope\ PWM\ inspection}}
+\DoxyCodeLine{00025\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_abe87160f4bfe97de44dcd573b063f4f5}{nom\_pwm}};}
+\DoxyCodeLine{00026\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_ac9f1082b01ce4c5c64ccc838bc915984}{high\_pwm}};}
+\DoxyCodeLine{00027\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_a7d594be7b2db4149abf7c7bd5048213d}{low\_pwm}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ time\ in\ @\ relevant\ points\ in\ the\ PWM\ cycle}}
+\DoxyCodeLine{00030\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_a38b5abdfb7eab0416a5f9890f4631b44}{trig\_first}};}
+\DoxyCodeLine{00031\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_a665125d1ac2301a19080aef0e3eda821}{trig\_second}};}
+\DoxyCodeLine{00032\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_a344e1e62496a70b109b268700f0fe9f5}{trig\_delta}};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_ad3d3664f010835a78717f5052f555a0a}{whl\_first}};}
+\DoxyCodeLine{00035\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_a0a4ef3c6392e62a224d1c047e8c24e1b}{whl\_second}};}
+\DoxyCodeLine{00036\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structrc__inp__t_a7016c7e633998d23bb55762de89fb14f}{whl\_delta}};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \}\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{structrc__inp__t}{rc\_inp\_t}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{comment}{//\ prototype\ functions}}
+\DoxyCodeLine{00041\ uint32\_t\ \mbox{\hyperlink{rc__input_8h_a6fe204f55b3b9bd8151b1a3a281cc54c}{RC\_get\_trig}}(\mbox{\hyperlink{structrc__inp__t}{rc\_inp\_t}}\ *p);}
+\DoxyCodeLine{00042\ uint32\_t\ \mbox{\hyperlink{rc__input_8h_a409cea763dd020135c48d3b7329fda32}{RC\_get\_whl}}(\mbox{\hyperlink{structrc__inp__t}{rc\_inp\_t}}\ *p);}
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{rc__input_8h_a6d9d21e31e69ba95f828f14468da310f}{RC\_start\_cap}}(\mbox{\hyperlink{structrc__inp__t}{rc\_inp\_t}}\ *p);}
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{rc__input_8h_a172b212a1b5960a31c110bb02b4b5ada}{RC\_callback}}(\mbox{\hyperlink{structrc__inp__t}{rc\_inp\_t}}*p,\ TIM\_HandleTypeDef*timer);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INC\_RC\_INPUT\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

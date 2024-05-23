@@ -1,0 +1,53 @@
+\doxysection{odrive\+\_\+wrapper.\+h}
+\hypertarget{odrive__wrapper_8h_source}{}\label{odrive__wrapper_8h_source}\index{odrive\_wrapper.h@{odrive\_wrapper.h}}
+\mbox{\hyperlink{odrive__wrapper_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ odrive\_wrapper.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ Created\ on:\ May\ 20,\ 2024}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ \ \ \ \ Author:\ Aidan}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ INC\_ODRIVE\_WRAPPER\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ INC\_ODRIVE\_WRAPPER\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{main_8h}{main.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }odrive\_struct\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ UART\_HandleTypeDef*\ \mbox{\hyperlink{structodrive__t_a1ed7dab212fde0a3a4600d33399c67b6}{huart}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \}\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{structodrive__t}{odrive\_t}};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ following\ is\ an\ implementation\ of\ the\ useful\ commands\ from\ here:}}
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ https://docs.odriverobotics.com/v/latest/manual/ascii-\/protocol.html}}
+\DoxyCodeLine{00022\ \textcolor{comment}{//\ all\ commands\ follow\ as\ ASCII\ protocol,\ formatted\ as\ so:}}
+\DoxyCodeLine{00023\ \textcolor{comment}{//\ command\ *42\ ;\ comment\ [new\ line\ character],\ where\ *42\ is\ a\ non-\/required\ checksum}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{comment}{//\ prototype\ functions}}
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ commands\ to\ odrive\ controller}}
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{odrive__wrapper_8h_a25d657b24b80292f58a570b02e7aa428}{ODRIVE\_Reboot}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p);}
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{odrive__wrapper_8h_ab13b958603fb943556b9a7c32fc95bac}{ODRIVE\_ClearErrors}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{comment}{//\ functions\ for\ motor\ control}}
+\DoxyCodeLine{00031\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{odrive__wrapper_8h_a7b3454ebe0e4fdd3a2a0dc64f72719c9}{ODRIVE\_SetPosition}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p,\ \textcolor{keywordtype}{int}\ motor\_number,\ \textcolor{keywordtype}{float}\ position,\ \textcolor{keywordtype}{float}\ velocity\_lim,\ \textcolor{keywordtype}{float}\ torque\_lim);}
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{odrive__wrapper_8h_a18367d959b193c49f6c7534cc7ab857f}{ODRIVE\_SetPositionFF}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p,\ \textcolor{keywordtype}{int}\ motor\_number,\ \textcolor{keywordtype}{float}\ position,\ \textcolor{keywordtype}{float}\ velocity\_feedforward,\ \textcolor{keywordtype}{float}\ current\_feedforward);}
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{odrive__wrapper_8h_a3a31ea6c326e5a87a3f76245f099e158}{ODRIVE\_SetVelocity}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p,\ \textcolor{keywordtype}{int}\ motor\_number,\ \textcolor{keywordtype}{float}\ velocity,\ \textcolor{keywordtype}{float}\ torque\_feedforward);}
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{odrive__wrapper_8h_a6fff222e9c4e938392faacf4cccd1925}{ODRIVE\_SetTorque}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p,\ \textcolor{keywordtype}{int}\ motor\_number,\ \textcolor{keywordtype}{float}\ torque);}
+\DoxyCodeLine{00035\ uint8\_t*\ \mbox{\hyperlink{odrive__wrapper_8h_a42dae01f885677084b5223cb8a259b66}{ODRIVE\_GetFeedback}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p,\ \textcolor{keywordtype}{int}\ motor\_number);\ \textcolor{comment}{//\ returns\ "{}pos\ vel"{}}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{comment}{//\ paramater\ reading\ and\ writing}}
+\DoxyCodeLine{00038\ uint8\_t*\ \mbox{\hyperlink{odrive__wrapper_8h_a60cc06522e5b60f0383052c1f9cea4c5}{ODRIVE\_GetVBus}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p);\ \textcolor{comment}{//\ functionally\ equivalent\ to\ the\ read\ param\ but\ used\ enough\ that\ it\ is\ its\ own\ function}}
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{odrive__wrapper_8h_a6ea52cd425986e041299100c9ce37564}{ODRIVE\_WriteParam}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p,\ \textcolor{keywordtype}{char}\ param[]);}
+\DoxyCodeLine{00040\ uint8\_t*\ \mbox{\hyperlink{odrive__wrapper_8h_ad14c9d5698a70cc0796f76190bdd1aa8}{ODRIVE\_ReadParam}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p,\ \textcolor{keywordtype}{char}\ param[]);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{comment}{//\ generic\ send\ /\ receive\ functions}}
+\DoxyCodeLine{00043\ uint8\_t*\ \mbox{\hyperlink{odrive__wrapper_8h_a15c8c6e4f8fd6ae104fff6063561fd57}{getReceivedString}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *P);}
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{odrive__wrapper_8h_ab6435b6238a1cb4ff3627f8736a86d72}{start\_receive\_string}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p);}
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{odrive__wrapper_8h_a38cf8e45ebb6bf5c5afcfde2e0df6a89}{ODRIVE\_Receive\_Callback}}\ (UART\_HandleTypeDef\ *huart,\ \mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INC\_ODRIVE\_WRAPPER\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,7 +1,10 @@
-<map id="C:/Users/Aidan/Documents/507_Project/balancer_code/Core/Src/odrive_wrapper.c" name="C:/Users/Aidan/Documents/507_Project/balancer_code/Core/Src/odrive_wrapper.c">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,188,64"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="10,112,71,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,66,59,100,54,97,76,63"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="95,112,213,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,63,140,97,135,100,113,66"/>
+<map id="odrive_wrapper.c" name="odrive_wrapper.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,123,32"/>
+<area shape="rect" id="Node000002" href="$main_8h.html" title=": Header for main.c file." alt="" coords="34,155,94,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,33,44,80,45,111,54,140,48,141,40,112,39,80,55,32"/>
+<area shape="rect" id="Node000004" href="$odrive__wrapper_8h.html" title=" " alt="" coords="53,80,171,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="75,31,98,66,93,69,70,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="6,229,122,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="67,182,67,214,61,214,61,182"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="106,109,83,143,78,140,101,106"/>
 </map>
