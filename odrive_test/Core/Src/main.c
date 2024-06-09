@@ -40,6 +40,8 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c1;
+
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim3;
 
@@ -62,6 +64,11 @@ odrive_t odrive = {
 		  .huart = &huart1
 };
 
+odrive_t laptop = {
+		  // uart 1 is odrive, uart2 is st-link
+		  .huart = &huart2
+};
+
 
 extern uint8_t rxBuffer; // Receive buffer. max length of expected returned values.
 extern uint8_t rxIndex; // init index at zero.
@@ -79,6 +86,7 @@ static void MX_TIM3_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_USART1_UART_Init(void);
+static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -121,6 +129,7 @@ int main(void)
   MX_TIM1_Init();
   MX_USART2_UART_Init();
   MX_USART1_UART_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 
   // start receiving
@@ -128,8 +137,21 @@ int main(void)
 
   HAL_UART_Transmit(&huart2, (uint8_t*)"\033c", strlen("\033c"), HAL_MAX_DELAY);
 
+  //uint8_t* is_calib = ODRIVE_IsCalibrated(&odrive);
+  //char calib_mess[50];
+  //int calib_mess_len = sprintf(calib_mess, "Is_Calibrated: %s\r\n", is_calib);
+  //HAL_UART_Transmit(&huart2, (uint8_t*)calib_mess, calib_mess_len, HAL_MAX_DELAY);
+
+
   ODRIVE_Reboot(&odrive);
   HAL_Delay(10000);
+
+  // battery voltage readout
+  uint8_t* voltage = ODRIVE_GetVBus(&odrive);
+  char new_mess[50];
+  int mess_len = sprintf(new_mess, "Received VBus: %s\r\n", voltage);
+  HAL_UART_Transmit(&huart2, (uint8_t*)new_mess, mess_len, HAL_MAX_DELAY);
+
 
   ODRIVE_ClearErrors(&odrive);
 
@@ -143,22 +165,31 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-	// battery voltage readout
-    uint8_t* voltage = ODRIVE_GetVBus(&odrive);
-    char new_mess[50];
-    int mess_len = sprintf(new_mess, "Received VBus: %s\r\n", voltage);
-    HAL_UART_Transmit(&huart2, (uint8_t*)new_mess, mess_len, HAL_MAX_DELAY);
+
     //HAL_Delay(2000);
+    /*
+    uint8_t* state = ODRIVE_GetFeedback(&odrive, 0);
+    char new_mess1[50];
+    int mess_len1 = sprintf(new_mess1, "Pos; Vel: %s \r\n", state);
+    HAL_UART_Transmit(&huart2, (uint8_t*)new_mess1, mess_len1, HAL_MAX_DELAY);
+	*/
 
 	// basic position controls
-	ODRIVE_SetPosition(&odrive, 0, 1, 0, 0);
+    /*
+	ODRIVE_SetPosition(&odrive, 0, 0.5, 500, 100);
 	HAL_Delay(2000);
-	ODRIVE_SetPosition(&odrive, 0, 0, 0, 0);
+	ODRIVE_SetPosition(&odrive, 0, 0, 500, 100);
+	HAL_Delay(2000);
+    */
+
+	// speed requests
+	ODRIVE_SetVelocity(&odrive, 0, 0.9);
+	ODRIVE_SetVelocity(&laptop, 0, 0.9);
+	HAL_Delay(2000);
+	ODRIVE_SetVelocity(&odrive, 0, 0.5);
+	ODRIVE_SetVelocity(&laptop, 0, 0.5);
 	HAL_Delay(2000);
 
-	// torque requests
-	//ODRIVE_SetTorque(&odrive, 0, 0.5);
-	//HAL_Delay(2000);
 
   }
   /* USER CODE END 3 */
@@ -207,6 +238,40 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C1_Init(void)
+{
+
+  /* USER CODE BEGIN I2C1_Init 0 */
+
+  /* USER CODE END I2C1_Init 0 */
+
+  /* USER CODE BEGIN I2C1_Init 1 */
+
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.ClockSpeed = 100000;
+  hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
+
 }
 
 /**

@@ -1,0 +1,4 @@
+../Core/Src/rc_input.c:15:6:RC_start_cap	16	static
+../Core/Src/rc_input.c:23:6:RC_callback	16	static
+../Core/Src/rc_input.c:61:10:RC_get_trig	24	static
+../Core/Src/rc_input.c:77:10:RC_get_whl	24	static

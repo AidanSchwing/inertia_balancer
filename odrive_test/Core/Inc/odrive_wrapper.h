@@ -30,12 +30,13 @@ void ODRIVE_ClearErrors(odrive_t *p);
 // functions for motor control
 void ODRIVE_SetPosition(odrive_t *p, int motor_number, float position, float velocity_lim, float torque_lim);
 void ODRIVE_SetPositionFF(odrive_t *p, int motor_number, float position, float velocity_feedforward, float current_feedforward);
-void ODRIVE_SetVelocity(odrive_t *p, int motor_number, float velocity, float torque_feedforward);
+void ODRIVE_SetVelocity(odrive_t *p, int motor_number, float velocity);
 void ODRIVE_SetTorque(odrive_t *p, int motor_number, float torque);
 uint8_t* ODRIVE_GetFeedback(odrive_t *p, int motor_number); // returns "pos vel"
 
 // paramater reading and writing
 uint8_t* ODRIVE_GetVBus(odrive_t *p); // functionally equivalent to the read param but used enough that it is its own function
+uint8_t* ODRIVE_IsCalibrated(odrive_t *p);
 void ODRIVE_WriteParam(odrive_t *p, char param[]);
 uint8_t* ODRIVE_ReadParam(odrive_t *p, char param[]);
 

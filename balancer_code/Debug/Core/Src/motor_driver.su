@@ -1,0 +1,3 @@
+../Core/Src/motor_driver.c:11:6:MOTOR_Init	16	static
+../Core/Src/motor_driver.c:27:6:MOTOR_DeInit	16	static
+../Core/Src/motor_driver.c:36:6:MOTOR_SetDuty	24	static

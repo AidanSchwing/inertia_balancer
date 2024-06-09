@@ -1,0 +1,4 @@
+../Core/Src/rc_input.c:15:6:RC_start_cap	1
+../Core/Src/rc_input.c:23:6:RC_callback	5
+../Core/Src/rc_input.c:61:10:RC_get_trig	3
+../Core/Src/rc_input.c:77:10:RC_get_whl	3
