@@ -24,8 +24,8 @@ char ctrl_msg[50];
 
 
 // system variables. assume x to be the axis running vertically through the IMU
-float angle_x = 0.0f;
-float gyro_rate_x = 0.0f;
+float angle_z = 0.0f;
+float angular_velocity = 0.0f;
 
 void update_control(float angle, float angular_velocity, float motor_curr_speed)
 {
@@ -41,13 +41,14 @@ void update_control(float angle, float angular_velocity, float motor_curr_speed)
 
 
 // reads IMU data and calculates angle of the system
-float calculate_IMU_Angle(ICM_20948 *p_IMU)
+pos_spd calculate_IMU_Angle(ICM_20948 *p_IMU)
 {
 
 	float ax, ay, az;
 	float gx, gy, gz;
-	float accel_angle_x;
-	float adj_ax;
+	float gyro_angle;
+	float accel_angle_z;
+	static float previous_angle_z= 0.0000;
 
 	// read both of the sensors
 	AccelData accel = IMU_read_accel(p_IMU);	// m/s^2
@@ -60,30 +61,31 @@ float calculate_IMU_Angle(ICM_20948 *p_IMU)
 	gy = gyro.gyro_y;
 	gz = gyro.gyro_z;
 
+	gyro_angle = angle_z + gz*DT;
 
-	float centrifugal_accel = pow(gyro_rate_x * M_PI / 180, 2) * DISPLACEMENT_DIST;
+	accel_angle_z = atan2f(ax,ay);
 
-	adj_ax = ax + centrifugal_accel;
+    if (accel_angle_z > M_PI) accel_angle_z -= 2 * M_PI;
+    else if (accel_angle_z < -M_PI) accel_angle_z += 2 * M_PI;
 
-	accel_angle_x = atan2f(ay, sqrt(adj_ax * adj_ax + az + az)) * (180 / M_PI);
+    accel_angle_z = accel_angle_z  * (180.0 / M_PI);
 
-	gyro_rate_x = gx;
+    // complementary filter
+	angle_z = ALPHA * gyro_angle  +  (1 - ALPHA) * accel_angle_z;
 
-    // Calculate the angle from the adjusted accelerometer reading
-    float denominator = sqrt(adj_ax * adj_ax + az * az);
-    if (denominator != 0) {
-        accel_angle_x = atan2(ay, denominator) * (180.0 / M_PI);
-    } else {
-        printf("Warning: Denominator is zero, setting accel_angle_x to zero to avoid NaN\n");
-        accel_angle_x = 0;
-    }
+    // Calculate tangential acceleration (at)
+    //float at = ax * cosf(angle_z) + ay * sinf(angle_z);
 
-	angle_x = ALPHA * (angle_x + gyro_rate_x * DT) + (1 - ALPHA) * accel_angle_x;
+    // Calculate angular acceleration (alpha)
+    //float alpha = at / DISPLACEMENT_DIST;
 
-    sprintf(ctrl_msg, "SYS ANGLE: %.4f     ", angle_x);
-    HAL_UART_Transmit(p_IMU->huart, (uint8_t*)ctrl_msg, strlen(ctrl_msg), HAL_MAX_DELAY);
+    // Update angular velocity using angular acceleration
+    float angular_velocity = (angle_z-previous_angle_z) / DT;
+    previous_angle_z = angle_z;
 
-	return angle_x;
+    pos_spd output = {angle_z, angular_velocity};
+
+	return output;
 }
 
 

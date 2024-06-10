@@ -167,10 +167,13 @@ int main(void)
     //uint8_t* voltage = ODRIVE_GetVBus(&odrive);
     char new_mess[50];
     int mess_len = sprintf(new_mess, "testing");
-    HAL_UART_Transmit(&huart2, (uint8_t*)new_mess, mess_len, HAL_MAX_DELAY);
-    HAL_Delay(500);
+    //HAL_UART_Transmit(&huart2, (uint8_t*)new_mess, mess_len, HAL_MAX_DELAY);
 
     HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_15);
+    HAL_Delay(10);
+
+
+    //HAL_StatusTypeDef ret = HAL_I2C_IsDeviceReady(IMU.hi2c, ICM20948_I2C_ADDR, 1, 400);
 	// speed requests
 	  /*
 	ODRIVE_SetVelocity(&odrive, 0, 2);
@@ -184,7 +187,17 @@ int main(void)
 	//IMU_read_accel(&IMU);
 	//IMU_read_gyro(&IMU);
 
-	//calculate_IMU_Angle(&IMU);
+	pos_spd new_IMU_out = calculate_IMU_Angle(&IMU);
+
+	float real_pos = new_IMU_out.position + 90;
+
+	char ctrl_msg[50];
+    sprintf(ctrl_msg, "SYS ANGLE: %.4f     ", real_pos);
+    HAL_UART_Transmit(IMU.huart, (uint8_t*)ctrl_msg, strlen(ctrl_msg), HAL_MAX_DELAY);
+
+    sprintf(ctrl_msg, "ANG_VEL: %.4f     \r\n", new_IMU_out.speed);
+    HAL_UART_Transmit(IMU.huart, (uint8_t*)ctrl_msg, strlen(ctrl_msg), HAL_MAX_DELAY);
+
 
 
   }
@@ -252,7 +265,7 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.ClockSpeed = 100000;
+  hi2c1.Init.ClockSpeed = 400000;
   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;

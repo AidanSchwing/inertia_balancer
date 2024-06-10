@@ -4,6 +4,7 @@
  *  Created on: Jun 2, 2024
  *      Author: sydne
  */
+#include "main.h"
 #include "IMU_driver.h"
 #include "stm32f4xx_hal.h"
 #include <string.h>
@@ -69,6 +70,10 @@ void IMU_init(ICM_20948*p_IMU){
     		 char msg[32];
     		 sprintf(msg, "Found device at 0x%02X\r\n", addr);
     		 HAL_UART_Transmit(p_IMU->huart, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+         } else {
+    		 char msg[50];
+    		 sprintf(msg, "No device found\r\n");
+    		 //HAL_UART_Transmit(p_IMU->huart, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
          }
      }
 }
@@ -127,7 +132,7 @@ GyroData IMU_read_gyro(ICM_20948*p_IMU){
 	    gyro_data.gyro_z = gyro_z_raw / GYRO_FS_SEL;
 
 	    // output the data in deg/s
-	    //sprintf(msg, "Gyro X: %.4f, Y: %.4f, Z: %.4f\r\n", gyro_data.gyro_x, gyro_data.gyro_y, gyro_data.gyro_z);
+	    //sprintf(msg, "Gyro X: %.4f, Y: %.4f, Z: %.4f      ", gyro_data.gyro_x, gyro_data.gyro_y, gyro_data.gyro_z);
 	    //HAL_UART_Transmit(p_IMU->huart, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
 
 	    }
