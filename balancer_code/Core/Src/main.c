@@ -44,7 +44,10 @@
 /* Private variables ---------------------------------------------------------*/
 I2C_HandleTypeDef hi2c1;
 
+TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim3;
+TIM_HandleTypeDef htim4;
+TIM_HandleTypeDef htim5;
 TIM_HandleTypeDef htim11;
 
 UART_HandleTypeDef huart2;
@@ -84,6 +87,12 @@ extern uint8_t responseFinishedFlag;
 extern uint8_t receivedData;
 extern char transmitBuffer;
 
+volatile uint8_t IMU_rdy_flag = 0;
+volatile uint8_t LED_rdy_flag = 0;
+volatile uint8_t CTRL_rdy_flag = 0;
+
+volatile float real_pos = 0;
+volatile float sys_vel = 0;
 
 /* USER CODE END PV */
 
@@ -95,6 +104,9 @@ static void MX_USART2_UART_Init(void);
 static void MX_TIM3_Init(void);
 static void MX_USART6_UART_Init(void);
 static void MX_TIM11_Init(void);
+static void MX_TIM1_Init(void);
+static void MX_TIM5_Init(void);
+static void MX_TIM4_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -138,19 +150,35 @@ int main(void)
   MX_TIM3_Init();
   MX_USART6_UART_Init();
   MX_TIM11_Init();
+  MX_TIM1_Init();
+  MX_TIM5_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
+
+  // start interrupts for timing tasks
+  HAL_TIM_Base_Start_IT(&htim1);
+  HAL_TIM_Base_Start_IT(&htim4);
+  HAL_TIM_Base_Start_IT(&htim5);
 
   // start receiving
   start_receive_string(&odrive);
 
   HAL_UART_Transmit(&huart2, (uint8_t*)"\033c", strlen("\033c"), HAL_MAX_DELAY);
 
-  //ODRIVE_Reboot(&odrive);
-  //HAL_Delay(10000);
+  ODRIVE_Reboot(&odrive);
+  HAL_Delay(10000);
 
-  //ODRIVE_ClearErrors(&odrive);
+  ODRIVE_ClearErrors(&odrive);
 
   IMU_init(&IMU);
+
+
+  // battery voltage readout
+  // battery voltage readout
+  //uint8_t* voltage = ODRIVE_GetVBus(&odrive);
+  //char new_mess[50];
+  //int mess_len = sprintf(new_mess, "Received VBus: %s\r\n", voltage);
+  //HAL_UART_Transmit(laptop.huart, (uint8_t*)new_mess, mess_len, HAL_MAX_DELAY);
 
 
   /* USER CODE END 2 */
@@ -163,19 +191,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-	// battery voltage readout
-    //uint8_t* voltage = ODRIVE_GetVBus(&odrive);
-    char new_mess[50];
-    int mess_len = sprintf(new_mess, "testing");
-    //HAL_UART_Transmit(&huart2, (uint8_t*)new_mess, mess_len, HAL_MAX_DELAY);
-
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_15);
-    HAL_Delay(10);
-
-
-    //HAL_StatusTypeDef ret = HAL_I2C_IsDeviceReady(IMU.hi2c, ICM20948_I2C_ADDR, 1, 400);
+    /*
 	// speed requests
-	  /*
 	ODRIVE_SetVelocity(&odrive, 0, 2);
 	ODRIVE_SetVelocity(&laptop, 0, 2);
 	HAL_Delay(2000);
@@ -187,16 +204,48 @@ int main(void)
 	//IMU_read_accel(&IMU);
 	//IMU_read_gyro(&IMU);
 
-	pos_spd new_IMU_out = calculate_IMU_Angle(&IMU);
+	// LED task
+	if (LED_rdy_flag == 1) {
+		LED_rdy_flag = 0;
 
-	float real_pos = new_IMU_out.position + 90;
+		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_15);
 
-	char ctrl_msg[50];
-    sprintf(ctrl_msg, "SYS ANGLE: %.4f     ", real_pos);
-    HAL_UART_Transmit(IMU.huart, (uint8_t*)ctrl_msg, strlen(ctrl_msg), HAL_MAX_DELAY);
+	}
 
-    sprintf(ctrl_msg, "ANG_VEL: %.4f     \r\n", new_IMU_out.speed);
-    HAL_UART_Transmit(IMU.huart, (uint8_t*)ctrl_msg, strlen(ctrl_msg), HAL_MAX_DELAY);
+
+	// IMU read task
+    if (IMU_rdy_flag ==  1) {
+        IMU_rdy_flag = 0;
+
+    	pos_spd new_IMU_out = calculate_IMU_Angle(&IMU);
+
+    	real_pos = new_IMU_out.position - 90;
+    	sys_vel = new_IMU_out.speed;
+
+    	char ctrl_msg[50];
+        sprintf(ctrl_msg, "SYS ANGLE: %.4f     ", real_pos);
+        HAL_UART_Transmit(laptop.huart, (uint8_t*)ctrl_msg, strlen(ctrl_msg), HAL_MAX_DELAY);
+
+        sprintf(ctrl_msg, "ANG_VEL: %.4f     \r\n", new_IMU_out.speed);
+        HAL_UART_Transmit(laptop.huart, (uint8_t*)ctrl_msg, strlen(ctrl_msg), HAL_MAX_DELAY);
+
+    }
+
+    // Controller task
+    if (CTRL_rdy_flag == 1) {
+    	CTRL_rdy_flag = 0;
+
+    	uint8_t* feedback = ODRIVE_GetFeedback(&odrive, 0);
+
+    	float motor_pos, motor_vel;
+    	extractFloats(feedback, &motor_pos, &motor_vel);
+
+    	update_control(&odrive, real_pos, sys_vel, motor_vel);
+    	//char feedback_mess[50];
+        //int feedback_mess_len = sprintf(feedback_mess, "MOTOR_FEEDBACK: %s\r\n", feedback);
+        //HAL_UART_Transmit(laptop.huart, (uint8_t*)feedback_mess, feedback_mess_len, HAL_MAX_DELAY);
+
+    }
 
 
 
@@ -284,6 +333,70 @@ static void MX_I2C1_Init(void)
 }
 
 /**
+  * @brief TIM1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM1_Init(void)
+{
+
+  /* USER CODE BEGIN TIM1_Init 0 */
+
+  /* USER CODE END TIM1_Init 0 */
+
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+  TIM_OC_InitTypeDef sConfigOC = {0};
+  TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
+
+  /* USER CODE BEGIN TIM1_Init 1 */
+
+  /* USER CODE END TIM1_Init 1 */
+  htim1.Instance = TIM1;
+  htim1.Init.Prescaler = 15-1;
+  htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim1.Init.Period = 64000-1;
+  htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim1.Init.RepetitionCounter = 0;
+  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_OC_Init(&htim1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sConfigOC.OCMode = TIM_OCMODE_TIMING;
+  sConfigOC.Pulse = 0;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
+  sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
+  if (HAL_TIM_OC_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
+  sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
+  sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
+  sBreakDeadTimeConfig.DeadTime = 0;
+  sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
+  sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
+  sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
+  if (HAL_TIMEx_ConfigBreakDeadTime(&htim1, &sBreakDeadTimeConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM1_Init 2 */
+
+  /* USER CODE END TIM1_Init 2 */
+
+}
+
+/**
   * @brief TIM3 Initialization Function
   * @param None
   * @retval None
@@ -329,6 +442,102 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 2 */
   HAL_TIM_MspPostInit(&htim3);
+
+}
+
+/**
+  * @brief TIM4 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM4_Init(void)
+{
+
+  /* USER CODE BEGIN TIM4_Init 0 */
+
+  /* USER CODE END TIM4_Init 0 */
+
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+  TIM_OC_InitTypeDef sConfigOC = {0};
+
+  /* USER CODE BEGIN TIM4_Init 1 */
+
+  /* USER CODE END TIM4_Init 1 */
+  htim4.Instance = TIM4;
+  htim4.Init.Prescaler = 75-1;
+  htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim4.Init.Period = 64000-1;
+  htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim4.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_OC_Init(&htim4) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim4, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sConfigOC.OCMode = TIM_OCMODE_TIMING;
+  sConfigOC.Pulse = 0;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  if (HAL_TIM_OC_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM4_Init 2 */
+
+  /* USER CODE END TIM4_Init 2 */
+
+}
+
+/**
+  * @brief TIM5 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM5_Init(void)
+{
+
+  /* USER CODE BEGIN TIM5_Init 0 */
+
+  /* USER CODE END TIM5_Init 0 */
+
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+  TIM_OC_InitTypeDef sConfigOC = {0};
+
+  /* USER CODE BEGIN TIM5_Init 1 */
+
+  /* USER CODE END TIM5_Init 1 */
+  htim5.Instance = TIM5;
+  htim5.Init.Prescaler = 150-1;
+  htim5.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim5.Init.Period = 64000-1;
+  htim5.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim5.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_OC_Init(&htim5) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim5, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sConfigOC.OCMode = TIM_OCMODE_TIMING;
+  sConfigOC.Pulse = 0;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  if (HAL_TIM_OC_ConfigChannel(&htim5, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM5_Init 2 */
+
+  /* USER CODE END TIM5_Init 2 */
 
 }
 
@@ -486,6 +695,19 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	ODRIVE_Receive_Callback(huart, &odrive);
 }
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*htim){
+	if (htim == &htim1){ // check the timer value
+		IMU_rdy_flag = 1;
+	}
+	else if (htim == &htim4){
+		CTRL_rdy_flag = 1;
+	}
+	else if (htim == &htim5){
+		LED_rdy_flag = 1;
+	}
+}
+
 
 /* USER CODE END 4 */
 

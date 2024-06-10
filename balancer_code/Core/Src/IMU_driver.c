@@ -102,12 +102,15 @@ AccelData IMU_read_accel(ICM_20948*p_IMU){
 	    //sprintf(msg, "Accel X: %.4f, Y: %.4f, Z: %.4f     ", accel_data.accel_x, accel_data.accel_y, accel_data.accel_z);
 	    //HAL_UART_Transmit(p_IMU->huart, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
 
+	}
+	else
+	{
+		HAL_UART_Transmit(p_IMU->huart, (uint8_t*)"Error reading accel data\r\n", 26, HAL_MAX_DELAY);
+	    accel_data.accel_x = 0;
+	    accel_data.accel_y = 0;
+	    accel_data.accel_z = 0;
+	}
 
-	    }
-	    else
-	    {
-	    	HAL_UART_Transmit(p_IMU->huart, (uint8_t*)"Error reading accel data\r\n", 26, HAL_MAX_DELAY);
-	    }
 	return accel_data;
 }
 
@@ -135,12 +138,14 @@ GyroData IMU_read_gyro(ICM_20948*p_IMU){
 	    //sprintf(msg, "Gyro X: %.4f, Y: %.4f, Z: %.4f      ", gyro_data.gyro_x, gyro_data.gyro_y, gyro_data.gyro_z);
 	    //HAL_UART_Transmit(p_IMU->huart, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
 
-	    }
-	    else
-	    {
-	    	// maybe throw a real error here, lmao
-	    	HAL_UART_Transmit(p_IMU->huart, (uint8_t*)"Error reading gyro data\r\n", 25, HAL_MAX_DELAY);
-	    }
+	}
+	else
+	{
+		HAL_UART_Transmit(p_IMU->huart, (uint8_t*)"Error reading gyro data\r\n", 25, HAL_MAX_DELAY);
+	    gyro_data.gyro_x = 0;
+	    gyro_data.gyro_y = 0;
+	    gyro_data.gyro_z = 0;
+	}
 
 	return gyro_data;
 }

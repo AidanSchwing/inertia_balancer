@@ -1,2 +1,2 @@
-../Core/Src/controller.c:30:6:update_control	1
-../Core/Src/controller.c:44:9:calculate_IMU_Angle	3
+../Core/Src/controller.c:23:6:update_control	1
+../Core/Src/controller.c:40:9:calculate_IMU_Angle	3

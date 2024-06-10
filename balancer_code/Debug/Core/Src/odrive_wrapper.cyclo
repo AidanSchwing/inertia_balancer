@@ -12,3 +12,4 @@
 ../Core/Src/odrive_wrapper.c:136:10:getReceivedString	2
 ../Core/Src/odrive_wrapper.c:153:6:start_receive_string	1
 ../Core/Src/odrive_wrapper.c:161:6:ODRIVE_Receive_Callback	3
+../Core/Src/odrive_wrapper.c:185:6:extractFloats	4

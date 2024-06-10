@@ -181,7 +181,24 @@ void ODRIVE_Receive_Callback (UART_HandleTypeDef *huart, odrive_t *p)
     }
 }
 
+// for use in decoding the feedback message
+void extractFloats(uint8_t* message, float* x, float* y) {
+    if (!message || !x || !y) {
+        return -1;  // Invalid input
+    }
 
+    // sscanf will parse two float values from the message
+    // The format string "%f %f" means:
+    // - Read a float (x.xxxx), then skip any whitespace
+    // - Read another float (y.yyyy)
+    // The actual values replace the x's and y's in the message
+    int result = sscanf(message, "%f %f", x, y);
 
+    if (result != 2) {
+        return -1;  // Failed to extract both floats
+    }
+
+    return 0;  // Success
+}
 
 

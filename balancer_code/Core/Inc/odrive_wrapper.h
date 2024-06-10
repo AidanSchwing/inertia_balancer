@@ -46,5 +46,6 @@ uint8_t* ODRIVE_ReadParam(odrive_t *p, char param[]);
 uint8_t* getReceivedString(odrive_t *P);
 void start_receive_string(odrive_t *p);
 void ODRIVE_Receive_Callback (UART_HandleTypeDef *huart, odrive_t *p);
+void extractFloats(uint8_t* message, float* pos, float* vel);
 
 #endif /* INC_ODRIVE_WRAPPER_H_ */

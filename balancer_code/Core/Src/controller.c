@@ -6,15 +6,8 @@
  */
 #include "controller.h"
 
-// derived from MATLAB simulation of discrete time system. here for book-keeping
-// format row, col
-float Ad[3][3] = {{1.0055,0.0100,-0.0001},
-				  {1.0920, 1.0055,-0.0130},
-				  {0,0,0.9048}};
-float Bd[3] = {0.0001,0.0130,0.0952};
-
 // LQR gains, used to calculte new requested speed
-float K[3] = {303.5, 29.2, -1.94};
+float K[3] = {10, 1, -1};
 
 // state vector
 float x[3] = {0,0,0};		// [angle, angular_vel, wheel_spd]
@@ -27,16 +20,19 @@ char ctrl_msg[50];
 float angle_z = 0.0f;
 float angular_velocity = 0.0f;
 
-void update_control(float angle, float angular_velocity, float motor_curr_speed)
+void update_control(odrive_t *p_odrive, float angle, float angular_velocity, float motor_curr_speed)
 {
 	x[0] = angle;
 	x[1] = angular_velocity;
 	x[2] = motor_curr_speed;
 
 	u = -(K[0]*x[0] + K[1]*x[1] + K[2]*x[2]);
-	u = fmaxf(fminf(u,30),-30); // limiting requested motor speed
 
-    //set_motor_speed();
+	u = u / (2*M_PI);
+
+	u = fmaxf(fminf(u,10),-10); // limiting requested motor speed
+
+	ODRIVE_SetVelocity(p_odrive, 0, u);
 }
 
 
