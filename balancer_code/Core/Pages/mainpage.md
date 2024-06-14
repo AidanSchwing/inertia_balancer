@@ -8,7 +8,7 @@
 # Introduction
 An inverted pendulum is a classic example of an unstable, controllable system in control theory. These systems are typically created using either a movable base or a moving mass to control the position of the system. We set out to implement such a system with reaction wheel-based balancing.  Initial designs of the system included a servo to brake the spinning mass in order to “bounce” up and balance. Our team was mostly interested in the control system implementation, and as such we chose to use an off-the-shelf motor controller. An ODrive derivative was ultimately chosen to serve as the BLDC driver with a 650kv quad-copter motor for price and availability. We wanted to constrain the system size to something that could serve as a display on a desk, approximately 6x6”. The final design is presented below. 
 
-![alt text](https://github.com/AidanSchwing/inertia_balancer/blob/main/balancer_code/Core/Pages/image-1.png)
+![alt text](https://github.com/AidanSchwing/inertia_balancer/blob/main/balancer_code/Core/Pages/image.png)
 
 # Hardware
 
