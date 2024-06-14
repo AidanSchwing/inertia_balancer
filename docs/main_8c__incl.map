@@ -1,10 +1,30 @@
 <map id="main.c" name="main.c">
-<area shape="rect" id="Node000001" title=": Main program body" alt="" coords="33,5,94,32"/>
-<area shape="rect" id="Node000002" href="$main_8h.html" title=": Header for main.c file." alt="" coords="33,155,94,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,33,43,80,44,111,53,140,48,141,39,112,38,80,55,32"/>
-<area shape="rect" id="Node000004" href="$odrive__wrapper_8h.html" title=" " alt="" coords="53,80,170,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="74,31,97,66,93,69,70,34"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,229,122,256"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="66,182,66,214,61,214,61,182"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="105,109,82,143,78,140,101,106"/>
+<area shape="rect" id="Node000001" title="Main program body." alt="" coords="242,5,303,32"/>
+<area shape="rect" id="Node000002" href="$main_8h.html" title=": Header for main.c file." alt="" coords="176,229,236,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,35,229,55,199,83,170,117,148,155,146,172,152,189,177,218,173,221,147,191,141,173,143,154,166,114,195,79,226,51,252,30"/>
+<area shape="rect" id="Node000007" href="$odrive__wrapper_8h.html" title=" " alt="" coords="158,155,275,181"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="270,33,229,141,224,139,265,32"/>
+<area shape="rect" id="Node000008" href="$_i_m_u__driver_8h.html" title=" " alt="" coords="350,155,443,181"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="304,30,338,50,369,78,386,108,395,139,390,140,381,110,365,82,335,54,301,35"/>
+<area shape="rect" id="Node000009" href="$controller_8h.html" title=" " alt="" coords="270,80,355,107"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="282,31,301,65,296,68,277,34"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="467,155,529,181"/>
+<area shape="poly" id="edge17_Node000001_Node000010" title=" " alt="" coords="303,30,347,51,394,78,438,110,476,142,472,147,435,115,391,82,344,56,301,35"/>
+<area shape="rect" id="Node000011" href="$rc__input_8h.html" title=" " alt="" coords="5,80,84,107"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="243,32,100,77,98,72,241,27"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="338,304,455,331"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="237,253,350,296,348,301,236,258"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="78,304,139,331"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="190,259,139,297,136,293,187,254"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="163,304,227,331"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="207,257,202,289,197,288,201,256"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="252,304,315,331"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="221,255,261,291,257,295,217,258"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="217,182,213,214,207,214,212,181"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="399,182,399,288,394,288,394,182"/>
+<area shape="poly" id="edge11_Node000009_Node000002" title=" " alt="" coords="314,107,307,143,300,164,289,183,269,205,245,223,242,219,265,201,285,180,295,161,302,141,309,106"/>
+<area shape="poly" id="edge13_Node000009_Node000007" title=" " alt="" coords="297,109,247,147,244,143,294,105"/>
+<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="329,105,372,142,369,146,325,109"/>
+<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="346,105,454,147,452,152,344,110"/>
+<area shape="poly" id="edge16_Node000011_Node000002" title=" " alt="" coords="53,106,73,141,104,179,133,202,164,220,162,225,130,206,100,183,68,144,48,108"/>
 </map>

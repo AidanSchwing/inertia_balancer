@@ -1,2 +1,2 @@
-../Core/Src/controller.c:23:6:update_control	24	static
-../Core/Src/controller.c:40:9:calculate_IMU_Angle	112	static
+../Core/Src/controller.c:26:6:update_control	32	static
+../Core/Src/controller.c:57:9:calculate_IMU_Angle	112	static

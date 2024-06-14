@@ -105,6 +105,7 @@ $(function(){initNavTree('odrive__wrapper_8h.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">odrive_wrapper.h File Reference</div></div>
 </div><!--header-->
@@ -115,11 +116,17 @@ Include dependency graph for odrive_wrapper.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="odrive__wrapper_8h__incl.png" border="0" usemap="#aodrive__wrapper_8h" alt=""/></div>
 <map name="aodrive__wrapper_8h" id="aodrive__wrapper_8h">
-<area shape="rect" title=" " alt="" coords="5,5,123,32"/>
-<area shape="rect" href="main_8h.html" title=": Header for main.c file." alt="" coords="34,80,94,107"/>
-<area shape="poly" title=" " alt="" coords="67,33,67,64,61,64,61,33"/>
-<area shape="rect" title=" " alt="" coords="6,155,122,181"/>
-<area shape="poly" title=" " alt="" coords="67,107,67,139,61,139,61,107"/>
+<area shape="rect" title=" " alt="" coords="160,5,277,32"/>
+<area shape="rect" href="main_8h.html" title=": Header for main.c file." alt="" coords="188,80,248,107"/>
+<area shape="poly" title=" " alt="" coords="221,33,221,64,216,64,216,33"/>
+<area shape="rect" title=" " alt="" coords="5,155,122,181"/>
+<area shape="poly" title=" " alt="" coords="192,110,105,150,103,145,190,105"/>
+<area shape="rect" title=" " alt="" coords="145,155,206,181"/>
+<area shape="poly" title=" " alt="" coords="213,109,193,143,188,140,208,106"/>
+<area shape="rect" title=" " alt="" coords="230,155,294,181"/>
+<area shape="poly" title=" " alt="" coords="228,106,249,140,244,143,224,109"/>
+<area shape="rect" title=" " alt="" coords="319,155,382,181"/>
+<area shape="poly" title=" " alt="" coords="242,105,315,145,313,149,240,110"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -127,11 +134,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="odrive__wrapper_8h__dep__incl.png" border="0" usemap="#aodrive__wrapper_8hdep" alt=""/></div>
 <map name="aodrive__wrapper_8hdep" id="aodrive__wrapper_8hdep">
-<area shape="rect" title=" " alt="" coords="33,5,150,32"/>
-<area shape="rect" href="main_8c.html" title=": Main program body" alt="" coords="5,80,66,107"/>
-<area shape="poly" title=" " alt="" coords="75,46,47,81,43,78,70,43"/>
-<area shape="rect" href="odrive__wrapper_8c.html" title=" " alt="" coords="90,80,208,107"/>
-<area shape="poly" title=" " alt="" coords="113,43,141,78,137,81,109,46"/>
+<area shape="rect" title=" " alt="" coords="87,5,204,32"/>
+<area shape="rect" href="controller_8h.html" title=" " alt="" coords="23,80,108,107"/>
+<area shape="poly" title=" " alt="" coords="122,44,81,82,77,78,119,41"/>
+<area shape="rect" href="main_8c.html" title="Main program body." alt="" coords="115,155,176,181"/>
+<area shape="poly" title=" " alt="" coords="148,48,148,154,143,154,143,48"/>
+<area shape="rect" href="odrive__wrapper_8c.html" title="Provides functions for interfacing with an external ODrive controller." alt="" coords="183,80,300,107"/>
+<area shape="poly" title=" " alt="" coords="175,39,226,77,223,82,172,44"/>
+<area shape="rect" href="controller_8c.html" title="Provides functions relevant to system control." alt="" coords="5,155,91,181"/>
+<area shape="poly" title=" " alt="" coords="61,123,54,155,48,154,56,121"/>
+<area shape="poly" title=" " alt="" coords="92,115,133,152,130,156,89,119"/>
 </map>
 </div>
 </div>
@@ -142,36 +154,111 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structodrive__t.html">odrive_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a6b20d41d6252e9871430c242cb1a56e7" id="r_a6b20d41d6252e9871430c242cb1a56e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</a>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:a6b20d41d6252e9871430c242cb1a56e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a25d657b24b80292f58a570b02e7aa428" id="r_a25d657b24b80292f58a570b02e7aa428"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25d657b24b80292f58a570b02e7aa428">ODRIVE_Reboot</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p)</td></tr>
+<tr class="memdesc:a25d657b24b80292f58a570b02e7aa428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends ASCII command to reboot ODrive.  <br /></td></tr>
 <tr class="separator:a25d657b24b80292f58a570b02e7aa428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab13b958603fb943556b9a7c32fc95bac" id="r_ab13b958603fb943556b9a7c32fc95bac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab13b958603fb943556b9a7c32fc95bac">ODRIVE_ClearErrors</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p)</td></tr>
+<tr class="memdesc:ab13b958603fb943556b9a7c32fc95bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends ASCII command to clear errors on ODrive.  <br /></td></tr>
 <tr class="separator:ab13b958603fb943556b9a7c32fc95bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b3454ebe0e4fdd3a2a0dc64f72719c9" id="r_a7b3454ebe0e4fdd3a2a0dc64f72719c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b3454ebe0e4fdd3a2a0dc64f72719c9">ODRIVE_SetPosition</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p, int motor_number, float position, float velocity_lim, float torque_lim)</td></tr>
+<tr class="memdesc:a7b3454ebe0e4fdd3a2a0dc64f72719c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends ASCII command to send position setpoint to ODrive.  <br /></td></tr>
 <tr class="separator:a7b3454ebe0e4fdd3a2a0dc64f72719c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18367d959b193c49f6c7534cc7ab857f" id="r_a18367d959b193c49f6c7534cc7ab857f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18367d959b193c49f6c7534cc7ab857f">ODRIVE_SetPositionFF</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p, int motor_number, float position, float velocity_feedforward, float current_feedforward)</td></tr>
+<tr class="memdesc:a18367d959b193c49f6c7534cc7ab857f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends ASCII command to send position setpoint with feedforward ODrive.  <br /></td></tr>
 <tr class="separator:a18367d959b193c49f6c7534cc7ab857f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a31ea6c326e5a87a3f76245f099e158" id="r_a3a31ea6c326e5a87a3f76245f099e158"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a31ea6c326e5a87a3f76245f099e158">ODRIVE_SetVelocity</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p, int motor_number, float velocity, float torque_feedforward)</td></tr>
-<tr class="separator:a3a31ea6c326e5a87a3f76245f099e158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a896ffd1031a488a9f22fd92ff20bd384" id="r_a896ffd1031a488a9f22fd92ff20bd384"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a896ffd1031a488a9f22fd92ff20bd384">ODRIVE_SetVelocity</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p, int motor_number, float velocity)</td></tr>
+<tr class="memdesc:a896ffd1031a488a9f22fd92ff20bd384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends ASCII command to send velocity setpoint to ODrive.  <br /></td></tr>
+<tr class="separator:a896ffd1031a488a9f22fd92ff20bd384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fff222e9c4e938392faacf4cccd1925" id="r_a6fff222e9c4e938392faacf4cccd1925"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fff222e9c4e938392faacf4cccd1925">ODRIVE_SetTorque</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p, int motor_number, float torque)</td></tr>
+<tr class="memdesc:a6fff222e9c4e938392faacf4cccd1925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends ASCII command to send torque setpoint to ODrive.  <br /></td></tr>
 <tr class="separator:a6fff222e9c4e938392faacf4cccd1925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42dae01f885677084b5223cb8a259b66" id="r_a42dae01f885677084b5223cb8a259b66"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42dae01f885677084b5223cb8a259b66">ODRIVE_GetFeedback</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p, int motor_number)</td></tr>
+<tr class="memdesc:a42dae01f885677084b5223cb8a259b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends ASCII command to get current position and velocity from ODrive.  <br /></td></tr>
 <tr class="separator:a42dae01f885677084b5223cb8a259b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60cc06522e5b60f0383052c1f9cea4c5" id="r_a60cc06522e5b60f0383052c1f9cea4c5"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60cc06522e5b60f0383052c1f9cea4c5">ODRIVE_GetVBus</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p)</td></tr>
+<tr class="memdesc:a60cc06522e5b60f0383052c1f9cea4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends ASCII command to get VBUS voltage from ODrive.  <br /></td></tr>
 <tr class="separator:a60cc06522e5b60f0383052c1f9cea4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac7f31794321642f9aa5064b454f4799" id="r_aac7f31794321642f9aa5064b454f4799"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac7f31794321642f9aa5064b454f4799">ODRIVE_IsCalibrated</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p)</td></tr>
+<tr class="memdesc:aac7f31794321642f9aa5064b454f4799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends ASCII command to check calibrated status ODrive.  <br /></td></tr>
+<tr class="separator:aac7f31794321642f9aa5064b454f4799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ea52cd425986e041299100c9ce37564" id="r_a6ea52cd425986e041299100c9ce37564"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ea52cd425986e041299100c9ce37564">ODRIVE_WriteParam</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p, char param[])</td></tr>
+<tr class="memdesc:a6ea52cd425986e041299100c9ce37564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends ASCII command to ODrive.  <br /></td></tr>
 <tr class="separator:a6ea52cd425986e041299100c9ce37564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad14c9d5698a70cc0796f76190bdd1aa8" id="r_ad14c9d5698a70cc0796f76190bdd1aa8"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad14c9d5698a70cc0796f76190bdd1aa8">ODRIVE_ReadParam</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p, char param[])</td></tr>
+<tr class="memdesc:ad14c9d5698a70cc0796f76190bdd1aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives ASCII command from ODrive.  <br /></td></tr>
 <tr class="separator:ad14c9d5698a70cc0796f76190bdd1aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15c8c6e4f8fd6ae104fff6063561fd57" id="r_a15c8c6e4f8fd6ae104fff6063561fd57"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15c8c6e4f8fd6ae104fff6063561fd57">getReceivedString</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *P)</td></tr>
+<tr class="memdesc:a15c8c6e4f8fd6ae104fff6063561fd57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends ASCII command to reboot ODrive.  <br /></td></tr>
 <tr class="separator:a15c8c6e4f8fd6ae104fff6063561fd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6435b6238a1cb4ff3627f8736a86d72" id="r_ab6435b6238a1cb4ff3627f8736a86d72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6435b6238a1cb4ff3627f8736a86d72">start_receive_string</a> (<a class="el" href="structodrive__t.html">odrive_t</a> *p)</td></tr>
+<tr class="memdesc:ab6435b6238a1cb4ff3627f8736a86d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts receiving a new string via UART.  <br /></td></tr>
 <tr class="separator:ab6435b6238a1cb4ff3627f8736a86d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38cf8e45ebb6bf5c5afcfde2e0df6a89" id="r_a38cf8e45ebb6bf5c5afcfde2e0df6a89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38cf8e45ebb6bf5c5afcfde2e0df6a89">ODRIVE_Receive_Callback</a> (UART_HandleTypeDef *huart, <a class="el" href="structodrive__t.html">odrive_t</a> *p)</td></tr>
+<tr class="memdesc:a38cf8e45ebb6bf5c5afcfde2e0df6a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to properly receive strings via UART.  <br /></td></tr>
 <tr class="separator:a38cf8e45ebb6bf5c5afcfde2e0df6a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79567b84e267d7523601be2949e4d2c" id="r_ac79567b84e267d7523601be2949e4d2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac79567b84e267d7523601be2949e4d2c">extractFloats</a> (uint8_t *message, float *pos, float *vel)</td></tr>
+<tr class="memdesc:ac79567b84e267d7523601be2949e4d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts floats from a given string of two floats in ASCII protocol format.  <br /></td></tr>
+<tr class="separator:ac79567b84e267d7523601be2949e4d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a6b20d41d6252e9871430c242cb1a56e7" name="a6b20d41d6252e9871430c242cb1a56e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b20d41d6252e9871430c242cb1a56e7">&#9670;&#160;</a></span>BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUFFER_SIZE&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ac79567b84e267d7523601be2949e4d2c" name="ac79567b84e267d7523601be2949e4d2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac79567b84e267d7523601be2949e4d2c">&#9670;&#160;</a></span>extractFloats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void extractFloats </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>message</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts floats from a given string of two floats in ASCII protocol format. </p>
+<p>For use in converting feedback message. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Pointer to the received message. </td></tr>
+    <tr><td class="paramname">x</td><td>Pointer to a first float. </td></tr>
+    <tr><td class="paramname">y</td><td>Pointer to a second float. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a15c8c6e4f8fd6ae104fff6063561fd57" name="a15c8c6e4f8fd6ae104fff6063561fd57"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15c8c6e4f8fd6ae104fff6063561fd57">&#9670;&#160;</a></span>getReceivedString()</h2>
 
@@ -181,11 +268,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">uint8_t * getReceivedString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structodrive__t.html">odrive_t</a> *</td>          <td class="paramname"><span class="paramname"><em>P</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structodrive__t.html">odrive_t</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sends ASCII command to reboot ODrive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -203,6 +298,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sends ASCII command to clear errors on ODrive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -225,6 +328,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sends ASCII command to get current position and velocity from ODrive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+    <tr><td class="paramname">motor_number</td><td>Motor number on ODrive. Typically 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a60cc06522e5b60f0383052c1f9cea4c5" name="a60cc06522e5b60f0383052c1f9cea4c5"></a>
@@ -241,6 +353,39 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sends ASCII command to get VBUS voltage from ODrive. </p>
+<p>Used mainly as a test to see if we can send and receive UART commands. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac7f31794321642f9aa5064b454f4799" name="aac7f31794321642f9aa5064b454f4799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac7f31794321642f9aa5064b454f4799">&#9670;&#160;</a></span>ODRIVE_IsCalibrated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t * ODRIVE_IsCalibrated </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structodrive__t.html">odrive_t</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends ASCII command to check calibrated status ODrive. </p>
+<p>I think this one is broken. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -263,6 +408,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Receives ASCII command from ODrive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+    <tr><td class="paramname">param[]</td><td>Parameter to read from, in string format. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a25d657b24b80292f58a570b02e7aa428" name="a25d657b24b80292f58a570b02e7aa428"></a>
@@ -279,6 +433,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sends ASCII command to reboot ODrive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -300,6 +462,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Callback to properly receive strings via UART. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+    <tr><td class="paramname">huart</td><td>UART object that is compared to ODrive object to confirm they are the same. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -337,6 +508,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sends ASCII command to send position setpoint to ODrive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+    <tr><td class="paramname">motor_number</td><td>Motor number on ODrive. Typically 0. </td></tr>
+    <tr><td class="paramname">position</td><td>Position setpoint </td></tr>
+    <tr><td class="paramname">velocity_lim</td><td>Velocity limit </td></tr>
+    <tr><td class="paramname">torque_lim</td><td>Torque limit </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a18367d959b193c49f6c7534cc7ab857f" name="a18367d959b193c49f6c7534cc7ab857f"></a>
@@ -373,6 +556,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sends ASCII command to send position setpoint with feedforward ODrive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+    <tr><td class="paramname">motor_number</td><td>Motor number on ODrive. Typically 0. </td></tr>
+    <tr><td class="paramname">position</td><td>Position setpoint </td></tr>
+    <tr><td class="paramname">velocity_feedforward</td><td>Velocity feedforward value. </td></tr>
+    <tr><td class="paramname">current_feedforward</td><td>Current feedforward value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a6fff222e9c4e938392faacf4cccd1925" name="a6fff222e9c4e938392faacf4cccd1925"></a>
@@ -399,10 +594,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sends ASCII command to send torque setpoint to ODrive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+    <tr><td class="paramname">motor_number</td><td>Motor number on ODrive. Typically 0. </td></tr>
+    <tr><td class="paramname">torque</td><td>Torque setpoint. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a3a31ea6c326e5a87a3f76245f099e158" name="a3a31ea6c326e5a87a3f76245f099e158"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a31ea6c326e5a87a3f76245f099e158">&#9670;&#160;</a></span>ODRIVE_SetVelocity()</h2>
+<a id="a896ffd1031a488a9f22fd92ff20bd384" name="a896ffd1031a488a9f22fd92ff20bd384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a896ffd1031a488a9f22fd92ff20bd384">&#9670;&#160;</a></span>ODRIVE_SetVelocity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,15 +625,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>velocity</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>torque_feedforward</em></span>&#160;)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>velocity</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sends ASCII command to send velocity setpoint to ODrive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+    <tr><td class="paramname">motor_number</td><td>Motor number on ODrive. Typically 0. </td></tr>
+    <tr><td class="paramname">velocity</td><td>Velocity setpoint. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -451,6 +661,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sends ASCII command to ODrive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+    <tr><td class="paramname">param[]</td><td>Parameter to write to, in string format. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ab6435b6238a1cb4ff3627f8736a86d72" name="ab6435b6238a1cb4ff3627f8736a86d72"></a>
@@ -467,6 +686,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Starts receiving a new string via UART. </p>
+<p>Sets the buffer index to zero and sets up HAL_UART_Receive correctly for the ODrive object. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to an ODrive object. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

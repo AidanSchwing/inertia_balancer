@@ -32,7 +32,17 @@ void \mbox{\hyperlink{stm32f4xx__it_8h_adbdfb05858cc36fc520974df37ec3cb0}{Debug\
 void \mbox{\hyperlink{stm32f4xx__it_8h_a6303e1f258cbdc1f970ce579cc015623}{Pend\+SV\+\_\+\+Handler}} (void)
 \begin{DoxyCompactList}\small\item\em This function handles Pendable request for system service. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{stm32f4xx__it_8h_ab5e09814056d617c521549e542639b7e}{Sys\+Tick\+\_\+\+Handler}} (void)
-\begin{DoxyCompactList}\small\item\em This function handles System tick timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function handles System tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f4xx__it_8h_ad1fd361bc5ad89facee67c76d1ff8dc0}{TIM1\+\_\+\+UP\+\_\+\+TIM10\+\_\+\+IRQHandler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles TIM1 update interrupt and TIM10 global interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f4xx__it_8h_a7133f3f78767503641d307386e68bd28}{TIM4\+\_\+\+IRQHandler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles TIM4 global interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f4xx__it_8h_a0ca6fd0e6f77921dd1123539857ba0a8}{USART2\+\_\+\+IRQHandler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles USART2 global interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f4xx__it_8h_a5e66446caf21dd90191dc07a13ce2378}{TIM5\+\_\+\+IRQHandler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles TIM5 global interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f4xx__it_8h_a12c827857d907ad0cccd586fd934d446}{USART6\+\_\+\+IRQHandler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles USART6 global interrupt. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -126,6 +136,36 @@ void Sys\+Tick\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{Dox
 
 This function handles System tick timer. 
 
+\Hypertarget{stm32f4xx__it_8h_ad1fd361bc5ad89facee67c76d1ff8dc0}\index{stm32f4xx\_it.h@{stm32f4xx\_it.h}!TIM1\_UP\_TIM10\_IRQHandler@{TIM1\_UP\_TIM10\_IRQHandler}}
+\index{TIM1\_UP\_TIM10\_IRQHandler@{TIM1\_UP\_TIM10\_IRQHandler}!stm32f4xx\_it.h@{stm32f4xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{TIM1\_UP\_TIM10\_IRQHandler()}{TIM1\_UP\_TIM10\_IRQHandler()}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8h_ad1fd361bc5ad89facee67c76d1ff8dc0} 
+void TIM1\+\_\+\+UP\+\_\+\+TIM10\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+This function handles TIM1 update interrupt and TIM10 global interrupt. 
+
+\Hypertarget{stm32f4xx__it_8h_a7133f3f78767503641d307386e68bd28}\index{stm32f4xx\_it.h@{stm32f4xx\_it.h}!TIM4\_IRQHandler@{TIM4\_IRQHandler}}
+\index{TIM4\_IRQHandler@{TIM4\_IRQHandler}!stm32f4xx\_it.h@{stm32f4xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{TIM4\_IRQHandler()}{TIM4\_IRQHandler()}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8h_a7133f3f78767503641d307386e68bd28} 
+void TIM4\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+This function handles TIM4 global interrupt. 
+
+\Hypertarget{stm32f4xx__it_8h_a5e66446caf21dd90191dc07a13ce2378}\index{stm32f4xx\_it.h@{stm32f4xx\_it.h}!TIM5\_IRQHandler@{TIM5\_IRQHandler}}
+\index{TIM5\_IRQHandler@{TIM5\_IRQHandler}!stm32f4xx\_it.h@{stm32f4xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{TIM5\_IRQHandler()}{TIM5\_IRQHandler()}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8h_a5e66446caf21dd90191dc07a13ce2378} 
+void TIM5\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+This function handles TIM5 global interrupt. 
+
 \Hypertarget{stm32f4xx__it_8h_a1d98923de2ed6b7309b66f9ba2971647}\index{stm32f4xx\_it.h@{stm32f4xx\_it.h}!UsageFault\_Handler@{UsageFault\_Handler}}
 \index{UsageFault\_Handler@{UsageFault\_Handler}!stm32f4xx\_it.h@{stm32f4xx\_it.h}}
 \doxysubsubsection{\texorpdfstring{UsageFault\_Handler()}{UsageFault\_Handler()}}
@@ -135,4 +175,24 @@ void Usage\+Fault\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{
 
 
 This function handles Undefined instruction or illegal state. 
+
+\Hypertarget{stm32f4xx__it_8h_a0ca6fd0e6f77921dd1123539857ba0a8}\index{stm32f4xx\_it.h@{stm32f4xx\_it.h}!USART2\_IRQHandler@{USART2\_IRQHandler}}
+\index{USART2\_IRQHandler@{USART2\_IRQHandler}!stm32f4xx\_it.h@{stm32f4xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{USART2\_IRQHandler()}{USART2\_IRQHandler()}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8h_a0ca6fd0e6f77921dd1123539857ba0a8} 
+void USART2\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+This function handles USART2 global interrupt. 
+
+\Hypertarget{stm32f4xx__it_8h_a12c827857d907ad0cccd586fd934d446}\index{stm32f4xx\_it.h@{stm32f4xx\_it.h}!USART6\_IRQHandler@{USART6\_IRQHandler}}
+\index{USART6\_IRQHandler@{USART6\_IRQHandler}!stm32f4xx\_it.h@{stm32f4xx\_it.h}}
+\doxysubsubsection{\texorpdfstring{USART6\_IRQHandler()}{USART6\_IRQHandler()}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8h_a12c827857d907ad0cccd586fd934d446} 
+void USART6\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+This function handles USART6 global interrupt. 
 

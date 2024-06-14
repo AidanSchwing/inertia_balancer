@@ -5,14 +5,14 @@ Include dependency graph for odrive\+\_\+wrapper.\+h\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=168pt]{odrive__wrapper_8h__incl}
+\includegraphics[width=350pt]{odrive__wrapper_8h__incl}
 \end{center}
 \end{figure}
 This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=232pt]{odrive__wrapper_8h__dep__incl}
+\includegraphics[width=301pt]{odrive__wrapper_8h__dep__incl}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Data Structures}
@@ -20,113 +20,314 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \item 
 struct \mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}}
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{odrive__wrapper_8h_a6b20d41d6252e9871430c242cb1a56e7}{BUFFER\+\_\+\+SIZE}}~50
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{odrive__wrapper_8h_a25d657b24b80292f58a570b02e7aa428}{ODRIVE\+\_\+\+Reboot}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends ASCII command to reboot ODrive. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{odrive__wrapper_8h_ab13b958603fb943556b9a7c32fc95bac}{ODRIVE\+\_\+\+Clear\+Errors}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends ASCII command to clear errors on ODrive. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{odrive__wrapper_8h_a7b3454ebe0e4fdd3a2a0dc64f72719c9}{ODRIVE\+\_\+\+Set\+Position}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p, int motor\+\_\+number, float position, float velocity\+\_\+lim, float torque\+\_\+lim)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends ASCII command to send position setpoint to ODrive. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{odrive__wrapper_8h_a18367d959b193c49f6c7534cc7ab857f}{ODRIVE\+\_\+\+Set\+Position\+FF}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p, int motor\+\_\+number, float position, float velocity\+\_\+feedforward, float current\+\_\+feedforward)
-\item 
-void \mbox{\hyperlink{odrive__wrapper_8h_a3a31ea6c326e5a87a3f76245f099e158}{ODRIVE\+\_\+\+Set\+Velocity}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p, int motor\+\_\+number, float velocity, float torque\+\_\+feedforward)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends ASCII command to send position setpoint with feedforward ODrive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{odrive__wrapper_8h_a896ffd1031a488a9f22fd92ff20bd384}{ODRIVE\+\_\+\+Set\+Velocity}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p, int motor\+\_\+number, float velocity)
+\begin{DoxyCompactList}\small\item\em Sends ASCII command to send velocity setpoint to ODrive. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{odrive__wrapper_8h_a6fff222e9c4e938392faacf4cccd1925}{ODRIVE\+\_\+\+Set\+Torque}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p, int motor\+\_\+number, float torque)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends ASCII command to send torque setpoint to ODrive. \end{DoxyCompactList}\item 
 uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{odrive__wrapper_8h_a42dae01f885677084b5223cb8a259b66}{ODRIVE\+\_\+\+Get\+Feedback}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p, int motor\+\_\+number)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends ASCII command to get current position and velocity from ODrive. \end{DoxyCompactList}\item 
 uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{odrive__wrapper_8h_a60cc06522e5b60f0383052c1f9cea4c5}{ODRIVE\+\_\+\+Get\+VBus}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends ASCII command to get VBUS voltage from ODrive. \end{DoxyCompactList}\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{odrive__wrapper_8h_aac7f31794321642f9aa5064b454f4799}{ODRIVE\+\_\+\+Is\+Calibrated}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Sends ASCII command to check calibrated status ODrive. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{odrive__wrapper_8h_a6ea52cd425986e041299100c9ce37564}{ODRIVE\+\_\+\+Write\+Param}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p, char param\mbox{[}$\,$\mbox{]})
-\item 
+\begin{DoxyCompactList}\small\item\em Sends ASCII command to ODrive. \end{DoxyCompactList}\item 
 uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{odrive__wrapper_8h_ad14c9d5698a70cc0796f76190bdd1aa8}{ODRIVE\+\_\+\+Read\+Param}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p, char param\mbox{[}$\,$\mbox{]})
-\item 
+\begin{DoxyCompactList}\small\item\em Receives ASCII command from ODrive. \end{DoxyCompactList}\item 
 uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{odrive__wrapper_8h_a15c8c6e4f8fd6ae104fff6063561fd57}{get\+Received\+String}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}P)
-\item 
+\begin{DoxyCompactList}\small\item\em Sends ASCII command to reboot ODrive. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{odrive__wrapper_8h_ab6435b6238a1cb4ff3627f8736a86d72}{start\+\_\+receive\+\_\+string}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p)
-\item 
+\begin{DoxyCompactList}\small\item\em Starts receiving a new string via UART. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{odrive__wrapper_8h_a38cf8e45ebb6bf5c5afcfde2e0df6a89}{ODRIVE\+\_\+\+Receive\+\_\+\+Callback}} (UART\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}huart, \mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Callback to properly receive strings via UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{odrive__wrapper_8h_ac79567b84e267d7523601be2949e4d2c}{extract\+Floats}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}message, float \texorpdfstring{$\ast$}{*}pos, float \texorpdfstring{$\ast$}{*}vel)
+\begin{DoxyCompactList}\small\item\em Extracts floats from a given string of two floats in ASCII protocol format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{odrive__wrapper_8h_a6b20d41d6252e9871430c242cb1a56e7}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!BUFFER\_SIZE@{BUFFER\_SIZE}}
+\index{BUFFER\_SIZE@{BUFFER\_SIZE}!odrive\_wrapper.h@{odrive\_wrapper.h}}
+\doxysubsubsection{\texorpdfstring{BUFFER\_SIZE}{BUFFER\_SIZE}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8h_a6b20d41d6252e9871430c242cb1a56e7} 
+\#define BUFFER\+\_\+\+SIZE~50}
+
 
 
 \doxysubsection{Function Documentation}
+\Hypertarget{odrive__wrapper_8h_ac79567b84e267d7523601be2949e4d2c}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!extractFloats@{extractFloats}}
+\index{extractFloats@{extractFloats}!odrive\_wrapper.h@{odrive\_wrapper.h}}
+\doxysubsubsection{\texorpdfstring{extractFloats()}{extractFloats()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8h_ac79567b84e267d7523601be2949e4d2c} 
+void extract\+Floats (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{message}{, }\item[{float \texorpdfstring{$\ast$}{*}}]{x}{, }\item[{float \texorpdfstring{$\ast$}{*}}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Extracts floats from a given string of two floats in ASCII protocol format. 
+
+For use in converting feedback message. 
+\begin{DoxyParams}{Parameters}
+{\em message} & Pointer to the received message. \\
+\hline
+{\em x} & Pointer to a first float. \\
+\hline
+{\em y} & Pointer to a second float. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{odrive__wrapper_8h_a15c8c6e4f8fd6ae104fff6063561fd57}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!getReceivedString@{getReceivedString}}
 \index{getReceivedString@{getReceivedString}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{getReceivedString()}{getReceivedString()}}
 {\footnotesize\ttfamily \label{odrive__wrapper_8h_a15c8c6e4f8fd6ae104fff6063561fd57} 
-uint8\+\_\+t \texorpdfstring{$\ast$}{*} get\+Received\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{P}{}\end{DoxyParamCaption})}
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} get\+Received\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
 
+
+
+Sends ASCII command to reboot ODrive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{odrive__wrapper_8h_ab13b958603fb943556b9a7c32fc95bac}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_ClearErrors@{ODRIVE\_ClearErrors}}
 \index{ODRIVE\_ClearErrors@{ODRIVE\_ClearErrors}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{ODRIVE\_ClearErrors()}{ODRIVE\_ClearErrors()}}
 {\footnotesize\ttfamily \label{odrive__wrapper_8h_ab13b958603fb943556b9a7c32fc95bac} 
 void ODRIVE\+\_\+\+Clear\+Errors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
 
+
+
+Sends ASCII command to clear errors on ODrive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{odrive__wrapper_8h_a42dae01f885677084b5223cb8a259b66}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_GetFeedback@{ODRIVE\_GetFeedback}}
 \index{ODRIVE\_GetFeedback@{ODRIVE\_GetFeedback}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{ODRIVE\_GetFeedback()}{ODRIVE\_GetFeedback()}}
 {\footnotesize\ttfamily \label{odrive__wrapper_8h_a42dae01f885677084b5223cb8a259b66} 
 uint8\+\_\+t \texorpdfstring{$\ast$}{*} ODRIVE\+\_\+\+Get\+Feedback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{int}]{motor\+\_\+number}{}\end{DoxyParamCaption})}
 
+
+
+Sends ASCII command to get current position and velocity from ODrive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+{\em motor\+\_\+number} & Motor number on ODrive. Typically 0. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{odrive__wrapper_8h_a60cc06522e5b60f0383052c1f9cea4c5}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_GetVBus@{ODRIVE\_GetVBus}}
 \index{ODRIVE\_GetVBus@{ODRIVE\_GetVBus}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{ODRIVE\_GetVBus()}{ODRIVE\_GetVBus()}}
 {\footnotesize\ttfamily \label{odrive__wrapper_8h_a60cc06522e5b60f0383052c1f9cea4c5} 
 uint8\+\_\+t \texorpdfstring{$\ast$}{*} ODRIVE\+\_\+\+Get\+VBus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
 
+
+
+Sends ASCII command to get VBUS voltage from ODrive. 
+
+Used mainly as a test to see if we can send and receive UART commands. 
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{odrive__wrapper_8h_aac7f31794321642f9aa5064b454f4799}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_IsCalibrated@{ODRIVE\_IsCalibrated}}
+\index{ODRIVE\_IsCalibrated@{ODRIVE\_IsCalibrated}!odrive\_wrapper.h@{odrive\_wrapper.h}}
+\doxysubsubsection{\texorpdfstring{ODRIVE\_IsCalibrated()}{ODRIVE\_IsCalibrated()}}
+{\footnotesize\ttfamily \label{odrive__wrapper_8h_aac7f31794321642f9aa5064b454f4799} 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} ODRIVE\+\_\+\+Is\+Calibrated (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+
+
+Sends ASCII command to check calibrated status ODrive. 
+
+I think this one is broken. 
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{odrive__wrapper_8h_ad14c9d5698a70cc0796f76190bdd1aa8}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_ReadParam@{ODRIVE\_ReadParam}}
 \index{ODRIVE\_ReadParam@{ODRIVE\_ReadParam}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{ODRIVE\_ReadParam()}{ODRIVE\_ReadParam()}}
 {\footnotesize\ttfamily \label{odrive__wrapper_8h_ad14c9d5698a70cc0796f76190bdd1aa8} 
 uint8\+\_\+t \texorpdfstring{$\ast$}{*} ODRIVE\+\_\+\+Read\+Param (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{char}]{param}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
 
+
+
+Receives ASCII command from ODrive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+{\em param\mbox{[}$\,$\mbox{]}} & Parameter to read from, in string format. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{odrive__wrapper_8h_a25d657b24b80292f58a570b02e7aa428}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_Reboot@{ODRIVE\_Reboot}}
 \index{ODRIVE\_Reboot@{ODRIVE\_Reboot}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{ODRIVE\_Reboot()}{ODRIVE\_Reboot()}}
 {\footnotesize\ttfamily \label{odrive__wrapper_8h_a25d657b24b80292f58a570b02e7aa428} 
 void ODRIVE\+\_\+\+Reboot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
 
+
+
+Sends ASCII command to reboot ODrive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{odrive__wrapper_8h_a38cf8e45ebb6bf5c5afcfde2e0df6a89}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_Receive\_Callback@{ODRIVE\_Receive\_Callback}}
 \index{ODRIVE\_Receive\_Callback@{ODRIVE\_Receive\_Callback}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{ODRIVE\_Receive\_Callback()}{ODRIVE\_Receive\_Callback()}}
 {\footnotesize\ttfamily \label{odrive__wrapper_8h_a38cf8e45ebb6bf5c5afcfde2e0df6a89} 
 void ODRIVE\+\_\+\+Receive\+\_\+\+Callback (\begin{DoxyParamCaption}\item[{UART\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}}]{huart}{, }\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
 
+
+
+Callback to properly receive strings via UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+{\em huart} & UART object that is compared to ODrive object to confirm they are the same. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{odrive__wrapper_8h_a7b3454ebe0e4fdd3a2a0dc64f72719c9}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_SetPosition@{ODRIVE\_SetPosition}}
 \index{ODRIVE\_SetPosition@{ODRIVE\_SetPosition}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{ODRIVE\_SetPosition()}{ODRIVE\_SetPosition()}}
 {\footnotesize\ttfamily \label{odrive__wrapper_8h_a7b3454ebe0e4fdd3a2a0dc64f72719c9} 
 void ODRIVE\+\_\+\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{int}]{motor\+\_\+number}{, }\item[{float}]{position}{, }\item[{float}]{velocity\+\_\+lim}{, }\item[{float}]{torque\+\_\+lim}{}\end{DoxyParamCaption})}
 
+
+
+Sends ASCII command to send position setpoint to ODrive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+{\em motor\+\_\+number} & Motor number on ODrive. Typically 0. \\
+\hline
+{\em position} & Position setpoint \\
+\hline
+{\em velocity\+\_\+lim} & Velocity limit \\
+\hline
+{\em torque\+\_\+lim} & Torque limit \\
+\hline
+\end{DoxyParams}
 \Hypertarget{odrive__wrapper_8h_a18367d959b193c49f6c7534cc7ab857f}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_SetPositionFF@{ODRIVE\_SetPositionFF}}
 \index{ODRIVE\_SetPositionFF@{ODRIVE\_SetPositionFF}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{ODRIVE\_SetPositionFF()}{ODRIVE\_SetPositionFF()}}
 {\footnotesize\ttfamily \label{odrive__wrapper_8h_a18367d959b193c49f6c7534cc7ab857f} 
 void ODRIVE\+\_\+\+Set\+Position\+FF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{int}]{motor\+\_\+number}{, }\item[{float}]{position}{, }\item[{float}]{velocity\+\_\+feedforward}{, }\item[{float}]{current\+\_\+feedforward}{}\end{DoxyParamCaption})}
 
+
+
+Sends ASCII command to send position setpoint with feedforward ODrive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+{\em motor\+\_\+number} & Motor number on ODrive. Typically 0. \\
+\hline
+{\em position} & Position setpoint \\
+\hline
+{\em velocity\+\_\+feedforward} & Velocity feedforward value. \\
+\hline
+{\em current\+\_\+feedforward} & Current feedforward value. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{odrive__wrapper_8h_a6fff222e9c4e938392faacf4cccd1925}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_SetTorque@{ODRIVE\_SetTorque}}
 \index{ODRIVE\_SetTorque@{ODRIVE\_SetTorque}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{ODRIVE\_SetTorque()}{ODRIVE\_SetTorque()}}
 {\footnotesize\ttfamily \label{odrive__wrapper_8h_a6fff222e9c4e938392faacf4cccd1925} 
 void ODRIVE\+\_\+\+Set\+Torque (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{int}]{motor\+\_\+number}{, }\item[{float}]{torque}{}\end{DoxyParamCaption})}
 
-\Hypertarget{odrive__wrapper_8h_a3a31ea6c326e5a87a3f76245f099e158}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_SetVelocity@{ODRIVE\_SetVelocity}}
+
+
+Sends ASCII command to send torque setpoint to ODrive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+{\em motor\+\_\+number} & Motor number on ODrive. Typically 0. \\
+\hline
+{\em torque} & Torque setpoint. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{odrive__wrapper_8h_a896ffd1031a488a9f22fd92ff20bd384}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_SetVelocity@{ODRIVE\_SetVelocity}}
 \index{ODRIVE\_SetVelocity@{ODRIVE\_SetVelocity}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{ODRIVE\_SetVelocity()}{ODRIVE\_SetVelocity()}}
-{\footnotesize\ttfamily \label{odrive__wrapper_8h_a3a31ea6c326e5a87a3f76245f099e158} 
-void ODRIVE\+\_\+\+Set\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{int}]{motor\+\_\+number}{, }\item[{float}]{velocity}{, }\item[{float}]{torque\+\_\+feedforward}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{odrive__wrapper_8h_a896ffd1031a488a9f22fd92ff20bd384} 
+void ODRIVE\+\_\+\+Set\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{int}]{motor\+\_\+number}{, }\item[{float}]{velocity}{}\end{DoxyParamCaption})}
 
+
+
+Sends ASCII command to send velocity setpoint to ODrive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+{\em motor\+\_\+number} & Motor number on ODrive. Typically 0. \\
+\hline
+{\em velocity} & Velocity setpoint. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{odrive__wrapper_8h_a6ea52cd425986e041299100c9ce37564}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!ODRIVE\_WriteParam@{ODRIVE\_WriteParam}}
 \index{ODRIVE\_WriteParam@{ODRIVE\_WriteParam}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{ODRIVE\_WriteParam()}{ODRIVE\_WriteParam()}}
 {\footnotesize\ttfamily \label{odrive__wrapper_8h_a6ea52cd425986e041299100c9ce37564} 
 void ODRIVE\+\_\+\+Write\+Param (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{char}]{param}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
 
+
+
+Sends ASCII command to ODrive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+{\em param\mbox{[}$\,$\mbox{]}} & Parameter to write to, in string format. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{odrive__wrapper_8h_ab6435b6238a1cb4ff3627f8736a86d72}\index{odrive\_wrapper.h@{odrive\_wrapper.h}!start\_receive\_string@{start\_receive\_string}}
 \index{start\_receive\_string@{start\_receive\_string}!odrive\_wrapper.h@{odrive\_wrapper.h}}
 \doxysubsubsection{\texorpdfstring{start\_receive\_string()}{start\_receive\_string()}}
 {\footnotesize\ttfamily \label{odrive__wrapper_8h_ab6435b6238a1cb4ff3627f8736a86d72} 
 void start\+\_\+receive\+\_\+string (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
 
+
+
+Starts receiving a new string via UART. 
+
+Sets the buffer index to zero and sets up HAL\+\_\+\+UART\+\_\+\+Receive correctly for the ODrive object. 
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to an ODrive object. \\
+\hline
+\end{DoxyParams}

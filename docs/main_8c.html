@@ -110,23 +110,47 @@ $(function(){initNavTree('main_8c.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>: Main program body  
+<p>Main program body.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="odrive__wrapper_8h_source.html">odrive_wrapper.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_i_m_u__driver_8h_source.html">IMU_driver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="controller_8h_source.html">controller.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rc__input_8h_source.html">rc_input.h</a>&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c__incl.png" border="0" usemap="#amain_8c" alt=""/></div>
 <map name="amain_8c" id="amain_8c">
-<area shape="rect" title=": Main program body" alt="" coords="33,5,94,32"/>
-<area shape="rect" href="main_8h.html" title=": Header for main.c file." alt="" coords="33,155,94,181"/>
-<area shape="poly" title=" " alt="" coords="60,33,43,80,44,111,53,140,48,141,39,112,38,80,55,32"/>
-<area shape="rect" href="odrive__wrapper_8h.html" title=" " alt="" coords="53,80,170,107"/>
-<area shape="poly" title=" " alt="" coords="74,31,97,66,93,69,70,34"/>
-<area shape="rect" title=" " alt="" coords="5,229,122,256"/>
-<area shape="poly" title=" " alt="" coords="66,182,66,214,61,214,61,182"/>
-<area shape="poly" title=" " alt="" coords="105,109,82,143,78,140,101,106"/>
+<area shape="rect" title="Main program body." alt="" coords="242,5,303,32"/>
+<area shape="rect" href="main_8h.html" title=": Header for main.c file." alt="" coords="176,229,236,256"/>
+<area shape="poly" title=" " alt="" coords="255,35,229,55,199,83,170,117,148,155,146,172,152,189,177,218,173,221,147,191,141,173,143,154,166,114,195,79,226,51,252,30"/>
+<area shape="rect" href="odrive__wrapper_8h.html" title=" " alt="" coords="158,155,275,181"/>
+<area shape="poly" title=" " alt="" coords="270,33,229,141,224,139,265,32"/>
+<area shape="rect" href="_i_m_u__driver_8h.html" title=" " alt="" coords="350,155,443,181"/>
+<area shape="poly" title=" " alt="" coords="304,30,338,50,369,78,386,108,395,139,390,140,381,110,365,82,335,54,301,35"/>
+<area shape="rect" href="controller_8h.html" title=" " alt="" coords="270,80,355,107"/>
+<area shape="poly" title=" " alt="" coords="282,31,301,65,296,68,277,34"/>
+<area shape="rect" title=" " alt="" coords="467,155,529,181"/>
+<area shape="poly" title=" " alt="" coords="303,30,347,51,394,78,438,110,476,142,472,147,435,115,391,82,344,56,301,35"/>
+<area shape="rect" href="rc__input_8h.html" title=" " alt="" coords="5,80,84,107"/>
+<area shape="poly" title=" " alt="" coords="243,32,100,77,98,72,241,27"/>
+<area shape="rect" title=" " alt="" coords="338,304,455,331"/>
+<area shape="poly" title=" " alt="" coords="237,253,350,296,348,301,236,258"/>
+<area shape="rect" title=" " alt="" coords="78,304,139,331"/>
+<area shape="poly" title=" " alt="" coords="190,259,139,297,136,293,187,254"/>
+<area shape="rect" title=" " alt="" coords="163,304,227,331"/>
+<area shape="poly" title=" " alt="" coords="207,257,202,289,197,288,201,256"/>
+<area shape="rect" title=" " alt="" coords="252,304,315,331"/>
+<area shape="poly" title=" " alt="" coords="221,255,261,291,257,295,217,258"/>
+<area shape="poly" title=" " alt="" coords="217,182,213,214,207,214,212,181"/>
+<area shape="poly" title=" " alt="" coords="399,182,399,288,394,288,394,182"/>
+<area shape="poly" title=" " alt="" coords="314,107,307,143,300,164,289,183,269,205,245,223,242,219,265,201,285,180,295,161,302,141,309,106"/>
+<area shape="poly" title=" " alt="" coords="297,109,247,147,244,143,294,105"/>
+<area shape="poly" title=" " alt="" coords="329,105,372,142,369,146,325,109"/>
+<area shape="poly" title=" " alt="" coords="346,105,454,147,452,152,344,110"/>
+<area shape="poly" title=" " alt="" coords="53,106,73,141,104,179,133,202,164,220,162,225,130,206,100,183,68,144,48,108"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -140,22 +164,36 @@ Functions</h2></td></tr>
 <tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae494a9643f29b87d6d81e5264e60e57b" id="r_ae494a9643f29b87d6d81e5264e60e57b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae494a9643f29b87d6d81e5264e60e57b">HAL_UART_RxCpltCallback</a> (UART_HandleTypeDef *huart)</td></tr>
 <tr class="separator:ae494a9643f29b87d6d81e5264e60e57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3b0ad512a6e6c6157440b68d395eac" id="r_a8a3b0ad512a6e6c6157440b68d395eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a3b0ad512a6e6c6157440b68d395eac">HAL_TIM_PeriodElapsedCallback</a> (TIM_HandleTypeDef *htim)</td></tr>
+<tr class="separator:a8a3b0ad512a6e6c6157440b68d395eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1730ffe1e560465665eb47d9264826f9" id="r_a1730ffe1e560465665eb47d9264826f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a> (void)</td></tr>
 <tr class="memdesc:a1730ffe1e560465665eb47d9264826f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is executed in case of error occurrence.  <br /></td></tr>
 <tr class="separator:a1730ffe1e560465665eb47d9264826f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:af7b2c26e44dadaaa798a5c3d82914ba7" id="r_af7b2c26e44dadaaa798a5c3d82914ba7"><td class="memItemLeft" align="right" valign="top">I2C_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7b2c26e44dadaaa798a5c3d82914ba7">hi2c1</a></td></tr>
+<tr class="separator:af7b2c26e44dadaaa798a5c3d82914ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25fc663547539bc49fecc0011bd76ab5" id="r_a25fc663547539bc49fecc0011bd76ab5"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25fc663547539bc49fecc0011bd76ab5">htim1</a></td></tr>
 <tr class="separator:a25fc663547539bc49fecc0011bd76ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac3d2c59ee0e3bbae1b99529a154eb62" id="r_aac3d2c59ee0e3bbae1b99529a154eb62"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac3d2c59ee0e3bbae1b99529a154eb62">htim3</a></td></tr>
 <tr class="separator:aac3d2c59ee0e3bbae1b99529a154eb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cf715bef37f7e8ef385a30974a5f0d5" id="r_a2cf715bef37f7e8ef385a30974a5f0d5"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cf715bef37f7e8ef385a30974a5f0d5">huart1</a></td></tr>
-<tr class="separator:a2cf715bef37f7e8ef385a30974a5f0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85788cec5a97ee377e4ee2e74f026484" id="r_a85788cec5a97ee377e4ee2e74f026484"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85788cec5a97ee377e4ee2e74f026484">htim4</a></td></tr>
+<tr class="separator:a85788cec5a97ee377e4ee2e74f026484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefaeaaa3856ddddae7083b2d220fe4b" id="r_acefaeaaa3856ddddae7083b2d220fe4b"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a></td></tr>
+<tr class="separator:acefaeaaa3856ddddae7083b2d220fe4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f22f985c4f33318fdcd4cc996623bf4" id="r_a2f22f985c4f33318fdcd4cc996623bf4"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f22f985c4f33318fdcd4cc996623bf4">htim11</a></td></tr>
+<tr class="separator:a2f22f985c4f33318fdcd4cc996623bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9479c261d65eecedd3d9582f7f0f89c" id="r_aa9479c261d65eecedd3d9582f7f0f89c"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9479c261d65eecedd3d9582f7f0f89c">huart2</a></td></tr>
 <tr class="separator:aa9479c261d65eecedd3d9582f7f0f89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38905dda1d2fbff006c69db48eddba9d" id="r_a38905dda1d2fbff006c69db48eddba9d"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38905dda1d2fbff006c69db48eddba9d">huart6</a></td></tr>
+<tr class="separator:a38905dda1d2fbff006c69db48eddba9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad04fe84a2d499fe57651a80bf68f29de" id="r_ad04fe84a2d499fe57651a80bf68f29de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structodrive__t.html">odrive_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad04fe84a2d499fe57651a80bf68f29de">odrive</a></td></tr>
 <tr class="separator:ad04fe84a2d499fe57651a80bf68f29de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ba99daa490dd49340550bb6fe885ba" id="r_a83ba99daa490dd49340550bb6fe885ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structodrive__t.html">odrive_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83ba99daa490dd49340550bb6fe885ba">laptop</a></td></tr>
+<tr class="separator:a83ba99daa490dd49340550bb6fe885ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c7b65fcf7197ae90670cd87ae675e95" id="r_a7c7b65fcf7197ae90670cd87ae675e95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i_c_m__20948.html">ICM_20948</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c7b65fcf7197ae90670cd87ae675e95">IMU</a></td></tr>
+<tr class="separator:a7c7b65fcf7197ae90670cd87ae675e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7394d71a5b03e693a17bc6ea557b4d9" id="r_ad7394d71a5b03e693a17bc6ea557b4d9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7394d71a5b03e693a17bc6ea557b4d9">rxBuffer</a></td></tr>
 <tr class="separator:ad7394d71a5b03e693a17bc6ea557b4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f39e47fdf46ecf4822ca9875f6aacf3" id="r_a5f39e47fdf46ecf4822ca9875f6aacf3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f39e47fdf46ecf4822ca9875f6aacf3">rxIndex</a></td></tr>
@@ -166,9 +204,19 @@ Variables</h2></td></tr>
 <tr class="separator:a076a5923dcfdcf95d91a8e24981ba4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4d22e2e3395f74933e838aa8134e4a3" id="r_af4d22e2e3395f74933e838aa8134e4a3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4d22e2e3395f74933e838aa8134e4a3">transmitBuffer</a></td></tr>
 <tr class="separator:af4d22e2e3395f74933e838aa8134e4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa16784b155ba429ef87337ffe4c8ef2" id="r_afa16784b155ba429ef87337ffe4c8ef2"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa16784b155ba429ef87337ffe4c8ef2">IMU_rdy_flag</a> = 0</td></tr>
+<tr class="separator:afa16784b155ba429ef87337ffe4c8ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae01ced9358c32bbda093e7d210a62cb" id="r_aae01ced9358c32bbda093e7d210a62cb"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae01ced9358c32bbda093e7d210a62cb">LED_rdy_flag</a> = 0</td></tr>
+<tr class="separator:aae01ced9358c32bbda093e7d210a62cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81fff9d8317019d7b8b09b4221f16279" id="r_a81fff9d8317019d7b8b09b4221f16279"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81fff9d8317019d7b8b09b4221f16279">CTRL_rdy_flag</a> = 0</td></tr>
+<tr class="separator:a81fff9d8317019d7b8b09b4221f16279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e7dfdc468098a5f8415ff14d8f24c61" id="r_a8e7dfdc468098a5f8415ff14d8f24c61"><td class="memItemLeft" align="right" valign="top">volatile float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e7dfdc468098a5f8415ff14d8f24c61">real_pos</a> = 0</td></tr>
+<tr class="separator:a8e7dfdc468098a5f8415ff14d8f24c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac360703ec72b1bae53031421664e4bef" id="r_ac360703ec72b1bae53031421664e4bef"><td class="memItemLeft" align="right" valign="top">volatile float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac360703ec72b1bae53031421664e4bef">sys_vel</a> = 0</td></tr>
+<tr class="separator:ac360703ec72b1bae53031421664e4bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>: Main program body </p>
+<div class="textblock"><p>Main program body. </p>
 <dl class="section attention"><dt>Attention</dt><dd></dd></dl>
 <p>Copyright (c) 2024 STMicroelectronics. All rights reserved.</p>
 <p>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </p>
@@ -195,6 +243,23 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8a3b0ad512a6e6c6157440b68d395eac" name="a8a3b0ad512a6e6c6157440b68d395eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a3b0ad512a6e6c6157440b68d395eac">&#9670;&#160;</a></span>HAL_TIM_PeriodElapsedCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_TIM_PeriodElapsedCallback </td>
+          <td>(</td>
+          <td class="paramtype">TIM_HandleTypeDef *</td>          <td class="paramname"><span class="paramname"><em>htim</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -269,6 +334,34 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a81fff9d8317019d7b8b09b4221f16279" name="a81fff9d8317019d7b8b09b4221f16279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81fff9d8317019d7b8b09b4221f16279">&#9670;&#160;</a></span>CTRL_rdy_flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t CTRL_rdy_flag = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7b2c26e44dadaaa798a5c3d82914ba7" name="af7b2c26e44dadaaa798a5c3d82914ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b2c26e44dadaaa798a5c3d82914ba7">&#9670;&#160;</a></span>hi2c1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I2C_HandleTypeDef hi2c1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a25fc663547539bc49fecc0011bd76ab5" name="a25fc663547539bc49fecc0011bd76ab5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25fc663547539bc49fecc0011bd76ab5">&#9670;&#160;</a></span>htim1</h2>
 
@@ -277,6 +370,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">TIM_HandleTypeDef htim1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f22f985c4f33318fdcd4cc996623bf4" name="a2f22f985c4f33318fdcd4cc996623bf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f22f985c4f33318fdcd4cc996623bf4">&#9670;&#160;</a></span>htim11</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_HandleTypeDef htim11</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -297,14 +404,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2cf715bef37f7e8ef385a30974a5f0d5" name="a2cf715bef37f7e8ef385a30974a5f0d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cf715bef37f7e8ef385a30974a5f0d5">&#9670;&#160;</a></span>huart1</h2>
+<a id="a85788cec5a97ee377e4ee2e74f026484" name="a85788cec5a97ee377e4ee2e74f026484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85788cec5a97ee377e4ee2e74f026484">&#9670;&#160;</a></span>htim4</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">UART_HandleTypeDef huart1</td>
+          <td class="memname">TIM_HandleTypeDef htim4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acefaeaaa3856ddddae7083b2d220fe4b" name="acefaeaaa3856ddddae7083b2d220fe4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acefaeaaa3856ddddae7083b2d220fe4b">&#9670;&#160;</a></span>htim5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_HandleTypeDef htim5</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -325,6 +446,85 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a38905dda1d2fbff006c69db48eddba9d" name="a38905dda1d2fbff006c69db48eddba9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38905dda1d2fbff006c69db48eddba9d">&#9670;&#160;</a></span>huart6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UART_HandleTypeDef huart6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c7b65fcf7197ae90670cd87ae675e95" name="a7c7b65fcf7197ae90670cd87ae675e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c7b65fcf7197ae90670cd87ae675e95">&#9670;&#160;</a></span>IMU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_i_c_m__20948.html">ICM_20948</a> IMU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">={</div>
+<div class="line">        .hi2c = &amp;<a class="code hl_variable" href="#af7b2c26e44dadaaa798a5c3d82914ba7">hi2c1</a>,</div>
+<div class="line">        .huart = &amp;<a class="code hl_variable" href="#aa9479c261d65eecedd3d9582f7f0f89c">huart2</a> </div>
+<div class="line">}</div>
+<div class="ttc" id="amain_8c_html_aa9479c261d65eecedd3d9582f7f0f89c"><div class="ttname"><a href="#aa9479c261d65eecedd3d9582f7f0f89c">huart2</a></div><div class="ttdeci">UART_HandleTypeDef huart2</div><div class="ttdef"><b>Definition</b> main.c:54</div></div>
+<div class="ttc" id="amain_8c_html_af7b2c26e44dadaaa798a5c3d82914ba7"><div class="ttname"><a href="#af7b2c26e44dadaaa798a5c3d82914ba7">hi2c1</a></div><div class="ttdeci">I2C_HandleTypeDef hi2c1</div><div class="ttdef"><b>Definition</b> main.c:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afa16784b155ba429ef87337ffe4c8ef2" name="afa16784b155ba429ef87337ffe4c8ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa16784b155ba429ef87337ffe4c8ef2">&#9670;&#160;</a></span>IMU_rdy_flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t IMU_rdy_flag = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83ba99daa490dd49340550bb6fe885ba" name="a83ba99daa490dd49340550bb6fe885ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83ba99daa490dd49340550bb6fe885ba">&#9670;&#160;</a></span>laptop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structodrive__t.html">odrive_t</a> laptop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">          .huart = &amp;<a class="code hl_variable" href="#aa9479c261d65eecedd3d9582f7f0f89c">huart2</a></div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aae01ced9358c32bbda093e7d210a62cb" name="aae01ced9358c32bbda093e7d210a62cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae01ced9358c32bbda093e7d210a62cb">&#9670;&#160;</a></span>LED_rdy_flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t LED_rdy_flag = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad04fe84a2d499fe57651a80bf68f29de" name="ad04fe84a2d499fe57651a80bf68f29de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad04fe84a2d499fe57651a80bf68f29de">&#9670;&#160;</a></span>odrive</h2>
 
@@ -337,11 +537,24 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">          </div>
-<div class="line">          .huart = &amp;<a class="code hl_variable" href="#a2cf715bef37f7e8ef385a30974a5f0d5">huart1</a></div>
+<div class="line">          .huart = &amp;<a class="code hl_variable" href="#a38905dda1d2fbff006c69db48eddba9d">huart6</a></div>
 <div class="line">}</div>
-<div class="ttc" id="amain_8c_html_a2cf715bef37f7e8ef385a30974a5f0d5"><div class="ttname"><a href="#a2cf715bef37f7e8ef385a30974a5f0d5">huart1</a></div><div class="ttdeci">UART_HandleTypeDef huart1</div><div class="ttdef"><b>Definition</b> main.c:46</div></div>
+<div class="ttc" id="amain_8c_html_a38905dda1d2fbff006c69db48eddba9d"><div class="ttname"><a href="#a38905dda1d2fbff006c69db48eddba9d">huart6</a></div><div class="ttdeci">UART_HandleTypeDef huart6</div><div class="ttdef"><b>Definition</b> main.c:55</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a8e7dfdc468098a5f8415ff14d8f24c61" name="a8e7dfdc468098a5f8415ff14d8f24c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e7dfdc468098a5f8415ff14d8f24c61">&#9670;&#160;</a></span>real_pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile float real_pos = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a076a5923dcfdcf95d91a8e24981ba4ee" name="a076a5923dcfdcf95d91a8e24981ba4ee"></a>
@@ -428,6 +641,20 @@ Variables</h2></td></tr>
 <span class="mlabels"><span class="mlabel">extern</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac360703ec72b1bae53031421664e4bef" name="ac360703ec72b1bae53031421664e4bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac360703ec72b1bae53031421664e4bef">&#9670;&#160;</a></span>sys_vel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile float sys_vel = 0</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

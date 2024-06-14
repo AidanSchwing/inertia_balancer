@@ -11,7 +11,7 @@ Include dependency graph for stm32f4xx\+\_\+it.\+c\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=245pt]{stm32f4xx__it_8c__incl}
+\includegraphics[width=350pt]{stm32f4xx__it_8c__incl}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Functions}
@@ -34,7 +34,30 @@ void \mbox{\hyperlink{stm32f4xx__it_8c_adbdfb05858cc36fc520974df37ec3cb0}{Debug\
 void \mbox{\hyperlink{stm32f4xx__it_8c_a6303e1f258cbdc1f970ce579cc015623}{Pend\+SV\+\_\+\+Handler}} (void)
 \begin{DoxyCompactList}\small\item\em This function handles Pendable request for system service. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{stm32f4xx__it_8c_ab5e09814056d617c521549e542639b7e}{Sys\+Tick\+\_\+\+Handler}} (void)
-\begin{DoxyCompactList}\small\item\em This function handles System tick timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function handles System tick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f4xx__it_8c_ad1fd361bc5ad89facee67c76d1ff8dc0}{TIM1\+\_\+\+UP\+\_\+\+TIM10\+\_\+\+IRQHandler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles TIM1 update interrupt and TIM10 global interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f4xx__it_8c_a7133f3f78767503641d307386e68bd28}{TIM4\+\_\+\+IRQHandler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles TIM4 global interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f4xx__it_8c_a0ca6fd0e6f77921dd1123539857ba0a8}{USART2\+\_\+\+IRQHandler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles USART2 global interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f4xx__it_8c_a5e66446caf21dd90191dc07a13ce2378}{TIM5\+\_\+\+IRQHandler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles TIM5 global interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stm32f4xx__it_8c_a12c827857d907ad0cccd586fd934d446}{USART6\+\_\+\+IRQHandler}} (void)
+\begin{DoxyCompactList}\small\item\em This function handles USART6 global interrupt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+TIM\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{stm32f4xx__it_8c_a25fc663547539bc49fecc0011bd76ab5}{htim1}}
+\item 
+TIM\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{stm32f4xx__it_8c_a85788cec5a97ee377e4ee2e74f026484}{htim4}}
+\item 
+TIM\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{stm32f4xx__it_8c_acefaeaaa3856ddddae7083b2d220fe4b}{htim5}}
+\item 
+UART\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{stm32f4xx__it_8c_aa9479c261d65eecedd3d9582f7f0f89c}{huart2}}
+\item 
+UART\+\_\+\+Handle\+Type\+Def \mbox{\hyperlink{stm32f4xx__it_8c_a38905dda1d2fbff006c69db48eddba9d}{huart6}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -128,6 +151,36 @@ void Sys\+Tick\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{Dox
 
 This function handles System tick timer. 
 
+\Hypertarget{stm32f4xx__it_8c_ad1fd361bc5ad89facee67c76d1ff8dc0}\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}!TIM1\_UP\_TIM10\_IRQHandler@{TIM1\_UP\_TIM10\_IRQHandler}}
+\index{TIM1\_UP\_TIM10\_IRQHandler@{TIM1\_UP\_TIM10\_IRQHandler}!stm32f4xx\_it.c@{stm32f4xx\_it.c}}
+\doxysubsubsection{\texorpdfstring{TIM1\_UP\_TIM10\_IRQHandler()}{TIM1\_UP\_TIM10\_IRQHandler()}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8c_ad1fd361bc5ad89facee67c76d1ff8dc0} 
+void TIM1\+\_\+\+UP\+\_\+\+TIM10\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+This function handles TIM1 update interrupt and TIM10 global interrupt. 
+
+\Hypertarget{stm32f4xx__it_8c_a7133f3f78767503641d307386e68bd28}\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}!TIM4\_IRQHandler@{TIM4\_IRQHandler}}
+\index{TIM4\_IRQHandler@{TIM4\_IRQHandler}!stm32f4xx\_it.c@{stm32f4xx\_it.c}}
+\doxysubsubsection{\texorpdfstring{TIM4\_IRQHandler()}{TIM4\_IRQHandler()}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8c_a7133f3f78767503641d307386e68bd28} 
+void TIM4\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+This function handles TIM4 global interrupt. 
+
+\Hypertarget{stm32f4xx__it_8c_a5e66446caf21dd90191dc07a13ce2378}\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}!TIM5\_IRQHandler@{TIM5\_IRQHandler}}
+\index{TIM5\_IRQHandler@{TIM5\_IRQHandler}!stm32f4xx\_it.c@{stm32f4xx\_it.c}}
+\doxysubsubsection{\texorpdfstring{TIM5\_IRQHandler()}{TIM5\_IRQHandler()}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8c_a5e66446caf21dd90191dc07a13ce2378} 
+void TIM5\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+This function handles TIM5 global interrupt. 
+
 \Hypertarget{stm32f4xx__it_8c_a1d98923de2ed6b7309b66f9ba2971647}\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}!UsageFault\_Handler@{UsageFault\_Handler}}
 \index{UsageFault\_Handler@{UsageFault\_Handler}!stm32f4xx\_it.c@{stm32f4xx\_it.c}}
 \doxysubsubsection{\texorpdfstring{UsageFault\_Handler()}{UsageFault\_Handler()}}
@@ -137,4 +190,57 @@ void Usage\+Fault\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{
 
 
 This function handles Undefined instruction or illegal state. 
+
+\Hypertarget{stm32f4xx__it_8c_a0ca6fd0e6f77921dd1123539857ba0a8}\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}!USART2\_IRQHandler@{USART2\_IRQHandler}}
+\index{USART2\_IRQHandler@{USART2\_IRQHandler}!stm32f4xx\_it.c@{stm32f4xx\_it.c}}
+\doxysubsubsection{\texorpdfstring{USART2\_IRQHandler()}{USART2\_IRQHandler()}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8c_a0ca6fd0e6f77921dd1123539857ba0a8} 
+void USART2\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+This function handles USART2 global interrupt. 
+
+\Hypertarget{stm32f4xx__it_8c_a12c827857d907ad0cccd586fd934d446}\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}!USART6\_IRQHandler@{USART6\_IRQHandler}}
+\index{USART6\_IRQHandler@{USART6\_IRQHandler}!stm32f4xx\_it.c@{stm32f4xx\_it.c}}
+\doxysubsubsection{\texorpdfstring{USART6\_IRQHandler()}{USART6\_IRQHandler()}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8c_a12c827857d907ad0cccd586fd934d446} 
+void USART6\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+This function handles USART6 global interrupt. 
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{stm32f4xx__it_8c_a25fc663547539bc49fecc0011bd76ab5}\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}!htim1@{htim1}}
+\index{htim1@{htim1}!stm32f4xx\_it.c@{stm32f4xx\_it.c}}
+\doxysubsubsection{\texorpdfstring{htim1}{htim1}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8c_a25fc663547539bc49fecc0011bd76ab5} 
+TIM\+\_\+\+Handle\+Type\+Def htim1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{stm32f4xx__it_8c_a85788cec5a97ee377e4ee2e74f026484}\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}!htim4@{htim4}}
+\index{htim4@{htim4}!stm32f4xx\_it.c@{stm32f4xx\_it.c}}
+\doxysubsubsection{\texorpdfstring{htim4}{htim4}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8c_a85788cec5a97ee377e4ee2e74f026484} 
+TIM\+\_\+\+Handle\+Type\+Def htim4\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{stm32f4xx__it_8c_acefaeaaa3856ddddae7083b2d220fe4b}\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}!htim5@{htim5}}
+\index{htim5@{htim5}!stm32f4xx\_it.c@{stm32f4xx\_it.c}}
+\doxysubsubsection{\texorpdfstring{htim5}{htim5}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8c_acefaeaaa3856ddddae7083b2d220fe4b} 
+TIM\+\_\+\+Handle\+Type\+Def htim5\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{stm32f4xx__it_8c_aa9479c261d65eecedd3d9582f7f0f89c}\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}!huart2@{huart2}}
+\index{huart2@{huart2}!stm32f4xx\_it.c@{stm32f4xx\_it.c}}
+\doxysubsubsection{\texorpdfstring{huart2}{huart2}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8c_aa9479c261d65eecedd3d9582f7f0f89c} 
+UART\+\_\+\+Handle\+Type\+Def huart2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{stm32f4xx__it_8c_a38905dda1d2fbff006c69db48eddba9d}\index{stm32f4xx\_it.c@{stm32f4xx\_it.c}!huart6@{huart6}}
+\index{huart6@{huart6}!stm32f4xx\_it.c@{stm32f4xx\_it.c}}
+\doxysubsubsection{\texorpdfstring{huart6}{huart6}}
+{\footnotesize\ttfamily \label{stm32f4xx__it_8c_a38905dda1d2fbff006c69db48eddba9d} 
+UART\+\_\+\+Handle\+Type\+Def huart6\hspace{0.3cm}{\ttfamily [extern]}}
 

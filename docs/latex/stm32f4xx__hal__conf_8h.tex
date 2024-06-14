@@ -5,13 +5,11 @@
 {\ttfamily \#include "{}stm32f4xx\+\_\+hal\+\_\+exti.\+h"{}}\newline
 {\ttfamily \#include "{}stm32f4xx\+\_\+hal\+\_\+dma.\+h"{}}\newline
 {\ttfamily \#include "{}stm32f4xx\+\_\+hal\+\_\+cortex.\+h"{}}\newline
-{\ttfamily \#include "{}stm32f4xx\+\_\+hal\+\_\+adc.\+h"{}}\newline
 {\ttfamily \#include "{}stm32f4xx\+\_\+hal\+\_\+flash.\+h"{}}\newline
 {\ttfamily \#include "{}stm32f4xx\+\_\+hal\+\_\+i2c.\+h"{}}\newline
 {\ttfamily \#include "{}stm32f4xx\+\_\+hal\+\_\+pwr.\+h"{}}\newline
 {\ttfamily \#include "{}stm32f4xx\+\_\+hal\+\_\+tim.\+h"{}}\newline
 {\ttfamily \#include "{}stm32f4xx\+\_\+hal\+\_\+uart.\+h"{}}\newline
-{\ttfamily \#include "{}stm32f4xx\+\_\+hal\+\_\+pcd.\+h"{}}\newline
 Include dependency graph for stm32f4xx\+\_\+hal\+\_\+conf.\+h\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -24,15 +22,11 @@ Include dependency graph for stm32f4xx\+\_\+hal\+\_\+conf.\+h\+:\nopagebreak
 \item 
 \#define \mbox{\hyperlink{stm32f4xx__hal__conf_8h_a877ae99e8c47a609ea97c888912bf75f}{HAL\+\_\+\+MODULE\+\_\+\+ENABLED}}
 \begin{DoxyCompactList}\small\item\em This is the list of modules to be used in the HAL driver. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{stm32f4xx__hal__conf_8h_a476f1655c969ae57e89a74d98c75f43f}{HAL\+\_\+\+ADC\+\_\+\+MODULE\+\_\+\+ENABLED}}
-\item 
 \#define \mbox{\hyperlink{stm32f4xx__hal__conf_8h_a19999766418b0224871f732d800841c6}{HAL\+\_\+\+I2\+C\+\_\+\+MODULE\+\_\+\+ENABLED}}
 \item 
 \#define \mbox{\hyperlink{stm32f4xx__hal__conf_8h_a23382b8f04b3e6db2c59dfa1ef5ea4a2}{HAL\+\_\+\+TIM\+\_\+\+MODULE\+\_\+\+ENABLED}}
 \item 
 \#define \mbox{\hyperlink{stm32f4xx__hal__conf_8h_a167269406e73327b95c3bb7b9cfe6d89}{HAL\+\_\+\+UART\+\_\+\+MODULE\+\_\+\+ENABLED}}
-\item 
-\#define \mbox{\hyperlink{stm32f4xx__hal__conf_8h_abc68645a06297042bf1f4d9f5a59f94b}{HAL\+\_\+\+PCD\+\_\+\+MODULE\+\_\+\+ENABLED}}
 \item 
 \#define \mbox{\hyperlink{stm32f4xx__hal__conf_8h_a86165f80d6078719ee0715afe13febf5}{HAL\+\_\+\+GPIO\+\_\+\+MODULE\+\_\+\+ENABLED}}
 \item 
@@ -281,13 +275,7 @@ Include module\textquotesingle{}s header file.
 
 External clock source for I2S peripheral This value is used by the I2S HAL module to compute the I2S clock source frequency, this source is inserted directly through I2\+S\+\_\+\+CKIN pad. 
 
-Value of the External audio frequency in Hz \Hypertarget{stm32f4xx__hal__conf_8h_a476f1655c969ae57e89a74d98c75f43f}\index{stm32f4xx\_hal\_conf.h@{stm32f4xx\_hal\_conf.h}!HAL\_ADC\_MODULE\_ENABLED@{HAL\_ADC\_MODULE\_ENABLED}}
-\index{HAL\_ADC\_MODULE\_ENABLED@{HAL\_ADC\_MODULE\_ENABLED}!stm32f4xx\_hal\_conf.h@{stm32f4xx\_hal\_conf.h}}
-\doxysubsubsection{\texorpdfstring{HAL\_ADC\_MODULE\_ENABLED}{HAL\_ADC\_MODULE\_ENABLED}}
-{\footnotesize\ttfamily \label{stm32f4xx__hal__conf_8h_a476f1655c969ae57e89a74d98c75f43f} 
-\#define HAL\+\_\+\+ADC\+\_\+\+MODULE\+\_\+\+ENABLED}
-
-\Hypertarget{stm32f4xx__hal__conf_8h_aa9b5a3a425901e097de70092dbe31e0f}\index{stm32f4xx\_hal\_conf.h@{stm32f4xx\_hal\_conf.h}!HAL\_CORTEX\_MODULE\_ENABLED@{HAL\_CORTEX\_MODULE\_ENABLED}}
+Value of the External audio frequency in Hz \Hypertarget{stm32f4xx__hal__conf_8h_aa9b5a3a425901e097de70092dbe31e0f}\index{stm32f4xx\_hal\_conf.h@{stm32f4xx\_hal\_conf.h}!HAL\_CORTEX\_MODULE\_ENABLED@{HAL\_CORTEX\_MODULE\_ENABLED}}
 \index{HAL\_CORTEX\_MODULE\_ENABLED@{HAL\_CORTEX\_MODULE\_ENABLED}!stm32f4xx\_hal\_conf.h@{stm32f4xx\_hal\_conf.h}}
 \doxysubsubsection{\texorpdfstring{HAL\_CORTEX\_MODULE\_ENABLED}{HAL\_CORTEX\_MODULE\_ENABLED}}
 {\footnotesize\ttfamily \label{stm32f4xx__hal__conf_8h_aa9b5a3a425901e097de70092dbe31e0f} 
@@ -332,12 +320,6 @@ Value of the External audio frequency in Hz \Hypertarget{stm32f4xx__hal__conf_8h
 
 
 This is the list of modules to be used in the HAL driver. 
-
-\Hypertarget{stm32f4xx__hal__conf_8h_abc68645a06297042bf1f4d9f5a59f94b}\index{stm32f4xx\_hal\_conf.h@{stm32f4xx\_hal\_conf.h}!HAL\_PCD\_MODULE\_ENABLED@{HAL\_PCD\_MODULE\_ENABLED}}
-\index{HAL\_PCD\_MODULE\_ENABLED@{HAL\_PCD\_MODULE\_ENABLED}!stm32f4xx\_hal\_conf.h@{stm32f4xx\_hal\_conf.h}}
-\doxysubsubsection{\texorpdfstring{HAL\_PCD\_MODULE\_ENABLED}{HAL\_PCD\_MODULE\_ENABLED}}
-{\footnotesize\ttfamily \label{stm32f4xx__hal__conf_8h_abc68645a06297042bf1f4d9f5a59f94b} 
-\#define HAL\+\_\+\+PCD\+\_\+\+MODULE\+\_\+\+ENABLED}
 
 \Hypertarget{stm32f4xx__hal__conf_8h_ab51923c3716977d7923f49cc9d081aa8}\index{stm32f4xx\_hal\_conf.h@{stm32f4xx\_hal\_conf.h}!HAL\_PWR\_MODULE\_ENABLED@{HAL\_PWR\_MODULE\_ENABLED}}
 \index{HAL\_PWR\_MODULE\_ENABLED@{HAL\_PWR\_MODULE\_ENABLED}!stm32f4xx\_hal\_conf.h@{stm32f4xx\_hal\_conf.h}}

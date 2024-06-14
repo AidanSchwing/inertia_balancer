@@ -1,25 +1,30 @@
 <map id="main.h" name="main.h">
-<area shape="rect" id="Node000001" title=": Header for main.c file." alt="" coords="312,5,372,32"/>
-<area shape="rect" id="Node000002" href="$main_8c.html" title=": Main program body" alt="" coords="5,155,66,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,25,228,30,151,41,81,58,56,69,39,82,30,99,28,118,34,154,29,155,23,118,25,97,35,78,53,64,80,53,150,36,228,25,296,20"/>
-<area shape="rect" id="Node000003" href="$motor__driver_8c.html" title=" " alt="" coords="274,155,376,181"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="312,44,295,61,282,81,280,100,286,120,312,152,308,156,282,122,274,101,277,79,291,57,308,40"/>
-<area shape="rect" id="Node000004" href="$motor__driver_8h.html" title=" " alt="" coords="291,80,393,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="345,48,345,80,340,80,340,48"/>
-<area shape="rect" id="Node000005" href="$odrive__wrapper_8c.html" title=" " alt="" coords="118,155,236,181"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="317,44,272,82,192,156,188,152,268,78,313,40"/>
-<area shape="rect" id="Node000006" href="$odrive__wrapper_8h.html" title=" " alt="" coords="49,80,166,107"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="298,36,149,82,148,77,296,31"/>
-<area shape="rect" id="Node000007" href="$rc__input_8c.html" title=" " alt="" coords="407,155,485,181"/>
-<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="372,41,407,78,430,118,444,153,439,155,425,121,403,82,368,44"/>
-<area shape="rect" id="Node000008" href="$rc__input_8h.html" title=" " alt="" coords="467,80,545,107"/>
-<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="386,36,478,77,476,82,384,41"/>
-<area shape="rect" id="Node000009" href="$stm32f4xx__hal__msp_8c.html" title="This file provides code for the MSP Initialization and de&#45;Initialization codes." alt="" coords="569,80,718,107"/>
-<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="388,28,591,77,590,82,387,33"/>
-<area shape="rect" id="Node000010" href="$stm32f4xx__it_8c.html" title="Interrupt Service Routines." alt="" coords="742,80,849,107"/>
-<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="388,24,731,77,742,79,741,85,730,83,387,29"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="338,123,330,155,325,154,333,121"/>
-<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="86,120,50,156,46,152,82,116"/>
-<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="132,116,167,152,163,156,128,120"/>
-<area shape="poly" id="edge11_Node000008_Node000007" title=" " alt="" coords="488,120,459,156,454,153,484,117"/>
+<area shape="rect" id="Node000001" title=": Header for main.c file." alt="" coords="419,5,479,32"/>
+<area shape="rect" id="Node000002" href="$_i_m_u__driver_8c.html" title="Implements a few features of the ICM20948 via I2C." alt="" coords="5,80,98,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="404,31,117,83,99,86,98,81,116,77,403,26"/>
+<area shape="rect" id="Node000003" href="$controller_8c.html" title="Provides functions relevant to system control." alt="" coords="149,229,234,256"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="404,26,363,32,316,43,267,59,222,82,200,98,185,113,174,131,163,155,161,175,166,195,184,228,179,230,161,196,156,175,158,154,169,128,181,109,197,94,219,78,265,54,314,38,362,27,403,21"/>
+<area shape="rect" id="Node000004" href="$controller_8h.html" title=" " alt="" coords="173,155,258,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="403,24,365,29,323,39,281,56,245,82,233,99,225,118,219,155,213,154,220,117,228,96,242,78,279,51,321,34,364,24,403,19"/>
+<area shape="rect" id="Node000005" href="$main_8c.html" title="Main program body." alt="" coords="289,229,350,256"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="495,36,547,62,597,97,615,117,626,138,627,161,616,183,597,198,569,210,496,227,416,237,350,243,350,237,415,232,495,222,568,205,595,193,612,180,622,160,621,140,611,120,593,101,544,67,492,41"/>
+<area shape="rect" id="Node000006" href="$odrive__wrapper_8c.html" title="Provides functions for interfacing with an external ODrive controller." alt="" coords="333,155,450,181"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="441,48,399,155,394,153,436,46"/>
+<area shape="rect" id="Node000007" href="$odrive__wrapper_8h.html" title=" " alt="" coords="256,80,373,107"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="414,42,339,82,337,77,411,37"/>
+<area shape="rect" id="Node000008" href="$rc__input_8c.html" title=" " alt="" coords="524,155,603,181"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="492,38,518,55,540,78,551,98,558,118,565,154,560,155,553,120,546,100,536,82,514,59,489,42"/>
+<area shape="rect" id="Node000009" href="$rc__input_8h.html" title=" " alt="" coords="448,80,527,107"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="465,45,483,78,478,81,460,47"/>
+<area shape="rect" id="Node000010" href="$stm32f4xx__hal__msp_8c.html" title="This file provides code for the MSP Initialization and de&#45;Initialization codes." alt="" coords="677,80,826,107"/>
+<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="495,28,699,77,698,82,494,33"/>
+<area shape="rect" id="Node000011" href="$stm32f4xx__it_8c.html" title="Interrupt Service Routines." alt="" coords="850,80,957,107"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="494,24,839,77,850,79,849,85,838,83,493,29"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="209,197,198,230,193,228,204,196"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="247,188,303,227,300,231,244,192"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="286,118,234,156,231,152,283,114"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="318,122,322,229,316,229,313,122"/>
+<area shape="poly" id="edge11_Node000007_Node000006" title=" " alt="" coords="341,116,380,152,376,156,337,119"/>
+<area shape="poly" id="edge14_Node000009_Node000005" title=" " alt="" coords="488,123,481,154,464,183,438,205,408,221,351,239,349,234,406,216,435,201,460,180,476,152,483,121"/>
+<area shape="poly" id="edge15_Node000009_Node000008" title=" " alt="" coords="513,116,552,152,549,156,510,119"/>
 </map>

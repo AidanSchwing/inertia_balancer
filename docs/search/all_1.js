@@ -1,6 +1,23 @@
 var searchData=
 [
-  ['ahbpresctable_0',['AHBPrescTable',['../group___s_t_m32_f4xx___system___private___variables.html#ga6e1d9cd666f0eacbfde31e9932a93466',1,'system_stm32f4xx.c']]],
-  ['apbpresctable_1',['APBPrescTable',['../group___s_t_m32_f4xx___system___private___variables.html#ga5b4f8b768465842cf854a8f993b375e9',1,'system_stm32f4xx.c']]],
-  ['assert_5fparam_2',['assert_param',['../stm32f4xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21',1,'stm32f4xx_hal_conf.h']]]
+  ['accel_5ffs_0',['ACCEL_FS',['../_i_m_u__driver_8h.html#a5ba2cf6938dfaad9fac1a7363e09dc98',1,'IMU_driver.h']]],
+  ['accel_5fx_1',['accel_x',['../struct_accel_data.html#a7afe3a6c26cdd445178cd83179491e40',1,'AccelData::accel_x'],['../_i_m_u__driver_8c.html#a7afe3a6c26cdd445178cd83179491e40',1,'accel_x:&#160;IMU_driver.c']]],
+  ['accel_5fx_5fraw_2',['accel_x_raw',['../_i_m_u__driver_8c.html#a43774160431f1d281972713b8c3713aa',1,'IMU_driver.c']]],
+  ['accel_5fxout_5fh_3',['ACCEL_XOUT_H',['../_i_m_u__driver_8h.html#a94b93aa4aabbe7caec7884ddb46b531b',1,'IMU_driver.h']]],
+  ['accel_5fxout_5fl_4',['ACCEL_XOUT_L',['../_i_m_u__driver_8h.html#a47679c25e1689ee0401959e33e05a761',1,'IMU_driver.h']]],
+  ['accel_5fy_5',['accel_y',['../struct_accel_data.html#ad8d3e4986ab0b0e7a17c77972b2d29e5',1,'AccelData::accel_y'],['../_i_m_u__driver_8c.html#ad8d3e4986ab0b0e7a17c77972b2d29e5',1,'accel_y:&#160;IMU_driver.c']]],
+  ['accel_5fy_5fraw_6',['accel_y_raw',['../_i_m_u__driver_8c.html#a39774ff9008a79392f27af91c77d6abf',1,'IMU_driver.c']]],
+  ['accel_5fyout_5fh_7',['ACCEL_YOUT_H',['../_i_m_u__driver_8h.html#a26d680f52fbdaa0623d16292e9c40d4c',1,'IMU_driver.h']]],
+  ['accel_5fyout_5fl_8',['ACCEL_YOUT_L',['../_i_m_u__driver_8h.html#ad7a92304bd1dd3755068380b51319a93',1,'IMU_driver.h']]],
+  ['accel_5fz_9',['accel_z',['../struct_accel_data.html#ab0ba2b834f44f31e60538b2f2dc01b40',1,'AccelData::accel_z'],['../_i_m_u__driver_8c.html#ab0ba2b834f44f31e60538b2f2dc01b40',1,'accel_z:&#160;IMU_driver.c']]],
+  ['accel_5fz_5fraw_10',['accel_z_raw',['../_i_m_u__driver_8c.html#ab9c75b5df99fc33a8f5edff29de59db9',1,'IMU_driver.c']]],
+  ['accel_5fzout_5fh_11',['ACCEL_ZOUT_H',['../_i_m_u__driver_8h.html#a44d84761605d984a0de060640f4c57da',1,'IMU_driver.h']]],
+  ['accel_5fzout_5fl_12',['ACCEL_ZOUT_L',['../_i_m_u__driver_8h.html#a36e02bfb24518b6c425d9c3411c8d720',1,'IMU_driver.h']]],
+  ['acceldata_13',['AccelData',['../struct_accel_data.html',1,'']]],
+  ['ahbpresctable_14',['AHBPrescTable',['../group___s_t_m32_f4xx___system___private___variables.html#ga6e1d9cd666f0eacbfde31e9932a93466',1,'system_stm32f4xx.c']]],
+  ['alpha_15',['ALPHA',['../controller_8h.html#af5abd28c44c29b7397c84f1fec4b1d84',1,'controller.h']]],
+  ['angle_5fz_16',['angle_z',['../controller_8c.html#a5be5be58449ccca7679ac2d151477f9d',1,'controller.c']]],
+  ['angular_5fvelocity_17',['angular_velocity',['../controller_8c.html#acb4c2f4fbad69c2d11b5878671545191',1,'controller.c']]],
+  ['apbpresctable_18',['APBPrescTable',['../group___s_t_m32_f4xx___system___private___variables.html#ga5b4f8b768465842cf854a8f993b375e9',1,'system_stm32f4xx.c']]],
+  ['assert_5fparam_19',['assert_param',['../stm32f4xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21',1,'stm32f4xx_hal_conf.h']]]
 ];

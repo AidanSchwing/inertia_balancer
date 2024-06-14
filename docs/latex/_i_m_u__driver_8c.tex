@@ -1,0 +1,198 @@
+\doxysection{IMU\+\_\+driver.\+c File Reference}
+\hypertarget{_i_m_u__driver_8c}{}\label{_i_m_u__driver_8c}\index{IMU\_driver.c@{IMU\_driver.c}}
+
+
+Implements a few features of the ICM20948 via I2C.  
+
+
+{\ttfamily \#include "{}main.\+h"{}}\newline
+{\ttfamily \#include "{}IMU\+\_\+driver.\+h"{}}\newline
+{\ttfamily \#include "{}stm32f4xx\+\_\+hal.\+h"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for IMU\+\_\+driver.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_i_m_u__driver_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_i_m_u__driver_8c_a0cd74f8ea5d18c95b16939d0c535c7c7}{IMU\+\_\+init}} (\mbox{\hyperlink{struct_i_c_m__20948}{ICM\+\_\+20948}} \texorpdfstring{$\ast$}{*}p\+\_\+\+IMU)
+\begin{DoxyCompactList}\small\item\em Initializes the ICM20948 IMU. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_accel_data}{Accel\+Data}} \mbox{\hyperlink{_i_m_u__driver_8c_a229fc931e0c8d8ddaae97a55d42fb407}{IMU\+\_\+read\+\_\+accel}} (\mbox{\hyperlink{struct_i_c_m__20948}{ICM\+\_\+20948}} \texorpdfstring{$\ast$}{*}p\+\_\+\+IMU)
+\begin{DoxyCompactList}\small\item\em Reads IMU acceleration data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_gyro_data}{Gyro\+Data}} \mbox{\hyperlink{_i_m_u__driver_8c_a1b2077ee259f3a484590a093cd950b3e}{IMU\+\_\+read\+\_\+gyro}} (\mbox{\hyperlink{struct_i_c_m__20948}{ICM\+\_\+20948}} \texorpdfstring{$\ast$}{*}p\+\_\+\+IMU)
+\begin{DoxyCompactList}\small\item\em Reads IMU gyro data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{_i_m_u__driver_8c_ae4f3f55be5de649fd367081b9d1b4b0c}{msg}} \mbox{[}50\mbox{]}
+\item 
+int16\+\_\+t \mbox{\hyperlink{_i_m_u__driver_8c_a43774160431f1d281972713b8c3713aa}{accel\+\_\+x\+\_\+raw}}
+\item 
+int16\+\_\+t \mbox{\hyperlink{_i_m_u__driver_8c_a39774ff9008a79392f27af91c77d6abf}{accel\+\_\+y\+\_\+raw}}
+\item 
+int16\+\_\+t \mbox{\hyperlink{_i_m_u__driver_8c_ab9c75b5df99fc33a8f5edff29de59db9}{accel\+\_\+z\+\_\+raw}}
+\item 
+float \mbox{\hyperlink{_i_m_u__driver_8c_a7afe3a6c26cdd445178cd83179491e40}{accel\+\_\+x}}
+\item 
+float \mbox{\hyperlink{_i_m_u__driver_8c_ad8d3e4986ab0b0e7a17c77972b2d29e5}{accel\+\_\+y}}
+\item 
+float \mbox{\hyperlink{_i_m_u__driver_8c_ab0ba2b834f44f31e60538b2f2dc01b40}{accel\+\_\+z}}
+\item 
+int16\+\_\+t \mbox{\hyperlink{_i_m_u__driver_8c_a4491d3e53991e6c408b25c72b8f0b63a}{gyro\+\_\+x\+\_\+raw}}
+\item 
+int16\+\_\+t \mbox{\hyperlink{_i_m_u__driver_8c_ab275e31c85828f4f9b2c5682393cf8d9}{gyro\+\_\+y\+\_\+raw}}
+\item 
+int16\+\_\+t \mbox{\hyperlink{_i_m_u__driver_8c_a44a00acadc35a7cf8bb0a051213fde6c}{gyro\+\_\+z\+\_\+raw}}
+\item 
+float \mbox{\hyperlink{_i_m_u__driver_8c_a1b80c9ecac5a5fc15e27ba109a9b5b9f}{gyro\+\_\+x}}
+\item 
+float \mbox{\hyperlink{_i_m_u__driver_8c_a4fb44c3aee68cbf76bda20093860d83a}{gyro\+\_\+y}}
+\item 
+float \mbox{\hyperlink{_i_m_u__driver_8c_a9e90fb26dd6e5b319874641588f10e7c}{gyro\+\_\+z}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_i_m_u__driver_8c_a2f2b760a34d5cbec275982e056d5f37e}{raw\+\_\+data}} \mbox{[}6\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements a few features of the ICM20948 via I2C. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_i_m_u__driver_8c_a0cd74f8ea5d18c95b16939d0c535c7c7}\index{IMU\_driver.c@{IMU\_driver.c}!IMU\_init@{IMU\_init}}
+\index{IMU\_init@{IMU\_init}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{IMU\_init()}{IMU\_init()}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_a0cd74f8ea5d18c95b16939d0c535c7c7} 
+void IMU\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_c_m__20948}{ICM\+\_\+20948}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+IMU}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the ICM20948 IMU. 
+
+Checks I2C connection, reads the WHO\+\_\+\+AM\+\_\+I register, and scans device address for verification purposes. Prints debugging messages through uart. 
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{struct_i_c_m__20948}{ICM\+\_\+20948}} & Pointer to an IMU object \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_i_m_u__driver_8c_a229fc931e0c8d8ddaae97a55d42fb407}\index{IMU\_driver.c@{IMU\_driver.c}!IMU\_read\_accel@{IMU\_read\_accel}}
+\index{IMU\_read\_accel@{IMU\_read\_accel}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{IMU\_read\_accel()}{IMU\_read\_accel()}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_a229fc931e0c8d8ddaae97a55d42fb407} 
+\mbox{\hyperlink{struct_accel_data}{Accel\+Data}} IMU\+\_\+read\+\_\+accel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_c_m__20948}{ICM\+\_\+20948}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+IMU}{}\end{DoxyParamCaption})}
+
+
+
+Reads IMU acceleration data. 
+
+Accesses the relevant registers via I2C and returns a triplet of float data scaled appropriately. 
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{struct_i_c_m__20948}{ICM\+\_\+20948}} & Pointer to an IMU object \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_i_m_u__driver_8c_a1b2077ee259f3a484590a093cd950b3e}\index{IMU\_driver.c@{IMU\_driver.c}!IMU\_read\_gyro@{IMU\_read\_gyro}}
+\index{IMU\_read\_gyro@{IMU\_read\_gyro}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{IMU\_read\_gyro()}{IMU\_read\_gyro()}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_a1b2077ee259f3a484590a093cd950b3e} 
+\mbox{\hyperlink{struct_gyro_data}{Gyro\+Data}} IMU\+\_\+read\+\_\+gyro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_c_m__20948}{ICM\+\_\+20948}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+IMU}{}\end{DoxyParamCaption})}
+
+
+
+Reads IMU gyro data. 
+
+Accesses the relevant registers via I2C and returns a triplet of float data scaled appropriately. 
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{struct_i_c_m__20948}{ICM\+\_\+20948}} & Pointer to an IMU object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_i_m_u__driver_8c_a7afe3a6c26cdd445178cd83179491e40}\index{IMU\_driver.c@{IMU\_driver.c}!accel\_x@{accel\_x}}
+\index{accel\_x@{accel\_x}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{accel\_x}{accel\_x}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_a7afe3a6c26cdd445178cd83179491e40} 
+float accel\+\_\+x}
+
+\Hypertarget{_i_m_u__driver_8c_a43774160431f1d281972713b8c3713aa}\index{IMU\_driver.c@{IMU\_driver.c}!accel\_x\_raw@{accel\_x\_raw}}
+\index{accel\_x\_raw@{accel\_x\_raw}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{accel\_x\_raw}{accel\_x\_raw}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_a43774160431f1d281972713b8c3713aa} 
+int16\+\_\+t accel\+\_\+x\+\_\+raw}
+
+\Hypertarget{_i_m_u__driver_8c_ad8d3e4986ab0b0e7a17c77972b2d29e5}\index{IMU\_driver.c@{IMU\_driver.c}!accel\_y@{accel\_y}}
+\index{accel\_y@{accel\_y}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{accel\_y}{accel\_y}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_ad8d3e4986ab0b0e7a17c77972b2d29e5} 
+float accel\+\_\+y}
+
+\Hypertarget{_i_m_u__driver_8c_a39774ff9008a79392f27af91c77d6abf}\index{IMU\_driver.c@{IMU\_driver.c}!accel\_y\_raw@{accel\_y\_raw}}
+\index{accel\_y\_raw@{accel\_y\_raw}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{accel\_y\_raw}{accel\_y\_raw}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_a39774ff9008a79392f27af91c77d6abf} 
+int16\+\_\+t accel\+\_\+y\+\_\+raw}
+
+\Hypertarget{_i_m_u__driver_8c_ab0ba2b834f44f31e60538b2f2dc01b40}\index{IMU\_driver.c@{IMU\_driver.c}!accel\_z@{accel\_z}}
+\index{accel\_z@{accel\_z}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{accel\_z}{accel\_z}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_ab0ba2b834f44f31e60538b2f2dc01b40} 
+float accel\+\_\+z}
+
+\Hypertarget{_i_m_u__driver_8c_ab9c75b5df99fc33a8f5edff29de59db9}\index{IMU\_driver.c@{IMU\_driver.c}!accel\_z\_raw@{accel\_z\_raw}}
+\index{accel\_z\_raw@{accel\_z\_raw}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{accel\_z\_raw}{accel\_z\_raw}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_ab9c75b5df99fc33a8f5edff29de59db9} 
+int16\+\_\+t accel\+\_\+z\+\_\+raw}
+
+\Hypertarget{_i_m_u__driver_8c_a1b80c9ecac5a5fc15e27ba109a9b5b9f}\index{IMU\_driver.c@{IMU\_driver.c}!gyro\_x@{gyro\_x}}
+\index{gyro\_x@{gyro\_x}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{gyro\_x}{gyro\_x}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_a1b80c9ecac5a5fc15e27ba109a9b5b9f} 
+float gyro\+\_\+x}
+
+\Hypertarget{_i_m_u__driver_8c_a4491d3e53991e6c408b25c72b8f0b63a}\index{IMU\_driver.c@{IMU\_driver.c}!gyro\_x\_raw@{gyro\_x\_raw}}
+\index{gyro\_x\_raw@{gyro\_x\_raw}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{gyro\_x\_raw}{gyro\_x\_raw}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_a4491d3e53991e6c408b25c72b8f0b63a} 
+int16\+\_\+t gyro\+\_\+x\+\_\+raw}
+
+\Hypertarget{_i_m_u__driver_8c_a4fb44c3aee68cbf76bda20093860d83a}\index{IMU\_driver.c@{IMU\_driver.c}!gyro\_y@{gyro\_y}}
+\index{gyro\_y@{gyro\_y}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{gyro\_y}{gyro\_y}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_a4fb44c3aee68cbf76bda20093860d83a} 
+float gyro\+\_\+y}
+
+\Hypertarget{_i_m_u__driver_8c_ab275e31c85828f4f9b2c5682393cf8d9}\index{IMU\_driver.c@{IMU\_driver.c}!gyro\_y\_raw@{gyro\_y\_raw}}
+\index{gyro\_y\_raw@{gyro\_y\_raw}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{gyro\_y\_raw}{gyro\_y\_raw}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_ab275e31c85828f4f9b2c5682393cf8d9} 
+int16\+\_\+t gyro\+\_\+y\+\_\+raw}
+
+\Hypertarget{_i_m_u__driver_8c_a9e90fb26dd6e5b319874641588f10e7c}\index{IMU\_driver.c@{IMU\_driver.c}!gyro\_z@{gyro\_z}}
+\index{gyro\_z@{gyro\_z}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{gyro\_z}{gyro\_z}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_a9e90fb26dd6e5b319874641588f10e7c} 
+float gyro\+\_\+z}
+
+\Hypertarget{_i_m_u__driver_8c_a44a00acadc35a7cf8bb0a051213fde6c}\index{IMU\_driver.c@{IMU\_driver.c}!gyro\_z\_raw@{gyro\_z\_raw}}
+\index{gyro\_z\_raw@{gyro\_z\_raw}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{gyro\_z\_raw}{gyro\_z\_raw}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_a44a00acadc35a7cf8bb0a051213fde6c} 
+int16\+\_\+t gyro\+\_\+z\+\_\+raw}
+
+\Hypertarget{_i_m_u__driver_8c_ae4f3f55be5de649fd367081b9d1b4b0c}\index{IMU\_driver.c@{IMU\_driver.c}!msg@{msg}}
+\index{msg@{msg}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_ae4f3f55be5de649fd367081b9d1b4b0c} 
+char msg\mbox{[}50\mbox{]}}
+
+\Hypertarget{_i_m_u__driver_8c_a2f2b760a34d5cbec275982e056d5f37e}\index{IMU\_driver.c@{IMU\_driver.c}!raw\_data@{raw\_data}}
+\index{raw\_data@{raw\_data}!IMU\_driver.c@{IMU\_driver.c}}
+\doxysubsubsection{\texorpdfstring{raw\_data}{raw\_data}}
+{\footnotesize\ttfamily \label{_i_m_u__driver_8c_a2f2b760a34d5cbec275982e056d5f37e} 
+uint8\+\_\+t raw\+\_\+data\mbox{[}6\mbox{]}}
+

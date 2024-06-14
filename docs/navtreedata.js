@@ -25,6 +25,16 @@
 var NAVTREE =
 [
   [ "reaction_balance", "index.html", [
+    [ "Introduction", "index.html#autotoc_md0", null ],
+    [ "Hardware", "index.html#autotoc_md1", [
+      [ "Mechanical Hardware", "index.html#autotoc_md2", null ],
+      [ "Electrical Hardware", "index.html#autotoc_md3", null ]
+    ] ],
+    [ "Software Implementation", "index.html#autotoc_md4", [
+      [ "IMU", "index.html#autotoc_md5", null ],
+      [ "Motor Driver: ODrive Interface", "index.html#autotoc_md6", null ],
+      [ "Control System", "index.html#autotoc_md7", null ]
+    ] ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -47,8 +57,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"stm32f4xx__it_8c.html#adbdfb05858cc36fc520974df37ec3cb0"
+"_i_m_u__driver_8c.html",
+"stm32f4xx__hal__conf_8h.html#a6c2182c3202253ba1a70c7d25122013c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

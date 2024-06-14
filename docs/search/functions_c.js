@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['start_5freceive_5fstring_0',['start_receive_string',['../odrive__wrapper_8h.html#ab6435b6238a1cb4ff3627f8736a86d72',1,'start_receive_string(odrive_t *p):&#160;odrive_wrapper.c'],['../odrive__wrapper_8c.html#ab6435b6238a1cb4ff3627f8736a86d72',1,'start_receive_string(odrive_t *p):&#160;odrive_wrapper.c']]],
-  ['svc_5fhandler_1',['SVC_Handler',['../stm32f4xx__it_8h.html#a3e5ddb3df0d62f2dc357e64a3f04a6ce',1,'SVC_Handler(void):&#160;stm32f4xx_it.c'],['../stm32f4xx__it_8c.html#a3e5ddb3df0d62f2dc357e64a3f04a6ce',1,'SVC_Handler(void):&#160;stm32f4xx_it.c']]],
-  ['systemclock_5fconfig_2',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]],
-  ['systemcoreclockupdate_3',['SystemCoreClockUpdate',['../group___s_t_m32_f4xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f',1,'system_stm32f4xx.c']]],
-  ['systeminit_4',['SystemInit',['../group___s_t_m32_f4xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2',1,'system_stm32f4xx.c']]],
-  ['systick_5fhandler_5',['SysTick_Handler',['../stm32f4xx__it_8h.html#ab5e09814056d617c521549e542639b7e',1,'SysTick_Handler(void):&#160;stm32f4xx_it.c'],['../stm32f4xx__it_8c.html#ab5e09814056d617c521549e542639b7e',1,'SysTick_Handler(void):&#160;stm32f4xx_it.c']]]
+  ['rc_5fcallback_0',['RC_callback',['../rc__input_8h.html#a172b212a1b5960a31c110bb02b4b5ada',1,'RC_callback(rc_inp_t *p, TIM_HandleTypeDef *timer):&#160;rc_input.c'],['../rc__input_8c.html#a172b212a1b5960a31c110bb02b4b5ada',1,'RC_callback(rc_inp_t *p, TIM_HandleTypeDef *timer):&#160;rc_input.c']]],
+  ['rc_5fget_5ftrig_1',['RC_get_trig',['../rc__input_8h.html#a6fe204f55b3b9bd8151b1a3a281cc54c',1,'RC_get_trig(rc_inp_t *p):&#160;rc_input.c'],['../rc__input_8c.html#a6fe204f55b3b9bd8151b1a3a281cc54c',1,'RC_get_trig(rc_inp_t *p):&#160;rc_input.c']]],
+  ['rc_5fget_5fwhl_2',['RC_get_whl',['../rc__input_8h.html#a409cea763dd020135c48d3b7329fda32',1,'RC_get_whl(rc_inp_t *p):&#160;rc_input.c'],['../rc__input_8c.html#a409cea763dd020135c48d3b7329fda32',1,'RC_get_whl(rc_inp_t *p):&#160;rc_input.c']]],
+  ['rc_5fstart_5fcap_3',['RC_start_cap',['../rc__input_8h.html#a6d9d21e31e69ba95f828f14468da310f',1,'RC_start_cap(rc_inp_t *p):&#160;rc_input.c'],['../rc__input_8c.html#a6d9d21e31e69ba95f828f14468da310f',1,'RC_start_cap(rc_inp_t *p):&#160;rc_input.c']]]
 ];

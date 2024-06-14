@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['debugmon_5fhandler_0',['DebugMon_Handler',['../stm32f4xx__it_8h.html#adbdfb05858cc36fc520974df37ec3cb0',1,'DebugMon_Handler(void):&#160;stm32f4xx_it.c'],['../stm32f4xx__it_8c.html#adbdfb05858cc36fc520974df37ec3cb0',1,'DebugMon_Handler(void):&#160;stm32f4xx_it.c']]]
+  ['calculate_5fimu_5fangle_0',['calculate_IMU_Angle',['../controller_8h.html#a954bf1baac2fc318fb976257965a9940',1,'calculate_IMU_Angle(ICM_20948 *p_IMU):&#160;controller.c'],['../controller_8c.html#a954bf1baac2fc318fb976257965a9940',1,'calculate_IMU_Angle(ICM_20948 *p_IMU):&#160;controller.c']]]
 ];

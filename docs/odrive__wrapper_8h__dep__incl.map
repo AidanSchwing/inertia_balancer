@@ -1,7 +1,12 @@
 <map id="odrive_wrapper.h" name="odrive_wrapper.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="33,5,150,32"/>
-<area shape="rect" id="Node000002" href="$main_8c.html" title=": Main program body" alt="" coords="5,80,66,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,46,47,81,43,78,70,43"/>
-<area shape="rect" id="Node000003" href="$odrive__wrapper_8c.html" title=" " alt="" coords="90,80,208,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,43,141,78,137,81,109,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="87,5,204,32"/>
+<area shape="rect" id="Node000002" href="$controller_8h.html" title=" " alt="" coords="23,80,108,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,44,81,82,77,78,119,41"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title="Main program body." alt="" coords="115,155,176,181"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="148,48,148,154,143,154,143,48"/>
+<area shape="rect" id="Node000005" href="$odrive__wrapper_8c.html" title="Provides functions for interfacing with an external ODrive controller." alt="" coords="183,80,300,107"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="175,39,226,77,223,82,172,44"/>
+<area shape="rect" id="Node000003" href="$controller_8c.html" title="Provides functions relevant to system control." alt="" coords="5,155,91,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="61,123,54,155,48,154,56,121"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="92,115,133,152,130,156,89,119"/>
 </map>

@@ -1,0 +1,18 @@
+<map id="IMU_driver.c" name="IMU_driver.c">
+<area shape="rect" id="Node000001" title="Implements a few features of the ICM20948 via I2C." alt="" coords="151,5,243,32"/>
+<area shape="rect" id="Node000002" href="$main_8h.html" title=": Header for main.c file." alt="" coords="217,80,278,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,31,232,66,228,69,203,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,122,181"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="160,35,123,54,91,82,76,110,69,140,64,138,71,108,87,78,120,49,158,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="317,155,381,181"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="224,30,258,51,292,78,318,109,338,140,333,143,314,112,288,82,255,55,221,35"/>
+<area shape="rect" id="Node000007" href="$_i_m_u__driver_8h.html" title=" " alt="" coords="101,80,194,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="190,34,167,69,162,66,186,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="218,109,111,151,109,146,216,104"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="145,155,206,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="237,109,200,145,197,142,233,105"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="267,105,320,143,317,147,264,109"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="229,155,293,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="252,107,258,139,253,140,247,108"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="135,109,91,146,88,142,131,105"/>
+</map>

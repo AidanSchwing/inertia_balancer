@@ -12,6 +12,7 @@ uint16_t trig_val = 0;
 uint16_t whl_val = 0;
 
 // start the interrupts on the timers
+
 void RC_start_cap(rc_inp_t *p)
 {
 	HAL_TIM_IC_Start_IT(p->rc_timer, p->trig_ch_rise);

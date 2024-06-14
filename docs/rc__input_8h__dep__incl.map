@@ -1,5 +1,7 @@
 <map id="rc_input.h" name="rc_input.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,84,32"/>
-<area shape="rect" id="Node000002" href="$rc__input_8c.html" title=" " alt="" coords="5,80,84,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,48,47,80,42,80,42,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="43,5,121,32"/>
+<area shape="rect" id="Node000002" href="$main_8c.html" title="Main program body." alt="" coords="5,80,66,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,47,46,81,41,78,64,44"/>
+<area shape="rect" id="Node000003" href="$rc__input_8c.html" title=" " alt="" coords="90,80,168,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,44,123,78,119,81,96,47"/>
 </map>

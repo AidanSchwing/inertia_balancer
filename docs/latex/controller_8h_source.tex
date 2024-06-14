@@ -1,0 +1,39 @@
+\doxysection{controller.\+h}
+\hypertarget{controller_8h_source}{}\label{controller_8h_source}\index{controller.h@{controller.h}}
+\mbox{\hyperlink{controller_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ controller.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ Created\ on:\ Jun\ 8,\ 2024}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ \ \ \ \ Author:\ Aidan}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ INC\_CONTROLLER\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ INC\_CONTROLLER\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{main_8h}{main.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_m_u__driver_8h}{IMU\_driver.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{odrive__wrapper_8h}{odrive\_wrapper.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ defines\ for\ the\ complementary\ filter}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ ALPHA\ 0.98}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ DT\ 0.01\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ sampling\ period\ 10ms}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ DISPLACEMENT\_DIST\ 0.07\ \ \ \ \ \ }\textcolor{comment}{//\ displacement\ distance\ to\ the\ axis\ of\ the\ gyro\ that\ is}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structpos__spd}{pos\_spd}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structpos__spd_a76777b356ab2a080225682528119c4fe}{position}};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structpos__spd_a7f7e4724cf57d59513b39c5ecc81adc8}{speed}};}
+\DoxyCodeLine{00024\ \}\textcolor{keyword}{typedef}\ \mbox{\hyperlink{controller_8h_a739745815516ab387b3bd08e33ddc4c3}{pos\_spd}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ prototype\ functions}}
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ LQR\ controller,\ update\ speed\ setpoint}}
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{controller_8h_a1bb07a75ed5a7889a5ccb8bc1ae6a9f6}{update\_control}}(\mbox{\hyperlink{structodrive__t}{odrive\_t}}\ *p\_odrive,\ \textcolor{keywordtype}{float}\ angle,\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{controller_8c_acb4c2f4fbad69c2d11b5878671545191}{angular\_velocity}},\ \textcolor{keywordtype}{float}\ motor\_curr\_speed);}
+\DoxyCodeLine{00029\ \textcolor{comment}{//\ System\ angle\ using\ complementary\ filter\ on\ gyro\ and\ accel\ data}}
+\DoxyCodeLine{00030\ \mbox{\hyperlink{structpos__spd}{pos\_spd}}\ \mbox{\hyperlink{controller_8h_a954bf1baac2fc318fb976257965a9940}{calculate\_IMU\_Angle}}(\mbox{\hyperlink{struct_i_c_m__20948}{ICM\_20948}}\ *p\_IMU);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INC\_CONTROLLER\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

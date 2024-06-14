@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['low_5fpwm_0',['low_pwm',['../structrc__inp__t.html#a7d594be7b2db4149abf7c7bd5048213d',1,'rc_inp_t']]],
-  ['lse_5fstartup_5ftimeout_1',['LSE_STARTUP_TIMEOUT',['../stm32f4xx__hal__conf_8h.html#a85e6fc812dc26f7161a04be2568a5462',1,'stm32f4xx_hal_conf.h']]],
-  ['lse_5fvalue_2',['LSE_VALUE',['../stm32f4xx__hal__conf_8h.html#a7bbb9d19e5189a6ccd0fb6fa6177d20d',1,'stm32f4xx_hal_conf.h']]],
-  ['lsi_5fvalue_3',['LSI_VALUE',['../stm32f4xx__hal__conf_8h.html#a4872023e65449c0506aac3ea6bec99e9',1,'stm32f4xx_hal_conf.h']]]
+  ['k_0',['K',['../controller_8c.html#ab9495215123bd4bc532d4678cb402897',1,'controller.c']]]
 ];

@@ -31,7 +31,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
  ../Core/Inc/odrive_wrapper.h ../Core/Inc/main.h ../Core/Inc/IMU_driver.h \
  ../Core/Inc/controller.h ../Core/Inc/IMU_driver.h \
- ../Core/Inc/odrive_wrapper.h
+ ../Core/Inc/odrive_wrapper.h ../Core/Inc/rc_input.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -69,3 +69,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/controller.h:
 ../Core/Inc/IMU_driver.h:
 ../Core/Inc/odrive_wrapper.h:
+../Core/Inc/rc_input.h:

@@ -2,8 +2,10 @@
  * IMU_driver.c
  *
  *  Created on: Jun 2, 2024
- *      Author: sydne
+ *      Author: Sydney
  */
+/// @file IMU_driver.c
+/// @brief Implements a few features of the ICM20948 via I2C.
 #include "main.h"
 #include "IMU_driver.h"
 #include "stm32f4xx_hal.h"
@@ -21,7 +23,12 @@ uint8_t raw_data[6]; //for use with the above
 
 
 //function definitions for the IMU
-/// Checks I2C connection, reads the WHO_AM_I register, and scans device address for verification purposes. Prints debugging messages through uart.
+
+/**
+ * Initializes the ICM20948 IMU.
+ * Checks I2C connection, reads the WHO_AM_I register, and scans device address for verification purposes. Prints debugging messages through uart.
+ * @param ICM_20948 Pointer to an IMU object
+ */
 void IMU_init(ICM_20948*p_IMU){
 
 	HAL_StatusTypeDef ret = HAL_I2C_IsDeviceReady(p_IMU->hi2c, ICM20948_I2C_ADDR, 1, 100); // i2c pointer & because we want the address
@@ -78,7 +85,11 @@ void IMU_init(ICM_20948*p_IMU){
      }
 }
 
-
+/**
+ * Reads IMU acceleration data.
+ * Accesses the relevant registers via I2C and returns a triplet of float data scaled appropriately.
+ * @param ICM_20948 Pointer to an IMU object
+ */
 AccelData IMU_read_accel(ICM_20948*p_IMU){
 	AccelData accel_data = {0};
 
@@ -114,7 +125,11 @@ AccelData IMU_read_accel(ICM_20948*p_IMU){
 	return accel_data;
 }
 
-
+/**
+ * Reads IMU gyro data.
+ * Accesses the relevant registers via I2C and returns a triplet of float data scaled appropriately.
+ * @param ICM_20948 Pointer to an IMU object
+ */
 GyroData IMU_read_gyro(ICM_20948*p_IMU){
 	GyroData gyro_data = {0};
 

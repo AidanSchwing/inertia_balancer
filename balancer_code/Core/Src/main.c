@@ -1,8 +1,8 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
+  * @file   main.c
+  * @brief  Main program body
   ******************************************************************************
   * @attention
   *
@@ -24,6 +24,7 @@
 #include "odrive_wrapper.h"
 #include "IMU_driver.h"
 #include "controller.h"
+#include "rc_input.h"
 #include <math.h>
 /* USER CODE END Includes */
 
@@ -173,7 +174,6 @@ int main(void)
   IMU_init(&IMU);
 
 
-  // battery voltage readout
   // battery voltage readout
   //uint8_t* voltage = ODRIVE_GetVBus(&odrive);
   //char new_mess[50];

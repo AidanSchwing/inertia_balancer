@@ -1,0 +1,115 @@
+\doxysection{controller.\+h File Reference}
+\hypertarget{controller_8h}{}\label{controller_8h}\index{controller.h@{controller.h}}
+{\ttfamily \#include "{}main.\+h"{}}\newline
+{\ttfamily \#include "{}IMU\+\_\+driver.\+h"{}}\newline
+{\ttfamily \#include "{}odrive\+\_\+wrapper.\+h"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for controller.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{controller_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{controller_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpos__spd}{pos\+\_\+spd}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{controller_8h_af5abd28c44c29b7397c84f1fec4b1d84}{ALPHA}}~0.\+98
+\item 
+\#define \mbox{\hyperlink{controller_8h_a943f07034774ef1261d62cd0d3d1fec9}{DT}}~0.\+01
+\item 
+\#define \mbox{\hyperlink{controller_8h_ae13192d02ea165e8b1ac471bf287be16}{DISPLACEMENT\+\_\+\+DIST}}~0.\+07
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{controller_8h_a1bb07a75ed5a7889a5ccb8bc1ae6a9f6}{update\+\_\+control}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+\_\+odrive, float angle, float \mbox{\hyperlink{controller_8c_acb4c2f4fbad69c2d11b5878671545191}{angular\+\_\+velocity}}, float motor\+\_\+curr\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Calculates an updates the motor speed setpoint using an LQR implementation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpos__spd}{pos\+\_\+spd}} \mbox{\hyperlink{controller_8h_a954bf1baac2fc318fb976257965a9940}{calculate\+\_\+\+IMU\+\_\+\+Angle}} (\mbox{\hyperlink{struct_i_c_m__20948}{ICM\+\_\+20948}} \texorpdfstring{$\ast$}{*}p\+\_\+\+IMU)
+\begin{DoxyCompactList}\small\item\em Initializes the system angle using the IMU using a complementary filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct pos\+\_\+spd \mbox{\hyperlink{controller_8h_a739745815516ab387b3bd08e33ddc4c3}{pos\+\_\+spd}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{controller_8h_af5abd28c44c29b7397c84f1fec4b1d84}\index{controller.h@{controller.h}!ALPHA@{ALPHA}}
+\index{ALPHA@{ALPHA}!controller.h@{controller.h}}
+\doxysubsubsection{\texorpdfstring{ALPHA}{ALPHA}}
+{\footnotesize\ttfamily \label{controller_8h_af5abd28c44c29b7397c84f1fec4b1d84} 
+\#define ALPHA~0.\+98}
+
+\Hypertarget{controller_8h_ae13192d02ea165e8b1ac471bf287be16}\index{controller.h@{controller.h}!DISPLACEMENT\_DIST@{DISPLACEMENT\_DIST}}
+\index{DISPLACEMENT\_DIST@{DISPLACEMENT\_DIST}!controller.h@{controller.h}}
+\doxysubsubsection{\texorpdfstring{DISPLACEMENT\_DIST}{DISPLACEMENT\_DIST}}
+{\footnotesize\ttfamily \label{controller_8h_ae13192d02ea165e8b1ac471bf287be16} 
+\#define DISPLACEMENT\+\_\+\+DIST~0.\+07}
+
+\Hypertarget{controller_8h_a943f07034774ef1261d62cd0d3d1fec9}\index{controller.h@{controller.h}!DT@{DT}}
+\index{DT@{DT}!controller.h@{controller.h}}
+\doxysubsubsection{\texorpdfstring{DT}{DT}}
+{\footnotesize\ttfamily \label{controller_8h_a943f07034774ef1261d62cd0d3d1fec9} 
+\#define DT~0.\+01}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{controller_8h_a954bf1baac2fc318fb976257965a9940}\index{controller.h@{controller.h}!calculate\_IMU\_Angle@{calculate\_IMU\_Angle}}
+\index{calculate\_IMU\_Angle@{calculate\_IMU\_Angle}!controller.h@{controller.h}}
+\doxysubsubsection{\texorpdfstring{calculate\_IMU\_Angle()}{calculate\_IMU\_Angle()}}
+{\footnotesize\ttfamily \label{controller_8h_a954bf1baac2fc318fb976257965a9940} 
+\mbox{\hyperlink{structpos__spd}{pos\+\_\+spd}} calculate\+\_\+\+IMU\+\_\+\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_c_m__20948}{ICM\+\_\+20948}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+IMU}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the system angle using the IMU using a complementary filter. 
+
+Calls functions from the IMU driver and calculates the system angle using a complementary filter. Noise was determined to be substantial even in the gyro data, so the gyro output is smoothed by calculating the true change in system angle. This is a little messy. 
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{struct_i_c_m__20948}{ICM\+\_\+20948}} & Pointer to an IMU object \\
+\hline
+\end{DoxyParams}
+\Hypertarget{controller_8h_a1bb07a75ed5a7889a5ccb8bc1ae6a9f6}\index{controller.h@{controller.h}!update\_control@{update\_control}}
+\index{update\_control@{update\_control}!controller.h@{controller.h}}
+\doxysubsubsection{\texorpdfstring{update\_control()}{update\_control()}}
+{\footnotesize\ttfamily \label{controller_8h_a1bb07a75ed5a7889a5ccb8bc1ae6a9f6} 
+void update\+\_\+control (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+odrive}{, }\item[{float}]{angle}{, }\item[{float}]{angular\+\_\+velocity}{, }\item[{float}]{motor\+\_\+curr\+\_\+speed}{}\end{DoxyParamCaption})}
+
+
+
+Calculates an updates the motor speed setpoint using an LQR implementation. 
+
+Calculates the next motor speed setpoint using current state vector and set of LQR gains. LQR gains originally calculated using MATLAB script. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+odrive} & Pointer to an ODrive object. \\
+\hline
+{\em angle} & Current system angle. \\
+\hline
+{\em angular\+\_\+velocity} & Current system angular velocity. \\
+\hline
+{\em motor\+\_\+curr\+\_\+speed} & Current motor speed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{controller_8h_a739745815516ab387b3bd08e33ddc4c3}\index{controller.h@{controller.h}!pos\_spd@{pos\_spd}}
+\index{pos\_spd@{pos\_spd}!controller.h@{controller.h}}
+\doxysubsubsection{\texorpdfstring{pos\_spd}{pos\_spd}}
+{\footnotesize\ttfamily \label{controller_8h_a739745815516ab387b3bd08e33ddc4c3} 
+struct pos\+\_\+spd pos\+\_\+spd}
+

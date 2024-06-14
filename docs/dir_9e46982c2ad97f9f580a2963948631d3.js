@@ -1,7 +1,8 @@
 var dir_9e46982c2ad97f9f580a2963948631d3 =
 [
+    [ "controller.c", "controller_8c.html", "controller_8c" ],
+    [ "IMU_driver.c", "_i_m_u__driver_8c.html", "_i_m_u__driver_8c" ],
     [ "main.c", "main_8c.html", "main_8c" ],
-    [ "motor_driver.c", "motor__driver_8c.html", "motor__driver_8c" ],
     [ "odrive_wrapper.c", "odrive__wrapper_8c.html", "odrive__wrapper_8c" ],
     [ "rc_input.c", "rc__input_8c.html", "rc__input_8c" ],
     [ "stm32f4xx_hal_msp.c", "stm32f4xx__hal__msp_8c.html", "stm32f4xx__hal__msp_8c" ],

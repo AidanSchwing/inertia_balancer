@@ -1,0 +1,152 @@
+\doxysection{controller.\+c File Reference}
+\hypertarget{controller_8c}{}\label{controller_8c}\index{controller.c@{controller.c}}
+
+
+Provides functions relevant to system control.  
+
+
+{\ttfamily \#include "{}controller.\+h"{}}\newline
+{\ttfamily \#include "{}main.\+h"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for controller.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{controller_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{controller_8c_a58a9c1a7ff5f19164ba9811c9fd80770}{MAX\+\_\+\+CHANGE}}~0.\+1
+\begin{DoxyCompactList}\small\item\em Maximum change in controller speed setpoint per interval. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{controller_8c_a1bb07a75ed5a7889a5ccb8bc1ae6a9f6}{update\+\_\+control}} (\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+\_\+odrive, float angle, float \mbox{\hyperlink{controller_8c_acb4c2f4fbad69c2d11b5878671545191}{angular\+\_\+velocity}}, float motor\+\_\+curr\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Calculates an updates the motor speed setpoint using an LQR implementation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpos__spd}{pos\+\_\+spd}} \mbox{\hyperlink{controller_8c_a954bf1baac2fc318fb976257965a9940}{calculate\+\_\+\+IMU\+\_\+\+Angle}} (\mbox{\hyperlink{struct_i_c_m__20948}{ICM\+\_\+20948}} \texorpdfstring{$\ast$}{*}p\+\_\+\+IMU)
+\begin{DoxyCompactList}\small\item\em Initializes the system angle using the IMU using a complementary filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{controller_8c_ab9495215123bd4bc532d4678cb402897}{K}} \mbox{[}3\mbox{]} = \{15, 0.\+1, -\/0.\+3\}
+\begin{DoxyCompactList}\small\item\em LQR gain matrix. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{controller_8c_ad50f9053a1bfede86c60be067d744d71}{x}} \mbox{[}3\mbox{]} = \{0,0,0\}
+\begin{DoxyCompactList}\small\item\em State vector in form \mbox{[}angle, angular\+\_\+vel, wheel\+\_\+spd\mbox{]}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{controller_8c_a55831f7eab5ed2917a0191e858852f42}{u}} = 0
+\begin{DoxyCompactList}\small\item\em Commanded motor speed. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{controller_8c_a34e7004bcd98a060416abb58359410fd}{ctrl\+\_\+msg}} \mbox{[}50\mbox{]}
+\item 
+float \mbox{\hyperlink{controller_8c_a5be5be58449ccca7679ac2d151477f9d}{angle\+\_\+z}} = 0.\+0f
+\item 
+float \mbox{\hyperlink{controller_8c_acb4c2f4fbad69c2d11b5878671545191}{angular\+\_\+velocity}} = 0.\+0f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides functions relevant to system control. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{controller_8c_a58a9c1a7ff5f19164ba9811c9fd80770}\index{controller.c@{controller.c}!MAX\_CHANGE@{MAX\_CHANGE}}
+\index{MAX\_CHANGE@{MAX\_CHANGE}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_CHANGE}{MAX\_CHANGE}}
+{\footnotesize\ttfamily \label{controller_8c_a58a9c1a7ff5f19164ba9811c9fd80770} 
+\#define MAX\+\_\+\+CHANGE~0.\+1}
+
+
+
+Maximum change in controller speed setpoint per interval. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{controller_8c_a954bf1baac2fc318fb976257965a9940}\index{controller.c@{controller.c}!calculate\_IMU\_Angle@{calculate\_IMU\_Angle}}
+\index{calculate\_IMU\_Angle@{calculate\_IMU\_Angle}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{calculate\_IMU\_Angle()}{calculate\_IMU\_Angle()}}
+{\footnotesize\ttfamily \label{controller_8c_a954bf1baac2fc318fb976257965a9940} 
+\mbox{\hyperlink{structpos__spd}{pos\+\_\+spd}} calculate\+\_\+\+IMU\+\_\+\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_c_m__20948}{ICM\+\_\+20948}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+\+IMU}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the system angle using the IMU using a complementary filter. 
+
+Calls functions from the IMU driver and calculates the system angle using a complementary filter. Noise was determined to be substantial even in the gyro data, so the gyro output is smoothed by calculating the true change in system angle. This is a little messy. 
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{struct_i_c_m__20948}{ICM\+\_\+20948}} & Pointer to an IMU object \\
+\hline
+\end{DoxyParams}
+\Hypertarget{controller_8c_a1bb07a75ed5a7889a5ccb8bc1ae6a9f6}\index{controller.c@{controller.c}!update\_control@{update\_control}}
+\index{update\_control@{update\_control}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{update\_control()}{update\_control()}}
+{\footnotesize\ttfamily \label{controller_8c_a1bb07a75ed5a7889a5ccb8bc1ae6a9f6} 
+void update\+\_\+control (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structodrive__t}{odrive\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+odrive}{, }\item[{float}]{angle}{, }\item[{float}]{angular\+\_\+velocity}{, }\item[{float}]{motor\+\_\+curr\+\_\+speed}{}\end{DoxyParamCaption})}
+
+
+
+Calculates an updates the motor speed setpoint using an LQR implementation. 
+
+Calculates the next motor speed setpoint using current state vector and set of LQR gains. LQR gains originally calculated using MATLAB script. 
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+odrive} & Pointer to an ODrive object. \\
+\hline
+{\em angle} & Current system angle. \\
+\hline
+{\em angular\+\_\+velocity} & Current system angular velocity. \\
+\hline
+{\em motor\+\_\+curr\+\_\+speed} & Current motor speed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{controller_8c_a5be5be58449ccca7679ac2d151477f9d}\index{controller.c@{controller.c}!angle\_z@{angle\_z}}
+\index{angle\_z@{angle\_z}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{angle\_z}{angle\_z}}
+{\footnotesize\ttfamily \label{controller_8c_a5be5be58449ccca7679ac2d151477f9d} 
+float angle\+\_\+z = 0.\+0f}
+
+\Hypertarget{controller_8c_acb4c2f4fbad69c2d11b5878671545191}\index{controller.c@{controller.c}!angular\_velocity@{angular\_velocity}}
+\index{angular\_velocity@{angular\_velocity}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{angular\_velocity}{angular\_velocity}}
+{\footnotesize\ttfamily \label{controller_8c_acb4c2f4fbad69c2d11b5878671545191} 
+float angular\+\_\+velocity = 0.\+0f}
+
+\Hypertarget{controller_8c_a34e7004bcd98a060416abb58359410fd}\index{controller.c@{controller.c}!ctrl\_msg@{ctrl\_msg}}
+\index{ctrl\_msg@{ctrl\_msg}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{ctrl\_msg}{ctrl\_msg}}
+{\footnotesize\ttfamily \label{controller_8c_a34e7004bcd98a060416abb58359410fd} 
+char ctrl\+\_\+msg\mbox{[}50\mbox{]}}
+
+\Hypertarget{controller_8c_ab9495215123bd4bc532d4678cb402897}\index{controller.c@{controller.c}!K@{K}}
+\index{K@{K}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{K}{K}}
+{\footnotesize\ttfamily \label{controller_8c_ab9495215123bd4bc532d4678cb402897} 
+float K\mbox{[}3\mbox{]} = \{15, 0.\+1, -\/0.\+3\}}
+
+
+
+LQR gain matrix. 
+
+\Hypertarget{controller_8c_a55831f7eab5ed2917a0191e858852f42}\index{controller.c@{controller.c}!u@{u}}
+\index{u@{u}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{u}{u}}
+{\footnotesize\ttfamily \label{controller_8c_a55831f7eab5ed2917a0191e858852f42} 
+float u = 0}
+
+
+
+Commanded motor speed. 
+
+\Hypertarget{controller_8c_ad50f9053a1bfede86c60be067d744d71}\index{controller.c@{controller.c}!x@{x}}
+\index{x@{x}!controller.c@{controller.c}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{controller_8c_ad50f9053a1bfede86c60be067d744d71} 
+float x\mbox{[}3\mbox{]} = \{0,0,0\}}
+
+
+
+State vector in form \mbox{[}angle, angular\+\_\+vel, wheel\+\_\+spd\mbox{]}. 
+

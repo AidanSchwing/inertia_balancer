@@ -1,10 +1,16 @@
 <map id="odrive_wrapper.c" name="odrive_wrapper.c">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,123,32"/>
-<area shape="rect" id="Node000002" href="$main_8h.html" title=": Header for main.c file." alt="" coords="34,155,94,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,33,44,80,45,111,54,140,48,141,40,112,39,80,55,32"/>
-<area shape="rect" id="Node000004" href="$odrive__wrapper_8h.html" title=" " alt="" coords="53,80,171,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="75,31,98,66,93,69,70,34"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="6,229,122,256"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="67,182,67,214,61,214,61,182"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="106,109,83,143,78,140,101,106"/>
+<area shape="rect" id="Node000001" title="Provides functions for interfacing with an external ODrive controller." alt="" coords="160,5,277,32"/>
+<area shape="rect" id="Node000002" href="$main_8h.html" title=": Header for main.c file." alt="" coords="188,155,248,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,33,198,80,199,111,208,140,203,141,194,112,193,80,209,32"/>
+<area shape="rect" id="Node000007" href="$odrive__wrapper_8h.html" title=" " alt="" coords="208,80,325,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="229,31,252,66,247,69,224,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,229,122,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="192,184,105,225,103,220,190,179"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="145,229,206,256"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="213,183,193,217,188,215,208,181"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="230,229,294,256"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="228,180,249,215,244,217,224,183"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="319,229,382,256"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="242,180,315,219,313,224,240,184"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="260,109,237,143,233,140,256,106"/>
 </map>
